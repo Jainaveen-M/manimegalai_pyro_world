@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manimegalai Pyro World - Price List 2026</title>
-  <meta name="description" content="Fancy crackers & gift boxes direct from Sivakasi. Diwali 2026 price list with up to 80% discount. Order online from Manimegalai Pyro World." />
+  <meta name="description"
+    content="Fancy crackers & gift boxes direct from Sivakasi. Diwali 2026 price list with up to 80% discount. Order online from Manimegalai Pyro World." />
   <meta name="theme-color" content="#3a1272" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+Tamil:wght@700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+Tamil:wght@700;800&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -32,16 +35,29 @@
     };
   </script>
   <style>
-    html { scroll-behavior: smooth; scroll-padding-top: 11rem; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 11rem;
+    }
+
     body {
       font-family: 'Montserrat', system-ui, sans-serif;
       background: linear-gradient(180deg, #cdeefd 0%, #e6f7ff 420px, #effaff 100%);
       background-attachment: fixed;
     }
-    body.drawer-open { overflow: hidden; }
 
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    body.drawer-open {
+      overflow: hidden;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
 
     /* ---------- Poster hero ---------- */
     .poster {
@@ -50,6 +66,7 @@
         radial-gradient(rgba(255, 255, 255, .55) 1px, transparent 1.4px) 0 0 / 56px 56px,
         linear-gradient(180deg, #4fb0e4 0%, #86cff0 48%, #d3f0fb 100%);
     }
+
     .title-swash {
       font-family: 'Berkshire Swash', serif;
       color: #5e0c1a;
@@ -69,23 +86,72 @@
     }
 
     /* Discount ribbon */
-    .rib { background: linear-gradient(180deg, #8f1632, #6b0f27); box-shadow: inset 0 2px 0 #e5b94a, inset 0 -2px 0 #e5b94a; }
-    .rib-l { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 12px 50%); }
-    .rib-r { clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 50%, 100% 100%, 0 100%); }
+    .rib {
+      background: linear-gradient(180deg, #8f1632, #6b0f27);
+      box-shadow: inset 0 2px 0 #e5b94a, inset 0 -2px 0 #e5b94a;
+    }
+
+    .rib-l {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 12px 50%);
+    }
+
+    .rib-r {
+      clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 50%, 100% 100%, 0 100%);
+    }
+
     .shield {
       background: linear-gradient(180deg, #fbefbd 0%, #e9c565 55%, #cf9b26 100%);
       clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%);
       filter: drop-shadow(0 5px 6px rgba(94, 12, 26, .28));
     }
-    .orn { display: flex; align-items: center; gap: .75rem; color: #7a1224; }
-    .orn::before, .orn::after { content: ""; height: 1px; width: clamp(24px, 8vw, 90px); background: linear-gradient(90deg, transparent, rgba(122, 18, 36, .55)); }
-    .orn::after { transform: scaleX(-1); }
+
+    .orn {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      color: #7a1224;
+    }
+
+    .orn::before,
+    .orn::after {
+      content: "";
+      height: 1px;
+      width: clamp(24px, 8vw, 90px);
+      background: linear-gradient(90deg, transparent, rgba(122, 18, 36, .55));
+    }
+
+    .orn::after {
+      transform: scaleX(-1);
+    }
 
     /* Fireworks */
-    .burst { position: absolute; pointer-events: none; }
-    .burst svg { width: 100%; height: 100%; overflow: visible; }
-    .twinkle { animation: twinkle 4s ease-in-out infinite alternate; transform-origin: center; }
-    @keyframes twinkle { from { transform: scale(.92) rotate(-3deg); opacity: .5; } to { transform: scale(1.05) rotate(3deg); opacity: .85; } }
+    .burst {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .burst svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .twinkle {
+      animation: twinkle 4s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+
+    @keyframes twinkle {
+      from {
+        transform: scale(.92) rotate(-3deg);
+        opacity: .5;
+      }
+
+      to {
+        transform: scale(1.05) rotate(3deg);
+        opacity: .85;
+      }
+    }
 
     /* Buttons */
     .btn-punch {
@@ -95,9 +161,21 @@
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 8px 16px -8px rgba(94, 12, 26, .7);
       transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
     }
-    .btn-punch:hover { filter: brightness(1.15); }
-    .btn-punch:active { transform: translateY(1px); }
-    .btn-punch:disabled { opacity: .45; cursor: not-allowed; filter: none; }
+
+    .btn-punch:hover {
+      filter: brightness(1.15);
+    }
+
+    .btn-punch:active {
+      transform: translateY(1px);
+    }
+
+    .btn-punch:disabled {
+      opacity: .45;
+      cursor: not-allowed;
+      filter: none;
+    }
+
     .btn-gold {
       background: linear-gradient(180deg, #f6df93, #dcae3a);
       color: #4d0914;
@@ -105,8 +183,14 @@
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55), 0 8px 16px -8px rgba(122, 90, 10, .6);
       transition: transform .12s ease, filter .12s ease;
     }
-    .btn-gold:hover { filter: brightness(1.05); }
-    .btn-gold:active { transform: translateY(1px); }
+
+    .btn-gold:hover {
+      filter: brightness(1.05);
+    }
+
+    .btn-gold:active {
+      transform: translateY(1px);
+    }
 
     .add-btn {
       background: #fff;
@@ -115,31 +199,85 @@
       letter-spacing: .08em;
       transition: background .15s ease, color .15s ease, transform .1s ease;
     }
+
     .add-btn .plus {
-      height: 20px; width: 20px; border-radius: 9999px;
-      background: #3a1272; color: #f3d98b;
-      display: inline-flex; align-items: center; justify-content: center;
-      font-size: 15px; line-height: 1; font-weight: 800;
+      height: 20px;
+      width: 20px;
+      border-radius: 9999px;
+      background: #3a1272;
+      color: #f3d98b;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      line-height: 1;
+      font-weight: 800;
       transition: background .15s ease, color .15s ease;
     }
-    .add-btn:hover { background: #3a1272; color: #f3d98b; }
-    .add-btn:hover .plus { background: #f3d98b; color: #3a1272; }
-    .add-btn:active { transform: scale(.97); }
+
+    .add-btn:hover {
+      background: #3a1272;
+      color: #f3d98b;
+    }
+
+    .add-btn:hover .plus {
+      background: #f3d98b;
+      color: #3a1272;
+    }
+
+    .add-btn:active {
+      transform: scale(.97);
+    }
 
     /* Cards */
-    .card { transition: transform .18s ease, box-shadow .18s ease; box-shadow: 0 1px 2px rgba(37, 9, 77, .08), 0 14px 26px -16px rgba(37, 9, 77, .4); }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 1px 2px rgba(37, 9, 77, .1), 0 20px 32px -16px rgba(37, 9, 77, .5); }
-    .card.in-cart { border-color: #3a1272; box-shadow: 0 0 0 1px #3a1272, 0 14px 26px -16px rgba(58, 18, 114, .5); }
+    .card {
+      transition: transform .18s ease, box-shadow .18s ease;
+      box-shadow: 0 1px 2px rgba(37, 9, 77, .08), 0 14px 26px -16px rgba(37, 9, 77, .4);
+    }
 
-    .drawer { transition: transform .3s cubic-bezier(.22, 1, .36, 1); }
-    .overlay { transition: opacity .25s ease; }
-    .pop { animation: pop .25s ease; }
-    @keyframes pop { 50% { transform: scale(1.3); } }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1px 2px rgba(37, 9, 77, .1), 0 20px 32px -16px rgba(37, 9, 77, .5);
+    }
+
+    .card.in-cart {
+      border-color: #3a1272;
+      box-shadow: 0 0 0 1px #3a1272, 0 14px 26px -16px rgba(58, 18, 114, .5);
+    }
+
+    .drawer {
+      transition: transform .3s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .overlay {
+      transition: opacity .25s ease;
+    }
+
+    .pop {
+      animation: pop .25s ease;
+    }
+
+    @keyframes pop {
+      50% {
+        transform: scale(1.3);
+      }
+    }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .twinkle, .pop { animation: none; }
-      .drawer, .overlay, .card { transition: none; }
+      html {
+        scroll-behavior: auto;
+      }
+
+      .twinkle,
+      .pop {
+        animation: none;
+      }
+
+      .drawer,
+      .overlay,
+      .card {
+        transition: none;
+      }
     }
   </style>
 </head>
@@ -149,10 +287,11 @@
   <!-- Top strip -->
   <div class="bg-grape-900 text-gold-300 text-[11px] sm:text-xs font-semibold">
     <div class="max-w-[1320px] mx-auto px-4 py-1.5 flex items-center justify-between gap-3">
-      <p class="truncate">🎉 Diwali 2026 &nbsp;·&nbsp; Up to <b class="text-white">80% OFF</b> &nbsp;·&nbsp; Min. order ₹1,000</p>
+      <p class="truncate">🎉 Diwali 2026 &nbsp;·&nbsp; Up to <b class="text-white">80% OFF</b> &nbsp;·&nbsp; Min. order
+        ₹1,000</p>
       <p class="hidden sm:flex items-center gap-4 shrink-0">
-        <a href="tel:9486496341" class="hover:text-white">📞 9486496341</a>
-        <a href="tel:6369178279" class="hover:text-white">6369178279</a>
+        <a href="tel:6369178279" class="hover:text-white">📞 6369178279</a>
+        <a href="tel:9787081688" class="hover:text-white">9787081688</a>
       </p>
     </div>
   </div>
@@ -164,25 +303,34 @@
         <a href="#top" class="flex items-center gap-2.5 min-w-0 flex-1 lg:flex-none">
           <span class="h-10 w-10 shrink-0 rounded-full btn-gold flex items-center justify-center text-xl">🎆</span>
           <span class="min-w-0 leading-tight">
-            <span class="block font-swash text-[17px] min-[400px]:text-xl sm:text-2xl text-gold-300 truncate">Manimegalai Pyro World</span>
-            <span class="block text-[10px] text-white/70 font-semibold tracking-wide truncate">Fancy Crackers &amp; Gift Boxes · Sivakasi</span>
+            <span
+              class="block font-swash text-[17px] min-[400px]:text-xl sm:text-2xl text-gold-300 truncate">Manimegalai
+              Pyro World</span>
+            <span class="block text-[10px] text-white/70 font-semibold tracking-wide truncate">Fancy Crackers &amp; Gift
+              Boxes · Sivakasi</span>
           </span>
         </a>
 
         <div class="relative order-3 lg:order-none w-full lg:w-auto lg:flex-1 lg:max-w-xl lg:mx-auto">
-          <svg class="w-4 h-4 absolute left-4 top-3.5 text-maroon-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          <svg class="w-4 h-4 absolute left-4 top-3.5 text-maroon-600" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
           </svg>
           <input id="searchInput" type="search" placeholder="Search crackers or item code…"
             class="w-full pl-11 pr-4 py-2.5 bg-white border-2 border-transparent rounded-full text-sm font-semibold text-maroon-700 focus:outline-none focus:border-gold-400 placeholder:text-maroon-600/50 placeholder:font-medium" />
         </div>
 
         <div class="flex items-center gap-2">
-          <a href="Manimegalai_Pyro_World_Complete_Price_List_2026_First_Page_Colours.pdf" target="_blank" rel="noopener"
-            class="hidden md:inline-flex items-center h-10 px-4 rounded-full border-2 border-gold-400/70 text-gold-300 text-sm font-bold hover:bg-white/10 transition">📄 Price List</a>
-          <button id="openCartBtn" type="button" class="btn-gold h-10 pl-4 pr-3 rounded-full text-sm font-extrabold inline-flex items-center gap-2">
+          <a href="Manimegalai_Pyro_World_Complete_Price_List_2026_First_Page_Colours.pdf" target="_blank"
+            rel="noopener"
+            class="hidden md:inline-flex items-center h-10 px-4 rounded-full border-2 border-gold-400/70 text-gold-300 text-sm font-bold hover:bg-white/10 transition">📄
+            Price List</a>
+          <button id="openCartBtn" type="button"
+            class="btn-gold h-10 pl-4 pr-3 rounded-full text-sm font-extrabold inline-flex items-center gap-2">
             <span aria-hidden="true">🛒</span><span class="hidden sm:inline">Cart</span>
-            <span id="navCartCount" class="min-w-[1.5rem] text-center rounded-full bg-maroon-700 text-gold-200 text-xs font-black px-1.5 py-0.5">0</span>
+            <span id="navCartCount"
+              class="min-w-[1.5rem] text-center rounded-full bg-maroon-700 text-gold-200 text-xs font-black px-1.5 py-0.5">0</span>
           </button>
         </div>
       </div>
@@ -199,20 +347,27 @@
   <div class="max-w-[1320px] mx-auto px-4">
 
     <!-- Poster hero -->
-    <section class="poster relative overflow-hidden rounded-[28px] mt-5 border-[3px] border-gold-400 shadow-xl shadow-sky-500/20">
+    <section
+      class="poster relative overflow-hidden rounded-[28px] mt-5 border-[3px] border-gold-400 shadow-xl shadow-sky-500/20">
       <div class="absolute inset-2 sm:inset-3 rounded-[20px] border border-white/80 pointer-events-none z-10"></div>
 
       <!-- fireworks -->
       <div class="burst twinkle w-16 h-16 sm:w-28 sm:h-28 left-4 top-3 sm:left-10 sm:top-8" data-burst="a"></div>
-      <div class="burst twinkle w-16 h-16 sm:w-28 sm:h-28 right-4 top-4 sm:right-12 sm:top-10" data-burst="b" style="animation-delay:-1.2s"></div>
-      <div class="burst twinkle w-24 h-24 sm:w-52 sm:h-52 -left-8 top-[36%] sm:-left-10" data-burst="c" style="animation-delay:-.6s"></div>
-      <div class="burst twinkle w-24 h-24 sm:w-52 sm:h-52 -right-8 top-[32%] sm:-right-10" data-burst="d" style="animation-delay:-2s"></div>
-      <div class="burst twinkle hidden sm:block w-36 h-36 left-10 -bottom-6" data-burst="e" style="animation-delay:-1.6s"></div>
-      <div class="burst twinkle hidden sm:block w-36 h-36 right-10 -bottom-6" data-burst="f" style="animation-delay:-.3s"></div>
+      <div class="burst twinkle w-16 h-16 sm:w-28 sm:h-28 right-4 top-4 sm:right-12 sm:top-10" data-burst="b"
+        style="animation-delay:-1.2s"></div>
+      <div class="burst twinkle w-24 h-24 sm:w-52 sm:h-52 -left-8 top-[36%] sm:-left-10" data-burst="c"
+        style="animation-delay:-.6s"></div>
+      <div class="burst twinkle w-24 h-24 sm:w-52 sm:h-52 -right-8 top-[32%] sm:-right-10" data-burst="d"
+        style="animation-delay:-2s"></div>
+      <div class="burst twinkle hidden sm:block w-36 h-36 left-10 -bottom-6" data-burst="e"
+        style="animation-delay:-1.6s"></div>
+      <div class="burst twinkle hidden sm:block w-36 h-36 right-10 -bottom-6" data-burst="f"
+        style="animation-delay:-.3s"></div>
 
       <div class="relative z-20 flex flex-col items-center text-center px-5 pb-9 sm:pb-12">
         <!-- invocation tab -->
-        <div class="tamil-tab font-tamil font-bold rounded-b-2xl px-5 sm:px-10 pt-2.5 pb-3 text-[13px] min-[400px]:text-[15px] sm:text-xl lg:text-2xl whitespace-nowrap">
+        <div
+          class="tamil-tab font-tamil font-bold rounded-b-2xl px-5 sm:px-10 pt-2.5 pb-3 text-[13px] min-[400px]:text-[15px] sm:text-xl lg:text-2xl whitespace-nowrap">
           ஸ்ரீ மாத்தூர் கருப்பசாமி துணை
         </div>
 
@@ -222,13 +377,20 @@
 
         <!-- discount ribbon -->
         <div class="mt-6 sm:mt-7 flex items-center justify-center font-bold" aria-label="Up to 80% discount">
-          <div class="rib rib-l pl-5 pr-8 sm:pl-8 sm:pr-12 py-1.5 sm:py-2.5 -mr-3 sm:-mr-5 text-gold-200 text-[11px] sm:text-lg tracking-[0.22em]">UPTO</div>
-          <div class="shield relative z-10 px-5 sm:px-8 pt-1.5 pb-5 sm:pt-2 sm:pb-8 -my-3 text-maroon-700 text-3xl sm:text-5xl font-black leading-none" style="text-shadow:0 1px 0 rgba(255,255,255,.6)">80%</div>
-          <div class="rib rib-r pr-5 pl-8 sm:pr-8 sm:pl-12 py-1.5 sm:py-2.5 -ml-3 sm:-ml-5 text-gold-200 text-[11px] sm:text-lg tracking-[0.22em]">DISCOUNT</div>
+          <div
+            class="rib rib-l pl-5 pr-8 sm:pl-8 sm:pr-12 py-1.5 sm:py-2.5 -mr-3 sm:-mr-5 text-gold-200 text-[11px] sm:text-lg tracking-[0.22em]">
+            UPTO</div>
+          <div
+            class="shield relative z-10 px-5 sm:px-8 pt-1.5 pb-5 sm:pt-2 sm:pb-8 -my-3 text-maroon-700 text-3xl sm:text-5xl font-black leading-none"
+            style="text-shadow:0 1px 0 rgba(255,255,255,.6)">80%</div>
+          <div
+            class="rib rib-r pr-5 pl-8 sm:pr-8 sm:pl-12 py-1.5 sm:py-2.5 -ml-3 sm:-ml-5 text-gold-200 text-[11px] sm:text-lg tracking-[0.22em]">
+            DISCOUNT</div>
         </div>
 
         <div class="orn mt-6 sm:mt-8"><span class="text-xs">◆</span></div>
-        <p class="mt-3 font-bold uppercase text-maroon-700 text-[clamp(.78rem,2.4vw,1.3rem)] tracking-[0.2em] sm:tracking-[0.28em] leading-relaxed">
+        <p
+          class="mt-3 font-bold uppercase text-maroon-700 text-[clamp(.78rem,2.4vw,1.3rem)] tracking-[0.2em] sm:tracking-[0.28em] leading-relaxed">
           Fancy crackers &amp; gift boxes available
         </p>
         <p class="mt-1.5 text-xs sm:text-sm font-medium text-maroon-700/70">
@@ -236,18 +398,32 @@
         </p>
 
         <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <a href="#shop" class="btn-punch rounded-full px-7 py-3 text-sm font-bold tracking-wide">Shop the price list →</a>
-          <a href="tel:9486496341" class="btn-gold rounded-full px-6 py-3 text-sm font-bold tracking-wide">📞 Call to order</a>
+          <a href="#shop" class="btn-punch rounded-full px-7 py-3 text-sm font-bold tracking-wide">Shop the price list
+            →</a>
+          <a href="tel:9787081688" class="btn-gold rounded-full px-6 py-3 text-sm font-bold tracking-wide">📞 Call to
+            order</a>
         </div>
       </div>
     </section>
 
     <!-- Trust row -->
     <section class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-5">
-      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🏭</span><p class="text-[13px] font-bold leading-tight">Direct from Sivakasi</p></div>
-      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🏷️</span><p class="text-[13px] font-bold leading-tight">Up to 80% off MRP</p></div>
-      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🔒</span><p class="text-[13px] font-bold leading-tight">Bank, GPay &amp; PhonePe</p></div>
-      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🚚</span><p class="text-[13px] font-bold leading-tight">Lorry transport "To Pay"</p></div>
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span
+          class="text-2xl">🏭</span>
+        <p class="text-[13px] font-bold leading-tight">Direct from Sivakasi</p>
+      </div>
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span
+          class="text-2xl">🏷️</span>
+        <p class="text-[13px] font-bold leading-tight">Up to 80% off MRP</p>
+      </div>
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span
+          class="text-2xl">🔒</span>
+        <p class="text-[13px] font-bold leading-tight">Bank, GPay &amp; PhonePe</p>
+      </div>
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span
+          class="text-2xl">🚚</span>
+        <p class="text-[13px] font-bold leading-tight">Lorry transport "To Pay"</p>
+      </div>
     </section>
 
     <!-- Shop -->
@@ -259,7 +435,8 @@
 
       <div id="productGrid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-4"></div>
 
-      <div id="emptyState" class="hidden text-center py-16 bg-white rounded-3xl border-2 border-dashed border-sky-300 mt-4">
+      <div id="emptyState"
+        class="hidden text-center py-16 bg-white rounded-3xl border-2 border-dashed border-sky-300 mt-4">
         <span class="text-5xl">🔍</span>
         <h3 class="font-swash text-2xl mt-3">No crackers match your search</h3>
         <p class="text-sm font-medium text-maroon-600/70 mt-1">Try a different keyword or category.</p>
@@ -269,49 +446,53 @@
 
   <!-- Footer -->
   <footer id="contact" class="mt-20 bg-grape-900 text-white relative">
-    <div class="h-2 bg-[repeating-linear-gradient(90deg,#ff4a6b_0_28px,#ffd23f_28px_56px,#4cc3f0_56px_84px,#ffffff_84px_112px)]"></div>
+    <div
+      class="h-2 bg-[repeating-linear-gradient(90deg,#ff4a6b_0_28px,#ffd23f_28px_56px,#4cc3f0_56px_84px,#ffffff_84px_112px)]">
+    </div>
     <div class="max-w-[1320px] mx-auto px-4 py-14">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-8 border-b border-white/10">
         <div>
           <p class="font-swash text-3xl sm:text-4xl text-gold-300">Manimegalai Pyro World</p>
           <p class="text-white/60 text-sm font-medium mt-1">Fancy Crackers &amp; Gift Boxes Supplier · Sivakasi</p>
         </div>
-        <a href="https://wa.me/919486496341" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold px-6 py-3 text-sm transition">💬 Chat on WhatsApp</a>
+        <a href="https://wa.me/919787081688" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold px-6 py-3 text-sm transition">💬
+          Chat on WhatsApp</a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         <div>
           <h3 class="font-swash text-xl text-gold-300 mb-4">Terms &amp; Conditions</h3>
-          <ol class="space-y-3 text-sm text-white/75 list-decimal pl-5 leading-relaxed font-medium marker:text-gold-400 marker:font-bold">
+          <ol
+            class="space-y-3 text-sm text-white/75 list-decimal pl-5 leading-relaxed font-medium marker:text-gold-400 marker:font-bold">
             <li>Once you pay 100%, then only we will confirm your order.</li>
-            <li>We will send the parcel with <strong class="text-white">"To Pay"</strong> option to your nearest lorry transport office as possible.</li>
+            <li>We will send the parcel with <strong class="text-white">"To Pay"</strong> option to your nearest lorry
+              transport office as possible.</li>
             <li>Return goods cannot be taken.</li>
-            <li>Very rarely, if the selected item is not available at the time of packing, an equivalent item with the same price will be supplied.</li>
+            <li>Very rarely, if the selected item is not available at the time of packing, an equivalent item with the
+              same price will be supplied.</li>
           </ol>
         </div>
 
         <div>
           <h3 class="font-swash text-xl text-gold-300 mb-4">Payment Details</h3>
-          <dl class="text-sm space-y-2">
-            <div class="flex justify-between gap-3"><dt class="text-white/50">Bank</dt><dd class="font-semibold text-right">Bank of India</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-white/50">Acc. Name</dt><dd class="font-semibold text-right">Gobinath R</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-white/50">Acc. Number</dt><dd class="font-mono font-bold text-gold-300 text-right">815210110019916</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-white/50">IFSC</dt><dd class="font-mono font-bold text-gold-300 text-right">BKID0008152</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-white/50">Branch</dt><dd class="font-semibold text-right">SIVAKASI</dd></div>
-          </dl>
           <div class="mt-4 rounded-2xl bg-white/5 border-2 border-gold-400/40 p-3.5">
             <p class="text-[11px] font-bold uppercase tracking-widest text-white/50">GPay &amp; PhonePe</p>
-            <p class="font-mono text-2xl font-bold text-gold-300 mt-0.5">9486496341</p>
-            <p class="text-xs text-white/60">Name: Gobinath R</p>
+            <p class="font-mono text-2xl font-bold text-gold-300 mt-0.5">6369178279</p>
+            <p class="text-xs text-white/60">Name: Manimegalai Pyro World</p>
           </div>
         </div>
 
         <div>
           <h3 class="font-swash text-xl text-gold-300 mb-4">Visit &amp; Contact</h3>
           <ul class="space-y-3.5 text-sm text-white/80 font-medium">
-            <li class="flex gap-3"><span>📍</span><span>Sivakasi to Vembakottai Main Road, Pernayakenpatti - 626189.</span></li>
-            <li class="flex gap-3"><span>📞</span><span>Call / WhatsApp<br /><a href="tel:9486496341" class="text-gold-300 font-bold hover:underline">9486496341</a> &nbsp;|&nbsp; <a href="tel:6369178279" class="text-gold-300 font-bold hover:underline">6369178279</a></span></li>
-            <li class="flex gap-3"><span>🌐</span><a href="https://www.manimegalaipyroworld.com" target="_blank" rel="noopener" class="text-gold-300 font-bold hover:underline">www.manimegalaipyroworld.com</a></li>
+            <li class="flex gap-3"><span>📍</span><span>Sivakasi to Vembakottai Main Road, Pernayakenpatti -
+                626189.</span></li>
+            <li class="flex gap-3"><span>📞</span><span>Call / WhatsApp<br /><a href="tel:9787081688"
+                  class="text-gold-300 font-bold hover:underline">9787081688</a> &nbsp;|&nbsp; <a href="tel:6369178279"
+                  class="text-gold-300 font-bold hover:underline">6369178279</a></span></li>
+            <li class="flex gap-3"><span>🌐</span><a href="https://www.manimegalaipyroworld.com" target="_blank"
+                rel="noopener" class="text-gold-300 font-bold hover:underline">www.manimegalaipyroworld.com</a></li>
           </ul>
         </div>
       </div>
@@ -334,10 +515,15 @@
 
   <!-- Cart / checkout drawer -->
   <div id="drawerOverlay" class="overlay fixed inset-0 bg-grape-900/70 z-40 opacity-0 pointer-events-none"></div>
-  <aside id="checkoutSection" class="drawer fixed top-0 right-0 bottom-0 w-full sm:w-[440px] bg-sky-50 z-50 translate-x-full flex flex-col shadow-2xl" role="dialog" aria-modal="true" aria-label="Your order" aria-hidden="true">
+  <aside id="checkoutSection"
+    class="drawer fixed top-0 right-0 bottom-0 w-full sm:w-[440px] bg-sky-50 z-50 translate-x-full flex flex-col shadow-2xl"
+    role="dialog" aria-modal="true" aria-label="Your order" aria-hidden="true">
     <div class="flex items-center justify-between px-5 py-4 bg-grape-800 border-b-4 border-gold-400">
-      <h3 class="font-swash text-2xl text-gold-300 flex items-center gap-2">🛒 Your Order <span id="cartCountBadge" class="font-sans text-xs font-extrabold bg-gold-400 text-maroon-800 px-2.5 py-1 rounded-full">0 items</span></h3>
-      <button id="closeCartBtn" type="button" aria-label="Close cart" class="h-9 w-9 rounded-full hover:bg-white/10 text-3xl leading-none text-white/80">×</button>
+      <h3 class="font-swash text-2xl text-gold-300 flex items-center gap-2">🛒 Your Order <span id="cartCountBadge"
+          class="font-sans text-xs font-extrabold bg-gold-400 text-maroon-800 px-2.5 py-1 rounded-full">0 items</span>
+      </h3>
+      <button id="closeCartBtn" type="button" aria-label="Close cart"
+        class="h-9 w-9 rounded-full hover:bg-white/10 text-3xl leading-none text-white/80">×</button>
     </div>
 
     <div class="flex-1 overflow-y-auto px-5 py-4 space-y-6">
@@ -345,20 +531,26 @@
         <div id="cartItems" class="space-y-2"></div>
 
         <div class="mt-4 bg-white rounded-2xl border-2 border-gold-300 p-4 space-y-2 text-sm font-semibold">
-          <div class="flex justify-between"><span>Subtotal (discounted rate)</span><span id="subtotalValue" class="font-extrabold">₹0</span></div>
-          <div id="savingsRow" class="hidden flex justify-between text-emerald-700"><span>You save vs MRP</span><span id="savingsValue" class="font-extrabold">₹0</span></div>
+          <div class="flex justify-between"><span>Subtotal (discounted rate)</span><span id="subtotalValue"
+              class="font-extrabold">₹0</span></div>
+          <div id="savingsRow" class="hidden flex justify-between text-emerald-700"><span>You save vs MRP</span><span
+              id="savingsValue" class="font-extrabold">₹0</span></div>
           <div class="flex justify-between text-maroon-600/80"><span>Delivery</span><span>To Pay (lorry)</span></div>
           <div class="pt-2">
             <div class="h-3 rounded-full bg-sky-100 overflow-hidden border border-sky-300">
-              <div id="minProgress" class="h-full rounded-full bg-gradient-to-r from-gold-400 to-punch-500 transition-all duration-300" style="width:0%"></div>
+              <div id="minProgress"
+                class="h-full rounded-full bg-gradient-to-r from-gold-400 to-punch-500 transition-all duration-300"
+                style="width:0%"></div>
             </div>
             <p id="minProgressText" class="text-xs text-maroon-600/70 mt-1.5 font-medium">Minimum order ₹1,000</p>
           </div>
         </div>
 
-        <div id="minimumOrderWarning" class="hidden mt-3 rounded-xl bg-punch-500/10 border-2 border-punch-500/40 text-punch-700 text-sm font-semibold px-3.5 py-2.5 flex items-start gap-2">
+        <div id="minimumOrderWarning"
+          class="hidden mt-3 rounded-xl bg-punch-500/10 border-2 border-punch-500/40 text-punch-700 text-sm font-semibold px-3.5 py-2.5 flex items-start gap-2">
           <span class="leading-none">⚠️</span>
-          <span>Minimum order value is <strong>₹1,000</strong>. Please add items worth <strong id="shortfallAmount">₹1,000</strong> more.</span>
+          <span>Minimum order value is <strong>₹1,000</strong>. Please add items worth <strong
+              id="shortfallAmount">₹1,000</strong> more.</span>
         </div>
       </div>
 
@@ -377,7 +569,8 @@
           </div>
           <div>
             <label for="address" class="block text-xs font-bold mb-1">Delivery Address *</label>
-            <textarea id="address" rows="2" autocomplete="street-address" placeholder="House no, street name, area/landmark" required
+            <textarea id="address" rows="2" autocomplete="street-address"
+              placeholder="House no, street name, area/landmark" required
               class="w-full bg-white border-2 border-sky-200 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:border-punch-500"></textarea>
           </div>
           <div class="grid grid-cols-2 gap-3">
@@ -388,11 +581,13 @@
             </div>
             <div>
               <label for="pincode" class="block text-xs font-bold mb-1">Pincode *</label>
-              <input id="pincode" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="Pincode" required
+              <input id="pincode" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="Pincode"
+                required
                 class="w-full bg-white border-2 border-sky-200 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:border-punch-500" />
             </div>
           </div>
-          <p class="text-xs font-medium text-maroon-600/70">You'll get bank &amp; UPI payment details after placing the order.</p>
+          <p class="text-xs font-medium text-maroon-600/70">You'll get bank &amp; UPI payment details after placing the
+            order.</p>
         </form>
       </div>
     </div>
@@ -410,14 +605,21 @@
   </aside>
 
   <!-- Order confirmation modal -->
-  <div id="confirmationModal" class="fixed inset-0 hidden bg-grape-900/80 backdrop-blur-sm p-4 flex items-center justify-center z-[60] overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
-    <div class="bg-sky-50 border-4 border-gold-300 rounded-3xl shadow-2xl max-w-lg w-full p-6 relative my-auto max-h-[95vh] overflow-y-auto no-scrollbar">
-      <button id="closeModalBtn" aria-label="Close" class="absolute top-4 right-4 h-8 w-8 rounded-full bg-white text-maroon-600 hover:bg-gold-200 text-xl font-bold leading-none">×</button>
+  <div id="confirmationModal"
+    class="fixed inset-0 hidden bg-grape-900/80 backdrop-blur-sm p-4 flex items-center justify-center z-[60] overflow-y-auto"
+    role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div
+      class="bg-sky-50 border-4 border-gold-300 rounded-3xl shadow-2xl max-w-lg w-full p-6 relative my-auto max-h-[95vh] overflow-y-auto no-scrollbar">
+      <button id="closeModalBtn" aria-label="Close"
+        class="absolute top-4 right-4 h-8 w-8 rounded-full bg-white text-maroon-600 hover:bg-gold-200 text-xl font-bold leading-none">×</button>
 
       <div class="text-center">
-        <div class="mx-auto mb-3 h-16 w-16 rounded-full bg-emerald-100 border-4 border-emerald-300 text-emerald-600 flex items-center justify-center text-3xl font-black">✓</div>
+        <div
+          class="mx-auto mb-3 h-16 w-16 rounded-full bg-emerald-100 border-4 border-emerald-300 text-emerald-600 flex items-center justify-center text-3xl font-black">
+          ✓</div>
         <h3 id="confirmTitle" class="font-swash text-2xl text-maroon-700">Order Placed Successfully!</h3>
-        <p class="mt-1 text-sm font-medium text-maroon-600/80">Your order has been recorded with <strong>Manimegalai Pyro World</strong>.</p>
+        <p class="mt-1 text-sm font-medium text-maroon-600/80">Your order has been recorded with <strong>Manimegalai
+            Pyro World</strong>.</p>
       </div>
 
       <div class="mt-5 bg-grape-800 border-2 border-gold-400 rounded-2xl p-4 text-center">
@@ -431,21 +633,13 @@
           <span id="confirmationTotal" class="font-swash text-2xl text-punch-600"></span>
         </div>
         <div class="bg-white p-4 rounded-2xl border-2 border-gold-300 space-y-3">
-          <div>
-            <p class="font-extrabold border-b border-sky-200 pb-1 mb-2 text-xs uppercase tracking-wider">🏦 Bank Transfer Details</p>
-            <p><span class="text-maroon-600/60">Bank Name:</span> Bank of India</p>
-            <p><span class="text-maroon-600/60">Acc. Name:</span> Gobinath R</p>
-            <p><span class="text-maroon-600/60">Acc. Number:</span> <strong class="font-mono text-base">815210110019916</strong></p>
-            <p><span class="text-maroon-600/60">IFSC Code:</span> <strong class="font-mono">BKID0008152</strong></p>
-            <p><span class="text-maroon-600/60">Branch:</span> SIVAKASI</p>
-          </div>
           <div class="pt-3 border-t border-sky-200">
             <p class="font-extrabold mb-1.5 text-xs uppercase tracking-wider">📲 GPay &amp; PhonePe Number</p>
             <div class="bg-sky-50 border-2 border-sky-200 rounded-xl p-3 flex items-center justify-between">
               <div>
                 <p class="text-xs font-bold text-maroon-600/60">Google Pay / PhonePe</p>
-                <p class="text-xl font-black font-mono">9486496341</p>
-                <p class="text-xs font-semibold">Name: Gobinath R</p>
+                <p class="text-xl font-black font-mono">6369178279</p>
+                <p class="text-xs font-semibold">Name: Manimegalai Pyro World</p>
               </div>
               <span class="text-2xl">📱</span>
             </div>
@@ -471,1939 +665,1939 @@
     const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzpXspjYXr9r84utaI3mZMWeyyBsvo93joJWAP9OYFjRkAwzhKiYZOlpwHhE4WDitWg/exec";
     const ORDER_SECRET = "CrackerBazaar@2026!SecureOrder";
 
-    
+
     const PRODUCTS = [
-  {
-    "code": 1,
-    "id": "item-1",
-    "category": "Sound Crackers",
-    "name": "2 3/4\" KURUVI",
-    "pack": "1 PKT",
-    "mrp": 45,
-    "price": 9,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 2,
-    "id": "item-2",
-    "category": "Sound Crackers",
-    "name": "3.5\" LAKSHMI",
-    "pack": "1 PKT",
-    "mrp": 80,
-    "price": 13,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 3,
-    "id": "item-3",
-    "category": "Sound Crackers",
-    "name": "3.5\" LAKSHMI DELUXE",
-    "pack": "1 PKT",
-    "mrp": 100,
-    "price": 20,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 4,
-    "id": "item-4",
-    "category": "Sound Crackers",
-    "name": "4\" LAKSHMI",
-    "pack": "1 PKT",
-    "mrp": 125,
-    "price": 14,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 5,
-    "id": "item-5",
-    "category": "Sound Crackers",
-    "name": "4\" LAKSHMI DELUXE",
-    "pack": "1 PKT",
-    "mrp": 150,
-    "price": 30,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 6,
-    "id": "item-6",
-    "category": "Sound Crackers",
-    "name": "4\" GOLD LAKSHMI DELUXE",
-    "pack": "1 PKT",
-    "mrp": 200,
-    "price": 40,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 7,
-    "id": "item-7",
-    "category": "Sound Crackers",
-    "name": "6\" LION",
-    "pack": "1 PKT",
-    "mrp": 325,
-    "price": 65,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 8,
-    "id": "item-8",
-    "category": "Sound Crackers",
-    "name": "6\" HULK DELUXE",
-    "pack": "1 PKT",
-    "mrp": 350,
-    "price": 70,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 9,
-    "id": "item-9",
-    "category": "Double Blast",
-    "name": "TWO SOUND CRACKER",
-    "pack": "1 PKT",
-    "mrp": 180,
-    "price": 36,
-    "img": "\ud83d\udca5"
-  },
-  {
-    "code": 10,
-    "id": "item-10",
-    "category": "Chorsa & Giant Crackers",
-    "name": "28 CHORSA",
-    "pack": "1 PKT",
-    "mrp": 90,
-    "price": 18,
-    "img": "\ud83d\udca3"
-  },
-  {
-    "code": 11,
-    "id": "item-11",
-    "category": "Chorsa & Giant Crackers",
-    "name": "28 GIANT",
-    "pack": "1 PKT",
-    "mrp": 145,
-    "price": 29,
-    "img": "\ud83d\udca3"
-  },
-  {
-    "code": 12,
-    "id": "item-12",
-    "category": "Chorsa & Giant Crackers",
-    "name": "56 GIANT",
-    "pack": "1 PKT",
-    "mrp": 290,
-    "price": 58,
-    "img": "\ud83d\udca3"
-  },
-  {
-    "code": 13,
-    "id": "item-13",
-    "category": "Time Pass Series",
-    "name": "RED BIJILI (50 PCS)",
-    "pack": "1 PKT",
-    "mrp": 100,
-    "price": 20,
-    "img": "\u26a1"
-  },
-  {
-    "code": 14,
-    "id": "item-14",
-    "category": "Time Pass Series",
-    "name": "RED BIJILI (100 PCS)",
-    "pack": "1 PKT",
-    "mrp": 210,
-    "price": 48,
-    "img": "\u26a1"
-  },
-  {
-    "code": 15,
-    "id": "item-15",
-    "category": "Time Pass Series",
-    "name": "STRIPPED BIJILI (50 PCS)",
-    "pack": "1 PKT",
-    "mrp": 115,
-    "price": 23,
-    "img": "\u26a1"
-  },
-  {
-    "code": 16,
-    "id": "item-16",
-    "category": "Time Pass Series",
-    "name": "STRIPPED BIJILI (100 PCS)",
-    "pack": "1 PKT",
-    "mrp": 225,
-    "price": 52,
-    "img": "\u26a1"
-  },
-  {
-    "code": 17,
-    "id": "item-17",
-    "category": "Thunderstrike",
-    "name": "BULLET BOMB",
-    "pack": "1 BOX",
-    "mrp": 150,
-    "price": 30,
-    "img": "\u26a1"
-  },
-  {
-    "code": 18,
-    "id": "item-18",
-    "category": "Thunderstrike",
-    "name": "HYDRO BOMB",
-    "pack": "1 BOX",
-    "mrp": 425,
-    "price": 100,
-    "img": "\u26a1"
-  },
-  {
-    "code": 19,
-    "id": "item-19",
-    "category": "Thunderstrike",
-    "name": "KING OF KING",
-    "pack": "1 BOX",
-    "mrp": 350,
-    "price": 80,
-    "img": "\u26a1"
-  },
-  {
-    "code": 20,
-    "id": "item-20",
-    "category": "Thunderstrike",
-    "name": "MARATHON BOMB GREEN",
-    "pack": "1 BOX",
-    "mrp": 700,
-    "price": 140,
-    "img": "\u26a1"
-  },
-  {
-    "code": 21,
-    "id": "item-21",
-    "category": "Thunderstrike",
-    "name": "MARATHON BOMB FOILS",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\u26a1"
-  },
-  {
-    "code": 22,
-    "id": "item-22",
-    "category": "Thunderstrike",
-    "name": "DIGITAL BOMB",
-    "pack": "1 BOX",
-    "mrp": 1300,
-    "price": 260,
-    "img": "\u26a1"
-  },
-  {
-    "code": 23,
-    "id": "item-23",
-    "category": "Thunderstrike",
-    "name": "CYLINDER BOMB",
-    "pack": "1 BOX",
-    "mrp": 1000,
-    "price": 200,
-    "img": "\u26a1"
-  },
-  {
-    "code": 24,
-    "id": "item-24",
-    "category": "Kids Special Blast",
-    "name": "SHINCHAN (Digital Wala)",
-    "pack": "1 BOX",
-    "mrp": 450,
-    "price": 90,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 25,
-    "id": "item-25",
-    "category": "Kids Special Blast",
-    "name": "90\" WATTS (100 Digital Wala)",
-    "pack": "1 BOX",
-    "mrp": 550,
-    "price": 110,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 26,
-    "id": "item-26",
-    "category": "Kids Special Blast",
-    "name": "MONEY IN THE BANK",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 27,
-    "id": "item-27",
-    "category": "Kids Special Blast",
-    "name": "SOUND MARRIAGE (Festive King)",
-    "pack": "1 BOX",
-    "mrp": 700,
-    "price": 140,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 28,
-    "id": "item-28",
-    "category": "Kids Special Blast",
-    "name": "BLACK MONEY",
-    "pack": "1 BOX",
-    "mrp": 750,
-    "price": 150,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 29,
-    "id": "item-29",
-    "category": "Twinkling Star",
-    "name": "1 1/2\" TWINKING STAR",
-    "pack": "1 BOX",
-    "mrp": 190,
-    "price": 35,
-    "img": "\u2728"
-  },
-  {
-    "code": 30,
-    "id": "item-30",
-    "category": "Twinkling Star",
-    "name": "4\"  TWINKING STAR",
-    "pack": "1 BOX",
-    "mrp": 390,
-    "price": 75,
-    "img": "\u2728"
-  },
-  {
-    "code": 31,
-    "id": "item-31",
-    "category": "Ground Chakkram",
-    "name": "CHAKKARAM BIG (10 pcs)",
-    "pack": "1 BOX",
-    "mrp": 240,
-    "price": 48,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 32,
-    "id": "item-32",
-    "category": "Ground Chakkram",
-    "name": "CHAKKARAM BIG (25 pcs)",
-    "pack": "1 BOX",
-    "mrp": 550,
-    "price": 110,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 33,
-    "id": "item-33",
-    "category": "Ground Chakkram",
-    "name": "CHAKKARAM ASOKA",
-    "pack": "1 BOX",
-    "mrp": 395,
-    "price": 79,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 34,
-    "id": "item-34",
-    "category": "Ground Chakkram",
-    "name": "CHAKKARAM SPECIAL",
-    "pack": "1 BOX",
-    "mrp": 475,
-    "price": 95,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 35,
-    "id": "item-35",
-    "category": "Ground Chakkram",
-    "name": "CHAKKARAM SPECIAL GREEN",
-    "pack": "1 BOX",
-    "mrp": 650,
-    "price": 130,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 36,
-    "id": "item-36",
-    "category": "Ground Chakkram",
-    "name": "CHAKKARAM DELUXE",
-    "pack": "1 BOX",
-    "mrp": 850,
-    "price": 170,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 37,
-    "id": "item-37",
-    "category": "Ground Chakkram",
-    "name": "TRENDY SPINNER SPECIAL",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 38,
-    "id": "item-38",
-    "category": "Ground Chakkram",
-    "name": "WIRE CHAKKARAM",
-    "pack": "1 BOX",
-    "mrp": 1100,
-    "price": 220,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 39,
-    "id": "item-39",
-    "category": "Ground Chakkram",
-    "name": "POPPET ( VANITHA ) (5 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1825,
-    "price": 365,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 40,
-    "id": "item-40",
-    "category": "Ground Chakkram",
-    "name": "4*4 WHEEL (5 pcs)",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\ud83c\udf00"
-  },
-  {
-    "code": 41,
-    "id": "item-41",
-    "category": "Flower Pots",
-    "name": "FLOWER POT BIG",
-    "pack": "1 BOX",
-    "mrp": 375,
-    "price": 75,
-    "img": "\ud83c\udf38"
-  },
-  {
-    "code": 42,
-    "id": "item-42",
-    "category": "Flower Pots",
-    "name": "FLOWER POT SPECIAL",
-    "pack": "1 BOX",
-    "mrp": 450,
-    "price": 90,
-    "img": "\ud83c\udf38"
-  },
-  {
-    "code": 43,
-    "id": "item-43",
-    "category": "Flower Pots",
-    "name": "FLOWER POT ASOKA",
-    "pack": "1 BOX",
-    "mrp": 600,
-    "price": 120,
-    "img": "\ud83c\udf38"
-  },
-  {
-    "code": 44,
-    "id": "item-44",
-    "category": "Flower Pots",
-    "name": "COLOUR KOTI",
-    "pack": "1 BOX",
-    "mrp": 1000,
-    "price": 200,
-    "img": "\ud83c\udf38"
-  },
-  {
-    "code": 45,
-    "id": "item-45",
-    "category": "Flower Pots",
-    "name": "SUPER KOTI / JUMBO KOTI",
-    "pack": "1 BOX",
-    "mrp": 3000,
-    "price": 600,
-    "img": "\ud83c\udf38"
-  },
-  {
-    "code": 46,
-    "id": "item-46",
-    "category": "Prime Fountain Series",
-    "name": "COLOUR CHANGING FOUNTAIN (3 pcs)",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\u26f2"
-  },
-  {
-    "code": 47,
-    "id": "item-47",
-    "category": "Prime Fountain Series",
-    "name": "GREEN KOTI",
-    "pack": "1 BOX",
-    "mrp": 1075,
-    "price": 215,
-    "img": "\u26f2"
-  },
-  {
-    "code": 48,
-    "id": "item-48",
-    "category": "Prime Fountain Series",
-    "name": "TRI COLOUR FOUNTAIN (5 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1400,
-    "price": 280,
-    "img": "\u26f2"
-  },
-  {
-    "code": 49,
-    "id": "item-49",
-    "category": "Prime Fountain Series",
-    "name": "VARNAJAL (5 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1400,
-    "price": 280,
-    "img": "\u26f2"
-  },
-  {
-    "code": 50,
-    "id": "item-50",
-    "category": "Whistle Series",
-    "name": "MINI SIREN (3 pcs)",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\ud83d\udce2"
-  },
-  {
-    "code": 51,
-    "id": "item-51",
-    "category": "Whistle Series",
-    "name": "MEGA SIREN (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1000,
-    "price": 200,
-    "img": "\ud83d\udce2"
-  },
-  {
-    "code": 52,
-    "id": "item-52",
-    "category": "Whistle Series",
-    "name": "MEGA SIREN (3 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1100,
-    "price": 220,
-    "img": "\ud83d\udce2"
-  },
-  {
-    "code": 53,
-    "id": "item-53",
-    "category": "Peacock Series",
-    "name": "MAGIC PEACOCK (3 FAN)",
-    "pack": "1 BOX",
-    "mrp": 750,
-    "price": 150,
-    "img": "\ud83e\udd9a"
-  },
-  {
-    "code": 54,
-    "id": "item-54",
-    "category": "Peacock Series",
-    "name": "DANCING PEACOCK (3 FAN)",
-    "pack": "1 BOX",
-    "mrp": 850,
-    "price": 170,
-    "img": "\ud83e\udd9a"
-  },
-  {
-    "code": 55,
-    "id": "item-55",
-    "category": "Peacock Series",
-    "name": "BADA PEACOCK (5 FAN)",
-    "pack": "1 BOX",
-    "mrp": 2250,
-    "price": 450,
-    "img": "\ud83e\udd9a"
-  },
-  {
-    "code": 56,
-    "id": "item-56",
-    "category": "2K26 Diwali Fountains",
-    "name": "CANDY POPS",
-    "pack": "1 BOX",
-    "mrp": 650,
-    "price": 130,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 57,
-    "id": "item-57",
-    "category": "2K26 Diwali Fountains",
-    "name": "PEACOCK FEATHER",
-    "pack": "1 BOX",
-    "mrp": 600,
-    "price": 120,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 58,
-    "id": "item-58",
-    "category": "2K26 Diwali Fountains",
-    "name": "GOLD RAIN",
-    "pack": "1 BOX",
-    "mrp": 600,
-    "price": 120,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 59,
-    "id": "item-59",
-    "category": "2K26 Diwali Fountains",
-    "name": "COLOUR SHOWER",
-    "pack": "1 BOX",
-    "mrp": 400,
-    "price": 80,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 60,
-    "id": "item-60",
-    "category": "2K26 Diwali Fountains",
-    "name": "POPS",
-    "pack": "1 BOX",
-    "mrp": 340,
-    "price": 68,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 61,
-    "id": "item-61",
-    "category": "2K26 Diwali Fountains",
-    "name": "GANGA JAMUNA (FLOWER POT BOMB)",
-    "pack": "1 BOX",
-    "mrp": 300,
-    "price": 60,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 62,
-    "id": "item-62",
-    "category": "2K26 Special Diwali Fountains",
-    "name": "TOY STORY",
-    "pack": "1 BOX",
-    "mrp": 350,
-    "price": 70,
-    "img": "\u26f2"
-  },
-  {
-    "code": 63,
-    "id": "item-63",
-    "category": "2K26 Special Diwali Fountains",
-    "name": "H2O WATER FALLS",
-    "pack": "1 BOX",
-    "mrp": 650,
-    "price": 130,
-    "img": "\u26f2"
-  },
-  {
-    "code": 64,
-    "id": "item-64",
-    "category": "2K26 Special Diwali Fountains",
-    "name": "H2O WATER QUEEN",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\u26f2"
-  },
-  {
-    "code": 65,
-    "id": "item-65",
-    "category": "2K26 Special Diwali Fountains",
-    "name": "ORION FOUNTAIN",
-    "pack": "1 BOX",
-    "mrp": 900,
-    "price": 180,
-    "img": "\u26f2"
-  },
-  {
-    "code": 66,
-    "id": "item-66",
-    "category": "2K26 Special Diwali Fountains",
-    "name": "POWER PUFF (ALIEN FOUNTAIN)",
-    "pack": "1 BOX",
-    "mrp": 1050,
-    "price": 195,
-    "img": "\u26f2"
-  },
-  {
-    "code": 67,
-    "id": "item-67",
-    "category": "2K26 Toy Series",
-    "name": "MRF BAT",
-    "pack": "1 BOX",
-    "mrp": 650,
-    "price": 130,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 68,
-    "id": "item-68",
-    "category": "2K26 Toy Series",
-    "name": "EMO EGG (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 750,
-    "price": 150,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 69,
-    "id": "item-69",
-    "category": "2K26 Toy Series",
-    "name": "GUITAR",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 70,
-    "id": "item-70",
-    "category": "2K26 Toy Series",
-    "name": "GUN",
-    "pack": "1 BOX",
-    "mrp": 700,
-    "price": 140,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 71,
-    "id": "item-71",
-    "category": "2K26 Toy Series",
-    "name": "I CONE (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1100,
-    "price": 210,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 72,
-    "id": "item-72",
-    "category": "2K26 Toy Series",
-    "name": "THE REAL THAR",
-    "pack": "1 BOX",
-    "mrp": 1125,
-    "price": 220,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 73,
-    "id": "item-73",
-    "category": "2K26 Toy Series",
-    "name": "WATER MEALON",
-    "pack": "1 BOX",
-    "mrp": 1050,
-    "price": 200,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 74,
-    "id": "item-74",
-    "category": "2K26 Toy Series",
-    "name": "MURUGA VEL (2 psc)",
-    "pack": "1 BOX",
-    "mrp": 1250,
-    "price": 250,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 75,
-    "id": "item-75",
-    "category": "2K26 Toy Series",
-    "name": "RACE CAR (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 2500,
-    "price": 500,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 76,
-    "id": "item-76",
-    "category": "2K26 Toy Series",
-    "name": "PIKACHU (Three magic show with toy gift)",
-    "pack": "1 BOX",
-    "mrp": 2750,
-    "price": 550,
-    "img": "\ud83e\uddf8"
-  },
-  {
-    "code": 77,
-    "id": "item-77",
-    "category": "Safety Handle Series",
-    "name": "LOLLYPOP (5 pcs)",
-    "pack": "1 BOX",
-    "mrp": 850,
-    "price": 170,
-    "img": "\ud83e\ude84"
-  },
-  {
-    "code": 78,
-    "id": "item-78",
-    "category": "Safety Handle Series",
-    "name": "POP CORN / WATER FALLS PENCIL (3 pcs)",
-    "pack": "1 BOX",
-    "mrp": 825,
-    "price": 165,
-    "img": "\ud83e\ude84"
-  },
-  {
-    "code": 79,
-    "id": "item-79",
-    "category": "Safety Handle Series",
-    "name": "SIVAKASI SPECIAL PENCIL (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 850,
-    "price": 170,
-    "img": "\ud83e\ude84"
-  },
-  {
-    "code": 80,
-    "id": "item-80",
-    "category": "Safety Handle Series",
-    "name": "RED FLOWER (5 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1000,
-    "price": 200,
-    "img": "\ud83e\ude84"
-  },
-  {
-    "code": 81,
-    "id": "item-81",
-    "category": "Vanitha Glow Sticks Series",
-    "name": "3 COLOUR PENCIL (4 pc)",
-    "pack": "1 BOX",
-    "mrp": 1250,
-    "price": 250,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 82,
-    "id": "item-82",
-    "category": "Vanitha Glow Sticks Series",
-    "name": "TOP GUN (5 pcs)",
-    "pack": "1 BOX",
-    "mrp": 1600,
-    "price": 320,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 83,
-    "id": "item-83",
-    "category": "Vanitha Glow Sticks Series",
-    "name": "ROO TTO (6 pc)",
-    "pack": "1 BOX",
-    "mrp": 2000,
-    "price": 400,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 84,
-    "id": "item-84",
-    "category": "Vanitha Glow Sticks Series",
-    "name": "AUTOGRAPH (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 2250,
-    "price": 450,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 85,
-    "id": "item-85",
-    "category": "Colourful Smoke",
-    "name": "COLOUR SMOKE",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\ud83d\udca8"
-  },
-  {
-    "code": 86,
-    "id": "item-86",
-    "category": "Tiny Crackers For Kids",
-    "name": "DRONE",
-    "pack": "1 BOX",
-    "mrp": 800,
-    "price": 160,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 87,
-    "id": "item-87",
-    "category": "Tiny Crackers For Kids",
-    "name": "HELICOPTER",
-    "pack": "1 BOX",
-    "mrp": 550,
-    "price": 110,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 88,
-    "id": "item-88",
-    "category": "Tiny Crackers For Kids",
-    "name": "BUTTERFLY",
-    "pack": "1 BOX",
-    "mrp": 550,
-    "price": 110,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 89,
-    "id": "item-89",
-    "category": "Tiny Crackers For Kids",
-    "name": "COLOUR FLASH ( VANITHA)",
-    "pack": "1 BOX",
-    "mrp": 1000,
-    "price": 200,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 90,
-    "id": "item-90",
-    "category": "Tiny Crackers For Kids",
-    "name": "PHOTO FLASH",
-    "pack": "1 BOX",
-    "mrp": 400,
-    "price": 80,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 91,
-    "id": "item-91",
-    "category": "Tiny Crackers For Kids",
-    "name": "SELFIE STICK",
-    "pack": "1 BOX",
-    "mrp": 300,
-    "price": 60,
-    "img": "\ud83c\udf88"
-  },
-  {
-    "code": 92,
-    "id": "item-92",
-    "category": "Fire Flash Matches",
-    "name": "3 IN 1 CRYSTAL COLOUR (62 mm)",
-    "pack": "1 BOX",
-    "mrp": 225,
-    "price": 45,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 93,
-    "id": "item-93",
-    "category": "Fire Flash Matches",
-    "name": "5 IN 1 MAGIC POT (62 mm)",
-    "pack": "1 BOX",
-    "mrp": 400,
-    "price": 80,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 94,
-    "id": "item-94",
-    "category": "Fire Flash Matches",
-    "name": "5 IN 1 PENTAGONA (104 mm)",
-    "pack": "1 BOX",
-    "mrp": 550,
-    "price": 110,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 95,
-    "id": "item-95",
-    "category": "Fire Flash Matches",
-    "name": "6 IN 1 HUNTER KING (140 mm)",
-    "pack": "1 BOX",
-    "mrp": 650,
-    "price": 130,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 96,
-    "id": "item-96",
-    "category": "Fire Flash Matches",
-    "name": "3 IN 1 GEM ULTRA (180 mm)",
-    "pack": "1 BOX",
-    "mrp": 950,
-    "price": 190,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 97,
-    "id": "item-97",
-    "category": "Fire Flash Matches",
-    "name": "10 IN 1 HUNTER MINI COOPER LAPTOP",
-    "pack": "1 BOX",
-    "mrp": 1050,
-    "price": 210,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 98,
-    "id": "item-98",
-    "category": "Fire Flash Matches",
-    "name": "10 IN 1 HUNTER BONAZA BIG LAPTOP",
-    "pack": "1 BOX",
-    "mrp": 1400,
-    "price": 280,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 99,
-    "id": "item-99",
-    "category": "Fire Flash Matches",
-    "name": "GEM ROOK COLOUR SMOKE",
-    "pack": "1 BOX",
-    "mrp": 700,
-    "price": 140,
-    "img": "\ud83d\udd6f\ufe0f"
-  },
-  {
-    "code": 100,
-    "id": "item-100",
-    "category": "Rockets",
-    "name": "BABY ROCKET",
-    "pack": "1 BOX",
-    "mrp": 300,
-    "price": 60,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 101,
-    "id": "item-101",
-    "category": "Rockets",
-    "name": "ROCKET BOMB",
-    "pack": "1 BOX",
-    "mrp": 400,
-    "price": 80,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 102,
-    "id": "item-102",
-    "category": "Rockets",
-    "name": "MUSICAL ROCKET",
-    "pack": "1 BOX",
-    "mrp": 700,
-    "price": 140,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 103,
-    "id": "item-103",
-    "category": "Rockets",
-    "name": "2 SOUND ROCKET",
-    "pack": "1 BOX",
-    "mrp": 850,
-    "price": 170,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 104,
-    "id": "item-104",
-    "category": "Level Up Series",
-    "name": "7 SHOT (5 PCS)",
-    "pack": "1 BOX",
-    "mrp": 600,
-    "price": 120,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 105,
-    "id": "item-105",
-    "category": "Level Up Series",
-    "name": "PANTA 5",
-    "pack": "1 BOX",
-    "mrp": 900,
-    "price": 180,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 106,
-    "id": "item-106",
-    "category": "Level Up Series",
-    "name": "SKY SHOT (10 PC)",
-    "pack": "1 BOX",
-    "mrp": 900,
-    "price": 180,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 107,
-    "id": "item-107",
-    "category": "Vanitha Sky Shot Series",
-    "name": "CHIP MIX (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 750,
-    "price": 150,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 108,
-    "id": "item-108",
-    "category": "Vanitha Sky Shot Series",
-    "name": "LONG WAY (10 pcs)",
-    "pack": "1 BOX",
-    "mrp": 2250,
-    "price": 450,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 109,
-    "id": "item-109",
-    "category": "Vanitha Sky Shot Series",
-    "name": "CHIP MIX 5 COLOUR (10 pcs)",
-    "pack": "1 BOX",
-    "mrp": 3000,
-    "price": 600,
-    "img": "\ud83d\ude80"
-  },
-  {
-    "code": 110,
-    "id": "item-110",
-    "category": "Symphony Of Lights",
-    "name": "1 1/2\" CHOTTA FANCY",
-    "pack": "1 BOX",
-    "mrp": 250,
-    "price": 50,
-    "img": "\ud83c\udf0c"
-  },
-  {
-    "code": 111,
-    "id": "item-111",
-    "category": "Symphony Of Lights",
-    "name": "2\" FANCY",
-    "pack": "1 BOX",
-    "mrp": 550,
-    "price": 110,
-    "img": "\ud83c\udf0c"
-  },
-  {
-    "code": 112,
-    "id": "item-112",
-    "category": "Symphony Of Lights",
-    "name": "2\" CANDY (3 psc)",
-    "pack": "1 BOX",
-    "mrp": 1350,
-    "price": 270,
-    "img": "\ud83c\udf0c"
-  },
-  {
-    "code": 113,
-    "id": "item-113",
-    "category": "Symphony Of Lights",
-    "name": "3 1/2\" HORROR FANCY",
-    "pack": "1 BOX",
-    "mrp": 1650,
-    "price": 330,
-    "img": "\ud83c\udf0c"
-  },
-  {
-    "code": 114,
-    "id": "item-114",
-    "category": "Symphony Of Lights",
-    "name": "4\" FANCY (RAMJI) (2 pcs)",
-    "pack": "1 BOX",
-    "mrp": 4500,
-    "price": 1200,
-    "img": "\ud83c\udf0c"
-  },
-  {
-    "code": 115,
-    "id": "item-115",
-    "category": "Symphony Of Lights",
-    "name": "4\" FANCY (SUNSHINE)",
-    "pack": "1 BOX",
-    "mrp": 2750,
-    "price": 450,
-    "img": "\ud83c\udf0c"
-  },
-  {
-    "code": 116,
-    "id": "item-116",
-    "category": "Elegance Fancy Series",
-    "name": "3 STEP (3 PCS)",
-    "pack": "1 BOX",
-    "mrp": 2200,
-    "price": 440,
-    "img": "\u2728"
-  },
-  {
-    "code": 117,
-    "id": "item-117",
-    "category": "Elegance Fancy Series",
-    "name": "7 STEP",
-    "pack": "1 BOX",
-    "mrp": 2225,
-    "price": 450,
-    "img": "\u2728"
-  },
-  {
-    "code": 118,
-    "id": "item-118",
-    "category": "Elegance Fancy Series",
-    "name": "12 STEP",
-    "pack": "1 BOX",
-    "mrp": 2500,
-    "price": 500,
-    "img": "\u2728"
-  },
-  {
-    "code": 119,
-    "id": "item-119",
-    "category": "Elegance Fancy Series",
-    "name": "31/2\" NAYAGARA FALLS",
-    "pack": "1 BOX",
-    "mrp": 770,
-    "price": 385,
-    "img": "\u2728"
-  },
-  {
-    "code": 120,
-    "id": "item-120",
-    "category": "Elegance Fancy Series",
-    "name": "4\" NAYAGARA FALLS (3 pcs)",
-    "pack": "1 BOX",
-    "mrp": 7500,
-    "price": 1500,
-    "img": "\u2728"
-  },
-  {
-    "code": 121,
-    "id": "item-121",
-    "category": "Elegance Fancy Series",
-    "name": "SONNY 5\" AQUA BLUE (2 PCS)",
-    "pack": "1 BOX",
-    "mrp": 9500,
-    "price": 1900,
-    "img": "\u2728"
-  },
-  {
-    "code": 122,
-    "id": "item-122",
-    "category": "Elegance Fancy Series",
-    "name": "SONNY 5\" OSCAR  (2 PCS)",
-    "pack": "1 BOX",
-    "mrp": 9500,
-    "price": 1900,
-    "img": "\u2728"
-  },
-  {
-    "code": 123,
-    "id": "item-123",
-    "category": "Elegance Fancy Series",
-    "name": "6\" PURPLE RAIN (VANITHA)",
-    "pack": "1 BOX",
-    "mrp": 10250,
-    "price": 2050,
-    "img": "\u2728"
-  },
-  {
-    "code": 124,
-    "id": "item-124",
-    "category": "Rapid Fire Barrage",
-    "name": "12 SHOT RIDER",
-    "pack": "1 BOX",
-    "mrp": 1000,
-    "price": 200,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 125,
-    "id": "item-125",
-    "category": "Rapid Fire Barrage",
-    "name": "25 RIDER",
-    "pack": "1 BOX",
-    "mrp": 1500,
-    "price": 300,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 126,
-    "id": "item-126",
-    "category": "Rapid Fire Barrage",
-    "name": "15 SHOT MULTI COLOUR",
-    "pack": "1 BOX",
-    "mrp": 1500,
-    "price": 300,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 127,
-    "id": "item-127",
-    "category": "Rapid Fire Barrage",
-    "name": "30 SHOT MULTI COLOUR",
-    "pack": "1 BOX",
-    "mrp": 2350,
-    "price": 470,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 128,
-    "id": "item-128",
-    "category": "Rapid Fire Barrage",
-    "name": "60 SHOT MULTI COLOUR",
-    "pack": "1 BOX",
-    "mrp": 4000,
-    "price": 800,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 129,
-    "id": "item-129",
-    "category": "Rapid Fire Barrage",
-    "name": "60 SHOT RANG",
-    "pack": "1 BOX",
-    "mrp": 4500,
-    "price": 900,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 130,
-    "id": "item-130",
-    "category": "Rapid Fire Barrage",
-    "name": "120 SHOT MULTI COLOUR",
-    "pack": "1 BOX",
-    "mrp": 8000,
-    "price": 1600,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 131,
-    "id": "item-131",
-    "category": "Rapid Fire Barrage",
-    "name": "120 SHOT BANG BANG",
-    "pack": "1 BOX",
-    "mrp": 9000,
-    "price": 1800,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 132,
-    "id": "item-132",
-    "category": "Rapid Fire Barrage",
-    "name": "240 SHOT MULTI COLOUR",
-    "pack": "1 BOX",
-    "mrp": 18000,
-    "price": 3600,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 133,
-    "id": "item-133",
-    "category": "Grand Showcase",
-    "name": "RANGOLI SMOKE (15 SHOT)",
-    "pack": "1 BOX",
-    "mrp": 2000,
-    "price": 400,
-    "img": "\ud83d\udc51"
-  },
-  {
-    "code": 134,
-    "id": "item-134",
-    "category": "Grand Showcase",
-    "name": "HAND SHOOTER (288 SHOT)",
-    "pack": "1 BOX",
-    "mrp": 12500,
-    "price": 2500,
-    "img": "\ud83d\udc51"
-  },
-  {
-    "code": 135,
-    "id": "item-135",
-    "category": "Grand Showcase",
-    "name": "2.5\" SET OUT",
-    "pack": "1 BOX",
-    "mrp": 18000,
-    "price": 3600,
-    "img": "\ud83d\udc51"
-  },
-  {
-    "code": 136,
-    "id": "item-136",
-    "category": "Grand Showcase",
-    "name": "10*10 CELEBRATION",
-    "pack": "1 BOX",
-    "mrp": 19500,
-    "price": 3900,
-    "img": "\ud83d\udc51"
-  },
-  {
-    "code": 137,
-    "id": "item-137",
-    "category": "Fairy Sparklers",
-    "name": "7 CM ELECTRIC SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 45,
-    "price": 9,
-    "img": "\u2728"
-  },
-  {
-    "code": 138,
-    "id": "item-138",
-    "category": "Fairy Sparklers",
-    "name": "7 CM COLOR SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 50,
-    "price": 10,
-    "img": "\u2728"
-  },
-  {
-    "code": 139,
-    "id": "item-139",
-    "category": "Fairy Sparklers",
-    "name": "7 CM GREEN SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 55,
-    "price": 11,
-    "img": "\u2728"
-  },
-  {
-    "code": 140,
-    "id": "item-140",
-    "category": "Fairy Sparklers",
-    "name": "7 CM RED SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 60,
-    "price": 12,
-    "img": "\u2728"
-  },
-  {
-    "code": 141,
-    "id": "item-141",
-    "category": "Fairy Sparklers",
-    "name": "10 CM ELECTRIC SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 100,
-    "price": 20,
-    "img": "\u2728"
-  },
-  {
-    "code": 142,
-    "id": "item-142",
-    "category": "Fairy Sparklers",
-    "name": "10 CM COLOR SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 110,
-    "price": 22,
-    "img": "\u2728"
-  },
-  {
-    "code": 143,
-    "id": "item-143",
-    "category": "Fairy Sparklers",
-    "name": "10 CM GREEN SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 120,
-    "price": 24,
-    "img": "\u2728"
-  },
-  {
-    "code": 144,
-    "id": "item-144",
-    "category": "Fairy Sparklers",
-    "name": "10 CM RED SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 130,
-    "price": 26,
-    "img": "\u2728"
-  },
-  {
-    "code": 145,
-    "id": "item-145",
-    "category": "Fairy Sparklers",
-    "name": "12 CM ELECTRIC SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 145,
-    "price": 29,
-    "img": "\u2728"
-  },
-  {
-    "code": 146,
-    "id": "item-146",
-    "category": "Fairy Sparklers",
-    "name": "12 CM COLOR SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 155,
-    "price": 31,
-    "img": "\u2728"
-  },
-  {
-    "code": 147,
-    "id": "item-147",
-    "category": "Fairy Sparklers",
-    "name": "12 CM GREEN SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 170,
-    "price": 34,
-    "img": "\u2728"
-  },
-  {
-    "code": 148,
-    "id": "item-148",
-    "category": "Fairy Sparklers",
-    "name": "12 CM RED SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 185,
-    "price": 37,
-    "img": "\u2728"
-  },
-  {
-    "code": 149,
-    "id": "item-149",
-    "category": "Fairy Sparklers",
-    "name": "15 CM ELECTRIC SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 200,
-    "price": 40,
-    "img": "\u2728"
-  },
-  {
-    "code": 150,
-    "id": "item-150",
-    "category": "Fairy Sparklers",
-    "name": "15 CM COLOR SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 215,
-    "price": 43,
-    "img": "\u2728"
-  },
-  {
-    "code": 151,
-    "id": "item-151",
-    "category": "Fairy Sparklers",
-    "name": "15 CM GREEN SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 225,
-    "price": 45,
-    "img": "\u2728"
-  },
-  {
-    "code": 152,
-    "id": "item-152",
-    "category": "Fairy Sparklers",
-    "name": "15 CM RED SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 245,
-    "price": 49,
-    "img": "\u2728"
-  },
-  {
-    "code": 153,
-    "id": "item-153",
-    "category": "Fairy Sparklers",
-    "name": "30 CM ELECTRIC SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 200,
-    "price": 40,
-    "img": "\u2728"
-  },
-  {
-    "code": 154,
-    "id": "item-154",
-    "category": "Fairy Sparklers",
-    "name": "30 CM COLOR SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 215,
-    "price": 43,
-    "img": "\u2728"
-  },
-  {
-    "code": 155,
-    "id": "item-155",
-    "category": "Fairy Sparklers",
-    "name": "30 CM GREEN SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 225,
-    "price": 45,
-    "img": "\u2728"
-  },
-  {
-    "code": 156,
-    "id": "item-156",
-    "category": "Fairy Sparklers",
-    "name": "30 CM RED SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 245,
-    "price": 49,
-    "img": "\u2728"
-  },
-  {
-    "code": 157,
-    "id": "item-157",
-    "category": "Fairy Sparklers",
-    "name": "30 CM 2 IN 1 SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 245,
-    "price": 49,
-    "img": "\u2728"
-  },
-  {
-    "code": 158,
-    "id": "item-158",
-    "category": "Fairy Sparklers",
-    "name": "50 CM ELECTRIC SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 850,
-    "price": 170,
-    "img": "\u2728"
-  },
-  {
-    "code": 159,
-    "id": "item-159",
-    "category": "Fairy Sparklers",
-    "name": "50 CM COLOR SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 900,
-    "price": 180,
-    "img": "\u2728"
-  },
-  {
-    "code": 160,
-    "id": "item-160",
-    "category": "Fairy Sparklers",
-    "name": "ROTATING SPARKLERS",
-    "pack": "1 BOX",
-    "mrp": 1100,
-    "price": 220,
-    "img": "\u2728"
-  },
-  {
-    "code": 161,
-    "id": "item-161",
-    "category": "90s Nostalgia",
-    "name": "SNAKE TABLET",
-    "pack": "1 BOX",
-    "mrp": 50,
-    "price": 10,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 162,
-    "id": "item-162",
-    "category": "90s Nostalgia",
-    "name": "RING CAP",
-    "pack": "1 BOX",
-    "mrp": 60,
-    "price": 12,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 163,
-    "id": "item-163",
-    "category": "90s Nostalgia",
-    "name": "RING GUN",
-    "pack": "1 BOX",
-    "mrp": 750,
-    "price": 150,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 164,
-    "id": "item-164",
-    "category": "90s Nostalgia",
-    "name": "RING GUN",
-    "pack": "1 BOX",
-    "mrp": 500,
-    "price": 100,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 165,
-    "id": "item-165",
-    "category": "90s Nostalgia",
-    "name": "ZEE BOOM BAA",
-    "pack": "1 BOX",
-    "mrp": 50,
-    "price": 10,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 166,
-    "id": "item-166",
-    "category": "90s Nostalgia",
-    "name": "MAGIC POPS",
-    "pack": "1 BOX",
-    "mrp": 50,
-    "price": 10,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 167,
-    "id": "item-167",
-    "category": "90s Nostalgia",
-    "name": "STONE",
-    "pack": "1 BOX",
-    "mrp": 50,
-    "price": 10,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 168,
-    "id": "item-168",
-    "category": "90s Nostalgia",
-    "name": "CARTON",
-    "pack": "1 BOX",
-    "mrp": 150,
-    "price": 30,
-    "img": "\ud83d\udd79\ufe0f"
-  },
-  {
-    "code": 169,
-    "id": "item-169",
-    "category": "Paper Series",
-    "name": "1/4 KG BLAST",
-    "pack": "1 BOX",
-    "mrp": 300,
-    "price": 60,
-    "img": "\ud83d\udce6"
-  },
-  {
-    "code": 170,
-    "id": "item-170",
-    "category": "Paper Series",
-    "name": "1/2 KG BLAST",
-    "pack": "1 BOX",
-    "mrp": 600,
-    "price": 120,
-    "img": "\ud83d\udce6"
-  },
-  {
-    "code": 171,
-    "id": "item-171",
-    "category": "Paper Series",
-    "name": "1 KG BLAST",
-    "pack": "1 BOX",
-    "mrp": 1200,
-    "price": 240,
-    "img": "\ud83d\udce6"
-  },
-  {
-    "code": 172,
-    "id": "item-172",
-    "category": "Digi Red Series",
-    "name": "100 DIGI RED",
-    "pack": "1 BOX",
-    "mrp": 200,
-    "price": 40,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 173,
-    "id": "item-173",
-    "category": "Digi Red Series",
-    "name": "200 DIGI RED",
-    "pack": "1 BOX",
-    "mrp": 400,
-    "price": 80,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 174,
-    "id": "item-174",
-    "category": "Digi Red Series",
-    "name": "1K DIGI RED",
-    "pack": "1 BOX",
-    "mrp": 1000,
-    "price": 200,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 175,
-    "id": "item-175",
-    "category": "Digi Red Series",
-    "name": "2K DIGI RED",
-    "pack": "1 BOX",
-    "mrp": 2000,
-    "price": 400,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 176,
-    "id": "item-176",
-    "category": "Digi Red Series",
-    "name": "5K DIGI RED",
-    "pack": "1 BOX",
-    "mrp": 5000,
-    "price": 1000,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": 177,
-    "id": "item-177",
-    "category": "Digi Red Series",
-    "name": "10K DIGI RED",
-    "pack": "1 BOX",
-    "mrp": 10000,
-    "price": 2000,
-    "img": "\ud83c\udf86"
-  },
-  {
-    "code": "G1",
-    "id": "item-g1",
-    "category": "Gift Boxes",
-    "name": "AVENGER [26 ITEMS]",
-    "pack": "1 BOX (26 Items)",
-    "mrp": 2000,
-    "price": 400,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "G2",
-    "id": "item-g2",
-    "category": "Gift Boxes",
-    "name": "AVATAR [30 ITEMS]",
-    "pack": "1 BOX (30 Items)",
-    "mrp": 2500,
-    "price": 500,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "G3",
-    "id": "item-g3",
-    "category": "Gift Boxes",
-    "name": "HULK [36 ITEMS]",
-    "pack": "1 BOX (36 Items)",
-    "mrp": 2900,
-    "price": 580,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "G4",
-    "id": "item-g4",
-    "category": "Gift Boxes",
-    "name": "ANGRY BIRDS [40 ITEMS]",
-    "pack": "1 BOX (40 Items)",
-    "mrp": 3650,
-    "price": 730,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "G5",
-    "id": "item-g5",
-    "category": "Gift Boxes",
-    "name": "PARADISE [45 ITEMS]",
-    "pack": "1 BOX (45 Items)",
-    "mrp": 4250,
-    "price": 850,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "G6",
-    "id": "item-g6",
-    "category": "Gift Boxes",
-    "name": "WONDERFUL [50 ITEMS]",
-    "pack": "1 BOX (50 Items)",
-    "mrp": 4900,
-    "price": 980,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "G7",
-    "id": "item-g7",
-    "category": "Gift Boxes",
-    "name": "CARNIVAL [55 ITEMS]",
-    "pack": "1 BOX (55 Items)",
-    "mrp": 5500,
-    "price": 1100,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "G8",
-    "id": "item-g8",
-    "category": "Gift Boxes",
-    "name": "VIP [60 ITEMS]",
-    "pack": "1 BOX (60 Items)",
-    "mrp": 6000,
-    "price": 1200,
-    "img": "\ud83c\udf81"
-  },
-  {
-    "code": "C1",
-    "id": "item-c1",
-    "category": "Combo Packs",
-    "name": "BARBIE KIDS COMBO",
-    "pack": "1 COMBO",
-    "mrp": 15000,
-    "price": 3000,
-    "img": "\ud83e\ude94"
-  },
-  {
-    "code": "C2",
-    "id": "item-c2",
-    "category": "Combo Packs",
-    "name": "MINION KIDS COMBO",
-    "pack": "1 COMBO",
-    "mrp": 25000,
-    "price": 5000,
-    "img": "\ud83e\ude94"
-  },
-  {
-    "code": "C3",
-    "id": "item-c3",
-    "category": "Combo Packs",
-    "name": "MINI BLAST COMBO",
-    "pack": "1 COMBO",
-    "mrp": 12500,
-    "price": 2500,
-    "img": "\ud83e\ude94"
-  },
-  {
-    "code": "C4",
-    "id": "item-c4",
-    "category": "Combo Packs",
-    "name": "WONDERFUL COMBO",
-    "pack": "1 COMBO",
-    "mrp": 15000,
-    "price": 3000,
-    "img": "\ud83e\ude94"
-  },
-  {
-    "code": "C5",
-    "id": "item-c5",
-    "category": "Combo Packs",
-    "name": "JUMBO COMBO",
-    "pack": "1 COMBO",
-    "mrp": 20000,
-    "price": 4000,
-    "img": "\ud83e\ude94"
-  },
-  {
-    "code": "C6",
-    "id": "item-c6",
-    "category": "Combo Packs",
-    "name": "FIVE STAR COMBO",
-    "pack": "1 COMBO",
-    "mrp": 25000,
-    "price": 5000,
-    "img": "\ud83e\ude94"
-  },
-  {
-    "code": "C7",
-    "id": "item-c7",
-    "category": "Combo Packs",
-    "name": "SEVEN STAR COMBO",
-    "pack": "1 COMBO",
-    "mrp": 35000,
-    "price": 7000,
-    "img": "\ud83e\ude94"
-  },
-  {
-    "code": "C8",
-    "id": "item-c8",
-    "category": "Combo Packs",
-    "name": "MEGA BLITZ COMBO",
-    "pack": "1 COMBO",
-    "mrp": 50000,
-    "price": 10000,
-    "img": "\ud83e\ude94"
-  }
-];
+      {
+        "code": 1,
+        "id": "item-1",
+        "category": "Sound Crackers",
+        "name": "2 3/4\" KURUVI",
+        "pack": "1 PKT",
+        "mrp": 45,
+        "price": 9,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 2,
+        "id": "item-2",
+        "category": "Sound Crackers",
+        "name": "3.5\" LAKSHMI",
+        "pack": "1 PKT",
+        "mrp": 80,
+        "price": 13,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 3,
+        "id": "item-3",
+        "category": "Sound Crackers",
+        "name": "3.5\" LAKSHMI DELUXE",
+        "pack": "1 PKT",
+        "mrp": 100,
+        "price": 20,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 4,
+        "id": "item-4",
+        "category": "Sound Crackers",
+        "name": "4\" LAKSHMI",
+        "pack": "1 PKT",
+        "mrp": 125,
+        "price": 14,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 5,
+        "id": "item-5",
+        "category": "Sound Crackers",
+        "name": "4\" LAKSHMI DELUXE",
+        "pack": "1 PKT",
+        "mrp": 150,
+        "price": 30,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 6,
+        "id": "item-6",
+        "category": "Sound Crackers",
+        "name": "4\" GOLD LAKSHMI DELUXE",
+        "pack": "1 PKT",
+        "mrp": 200,
+        "price": 40,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 7,
+        "id": "item-7",
+        "category": "Sound Crackers",
+        "name": "6\" LION",
+        "pack": "1 PKT",
+        "mrp": 325,
+        "price": 65,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 8,
+        "id": "item-8",
+        "category": "Sound Crackers",
+        "name": "6\" HULK DELUXE",
+        "pack": "1 PKT",
+        "mrp": 350,
+        "price": 70,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 9,
+        "id": "item-9",
+        "category": "Double Blast",
+        "name": "TWO SOUND CRACKER",
+        "pack": "1 PKT",
+        "mrp": 180,
+        "price": 36,
+        "img": "\ud83d\udca5"
+      },
+      {
+        "code": 10,
+        "id": "item-10",
+        "category": "Chorsa & Giant Crackers",
+        "name": "28 CHORSA",
+        "pack": "1 PKT",
+        "mrp": 90,
+        "price": 18,
+        "img": "\ud83d\udca3"
+      },
+      {
+        "code": 11,
+        "id": "item-11",
+        "category": "Chorsa & Giant Crackers",
+        "name": "28 GIANT",
+        "pack": "1 PKT",
+        "mrp": 145,
+        "price": 29,
+        "img": "\ud83d\udca3"
+      },
+      {
+        "code": 12,
+        "id": "item-12",
+        "category": "Chorsa & Giant Crackers",
+        "name": "56 GIANT",
+        "pack": "1 PKT",
+        "mrp": 290,
+        "price": 58,
+        "img": "\ud83d\udca3"
+      },
+      {
+        "code": 13,
+        "id": "item-13",
+        "category": "Time Pass Series",
+        "name": "RED BIJILI (50 PCS)",
+        "pack": "1 PKT",
+        "mrp": 100,
+        "price": 20,
+        "img": "\u26a1"
+      },
+      {
+        "code": 14,
+        "id": "item-14",
+        "category": "Time Pass Series",
+        "name": "RED BIJILI (100 PCS)",
+        "pack": "1 PKT",
+        "mrp": 210,
+        "price": 48,
+        "img": "\u26a1"
+      },
+      {
+        "code": 15,
+        "id": "item-15",
+        "category": "Time Pass Series",
+        "name": "STRIPPED BIJILI (50 PCS)",
+        "pack": "1 PKT",
+        "mrp": 115,
+        "price": 23,
+        "img": "\u26a1"
+      },
+      {
+        "code": 16,
+        "id": "item-16",
+        "category": "Time Pass Series",
+        "name": "STRIPPED BIJILI (100 PCS)",
+        "pack": "1 PKT",
+        "mrp": 225,
+        "price": 52,
+        "img": "\u26a1"
+      },
+      {
+        "code": 17,
+        "id": "item-17",
+        "category": "Thunderstrike",
+        "name": "BULLET BOMB",
+        "pack": "1 BOX",
+        "mrp": 150,
+        "price": 30,
+        "img": "\u26a1"
+      },
+      {
+        "code": 18,
+        "id": "item-18",
+        "category": "Thunderstrike",
+        "name": "HYDRO BOMB",
+        "pack": "1 BOX",
+        "mrp": 425,
+        "price": 100,
+        "img": "\u26a1"
+      },
+      {
+        "code": 19,
+        "id": "item-19",
+        "category": "Thunderstrike",
+        "name": "KING OF KING",
+        "pack": "1 BOX",
+        "mrp": 350,
+        "price": 80,
+        "img": "\u26a1"
+      },
+      {
+        "code": 20,
+        "id": "item-20",
+        "category": "Thunderstrike",
+        "name": "MARATHON BOMB GREEN",
+        "pack": "1 BOX",
+        "mrp": 700,
+        "price": 140,
+        "img": "\u26a1"
+      },
+      {
+        "code": 21,
+        "id": "item-21",
+        "category": "Thunderstrike",
+        "name": "MARATHON BOMB FOILS",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\u26a1"
+      },
+      {
+        "code": 22,
+        "id": "item-22",
+        "category": "Thunderstrike",
+        "name": "DIGITAL BOMB",
+        "pack": "1 BOX",
+        "mrp": 1300,
+        "price": 260,
+        "img": "\u26a1"
+      },
+      {
+        "code": 23,
+        "id": "item-23",
+        "category": "Thunderstrike",
+        "name": "CYLINDER BOMB",
+        "pack": "1 BOX",
+        "mrp": 1000,
+        "price": 200,
+        "img": "\u26a1"
+      },
+      {
+        "code": 24,
+        "id": "item-24",
+        "category": "Kids Special Blast",
+        "name": "SHINCHAN (Digital Wala)",
+        "pack": "1 BOX",
+        "mrp": 450,
+        "price": 90,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 25,
+        "id": "item-25",
+        "category": "Kids Special Blast",
+        "name": "90\" WATTS (100 Digital Wala)",
+        "pack": "1 BOX",
+        "mrp": 550,
+        "price": 110,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 26,
+        "id": "item-26",
+        "category": "Kids Special Blast",
+        "name": "MONEY IN THE BANK",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 27,
+        "id": "item-27",
+        "category": "Kids Special Blast",
+        "name": "SOUND MARRIAGE (Festive King)",
+        "pack": "1 BOX",
+        "mrp": 700,
+        "price": 140,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 28,
+        "id": "item-28",
+        "category": "Kids Special Blast",
+        "name": "BLACK MONEY",
+        "pack": "1 BOX",
+        "mrp": 750,
+        "price": 150,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 29,
+        "id": "item-29",
+        "category": "Twinkling Star",
+        "name": "1 1/2\" TWINKING STAR",
+        "pack": "1 BOX",
+        "mrp": 190,
+        "price": 35,
+        "img": "\u2728"
+      },
+      {
+        "code": 30,
+        "id": "item-30",
+        "category": "Twinkling Star",
+        "name": "4\"  TWINKING STAR",
+        "pack": "1 BOX",
+        "mrp": 390,
+        "price": 75,
+        "img": "\u2728"
+      },
+      {
+        "code": 31,
+        "id": "item-31",
+        "category": "Ground Chakkram",
+        "name": "CHAKKARAM BIG (10 pcs)",
+        "pack": "1 BOX",
+        "mrp": 240,
+        "price": 48,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 32,
+        "id": "item-32",
+        "category": "Ground Chakkram",
+        "name": "CHAKKARAM BIG (25 pcs)",
+        "pack": "1 BOX",
+        "mrp": 550,
+        "price": 110,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 33,
+        "id": "item-33",
+        "category": "Ground Chakkram",
+        "name": "CHAKKARAM ASOKA",
+        "pack": "1 BOX",
+        "mrp": 395,
+        "price": 79,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 34,
+        "id": "item-34",
+        "category": "Ground Chakkram",
+        "name": "CHAKKARAM SPECIAL",
+        "pack": "1 BOX",
+        "mrp": 475,
+        "price": 95,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 35,
+        "id": "item-35",
+        "category": "Ground Chakkram",
+        "name": "CHAKKARAM SPECIAL GREEN",
+        "pack": "1 BOX",
+        "mrp": 650,
+        "price": 130,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 36,
+        "id": "item-36",
+        "category": "Ground Chakkram",
+        "name": "CHAKKARAM DELUXE",
+        "pack": "1 BOX",
+        "mrp": 850,
+        "price": 170,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 37,
+        "id": "item-37",
+        "category": "Ground Chakkram",
+        "name": "TRENDY SPINNER SPECIAL",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 38,
+        "id": "item-38",
+        "category": "Ground Chakkram",
+        "name": "WIRE CHAKKARAM",
+        "pack": "1 BOX",
+        "mrp": 1100,
+        "price": 220,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 39,
+        "id": "item-39",
+        "category": "Ground Chakkram",
+        "name": "POPPET ( VANITHA ) (5 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1825,
+        "price": 365,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 40,
+        "id": "item-40",
+        "category": "Ground Chakkram",
+        "name": "4*4 WHEEL (5 pcs)",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\ud83c\udf00"
+      },
+      {
+        "code": 41,
+        "id": "item-41",
+        "category": "Flower Pots",
+        "name": "FLOWER POT BIG",
+        "pack": "1 BOX",
+        "mrp": 375,
+        "price": 75,
+        "img": "\ud83c\udf38"
+      },
+      {
+        "code": 42,
+        "id": "item-42",
+        "category": "Flower Pots",
+        "name": "FLOWER POT SPECIAL",
+        "pack": "1 BOX",
+        "mrp": 450,
+        "price": 90,
+        "img": "\ud83c\udf38"
+      },
+      {
+        "code": 43,
+        "id": "item-43",
+        "category": "Flower Pots",
+        "name": "FLOWER POT ASOKA",
+        "pack": "1 BOX",
+        "mrp": 600,
+        "price": 120,
+        "img": "\ud83c\udf38"
+      },
+      {
+        "code": 44,
+        "id": "item-44",
+        "category": "Flower Pots",
+        "name": "COLOUR KOTI",
+        "pack": "1 BOX",
+        "mrp": 1000,
+        "price": 200,
+        "img": "\ud83c\udf38"
+      },
+      {
+        "code": 45,
+        "id": "item-45",
+        "category": "Flower Pots",
+        "name": "SUPER KOTI / JUMBO KOTI",
+        "pack": "1 BOX",
+        "mrp": 3000,
+        "price": 600,
+        "img": "\ud83c\udf38"
+      },
+      {
+        "code": 46,
+        "id": "item-46",
+        "category": "Prime Fountain Series",
+        "name": "COLOUR CHANGING FOUNTAIN (3 pcs)",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\u26f2"
+      },
+      {
+        "code": 47,
+        "id": "item-47",
+        "category": "Prime Fountain Series",
+        "name": "GREEN KOTI",
+        "pack": "1 BOX",
+        "mrp": 1075,
+        "price": 215,
+        "img": "\u26f2"
+      },
+      {
+        "code": 48,
+        "id": "item-48",
+        "category": "Prime Fountain Series",
+        "name": "TRI COLOUR FOUNTAIN (5 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1400,
+        "price": 280,
+        "img": "\u26f2"
+      },
+      {
+        "code": 49,
+        "id": "item-49",
+        "category": "Prime Fountain Series",
+        "name": "VARNAJAL (5 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1400,
+        "price": 280,
+        "img": "\u26f2"
+      },
+      {
+        "code": 50,
+        "id": "item-50",
+        "category": "Whistle Series",
+        "name": "MINI SIREN (3 pcs)",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\ud83d\udce2"
+      },
+      {
+        "code": 51,
+        "id": "item-51",
+        "category": "Whistle Series",
+        "name": "MEGA SIREN (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1000,
+        "price": 200,
+        "img": "\ud83d\udce2"
+      },
+      {
+        "code": 52,
+        "id": "item-52",
+        "category": "Whistle Series",
+        "name": "MEGA SIREN (3 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1100,
+        "price": 220,
+        "img": "\ud83d\udce2"
+      },
+      {
+        "code": 53,
+        "id": "item-53",
+        "category": "Peacock Series",
+        "name": "MAGIC PEACOCK (3 FAN)",
+        "pack": "1 BOX",
+        "mrp": 750,
+        "price": 150,
+        "img": "\ud83e\udd9a"
+      },
+      {
+        "code": 54,
+        "id": "item-54",
+        "category": "Peacock Series",
+        "name": "DANCING PEACOCK (3 FAN)",
+        "pack": "1 BOX",
+        "mrp": 850,
+        "price": 170,
+        "img": "\ud83e\udd9a"
+      },
+      {
+        "code": 55,
+        "id": "item-55",
+        "category": "Peacock Series",
+        "name": "BADA PEACOCK (5 FAN)",
+        "pack": "1 BOX",
+        "mrp": 2250,
+        "price": 450,
+        "img": "\ud83e\udd9a"
+      },
+      {
+        "code": 56,
+        "id": "item-56",
+        "category": "2K26 Diwali Fountains",
+        "name": "CANDY POPS",
+        "pack": "1 BOX",
+        "mrp": 650,
+        "price": 130,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 57,
+        "id": "item-57",
+        "category": "2K26 Diwali Fountains",
+        "name": "PEACOCK FEATHER",
+        "pack": "1 BOX",
+        "mrp": 600,
+        "price": 120,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 58,
+        "id": "item-58",
+        "category": "2K26 Diwali Fountains",
+        "name": "GOLD RAIN",
+        "pack": "1 BOX",
+        "mrp": 600,
+        "price": 120,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 59,
+        "id": "item-59",
+        "category": "2K26 Diwali Fountains",
+        "name": "COLOUR SHOWER",
+        "pack": "1 BOX",
+        "mrp": 400,
+        "price": 80,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 60,
+        "id": "item-60",
+        "category": "2K26 Diwali Fountains",
+        "name": "POPS",
+        "pack": "1 BOX",
+        "mrp": 340,
+        "price": 68,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 61,
+        "id": "item-61",
+        "category": "2K26 Diwali Fountains",
+        "name": "GANGA JAMUNA (FLOWER POT BOMB)",
+        "pack": "1 BOX",
+        "mrp": 300,
+        "price": 60,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 62,
+        "id": "item-62",
+        "category": "2K26 Special Diwali Fountains",
+        "name": "TOY STORY",
+        "pack": "1 BOX",
+        "mrp": 350,
+        "price": 70,
+        "img": "\u26f2"
+      },
+      {
+        "code": 63,
+        "id": "item-63",
+        "category": "2K26 Special Diwali Fountains",
+        "name": "H2O WATER FALLS",
+        "pack": "1 BOX",
+        "mrp": 650,
+        "price": 130,
+        "img": "\u26f2"
+      },
+      {
+        "code": 64,
+        "id": "item-64",
+        "category": "2K26 Special Diwali Fountains",
+        "name": "H2O WATER QUEEN",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\u26f2"
+      },
+      {
+        "code": 65,
+        "id": "item-65",
+        "category": "2K26 Special Diwali Fountains",
+        "name": "ORION FOUNTAIN",
+        "pack": "1 BOX",
+        "mrp": 900,
+        "price": 180,
+        "img": "\u26f2"
+      },
+      {
+        "code": 66,
+        "id": "item-66",
+        "category": "2K26 Special Diwali Fountains",
+        "name": "POWER PUFF (ALIEN FOUNTAIN)",
+        "pack": "1 BOX",
+        "mrp": 1050,
+        "price": 195,
+        "img": "\u26f2"
+      },
+      {
+        "code": 67,
+        "id": "item-67",
+        "category": "2K26 Toy Series",
+        "name": "MRF BAT",
+        "pack": "1 BOX",
+        "mrp": 650,
+        "price": 130,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 68,
+        "id": "item-68",
+        "category": "2K26 Toy Series",
+        "name": "EMO EGG (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 750,
+        "price": 150,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 69,
+        "id": "item-69",
+        "category": "2K26 Toy Series",
+        "name": "GUITAR",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 70,
+        "id": "item-70",
+        "category": "2K26 Toy Series",
+        "name": "GUN",
+        "pack": "1 BOX",
+        "mrp": 700,
+        "price": 140,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 71,
+        "id": "item-71",
+        "category": "2K26 Toy Series",
+        "name": "I CONE (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1100,
+        "price": 210,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 72,
+        "id": "item-72",
+        "category": "2K26 Toy Series",
+        "name": "THE REAL THAR",
+        "pack": "1 BOX",
+        "mrp": 1125,
+        "price": 220,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 73,
+        "id": "item-73",
+        "category": "2K26 Toy Series",
+        "name": "WATER MEALON",
+        "pack": "1 BOX",
+        "mrp": 1050,
+        "price": 200,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 74,
+        "id": "item-74",
+        "category": "2K26 Toy Series",
+        "name": "MURUGA VEL (2 psc)",
+        "pack": "1 BOX",
+        "mrp": 1250,
+        "price": 250,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 75,
+        "id": "item-75",
+        "category": "2K26 Toy Series",
+        "name": "RACE CAR (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 2500,
+        "price": 500,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 76,
+        "id": "item-76",
+        "category": "2K26 Toy Series",
+        "name": "PIKACHU (Three magic show with toy gift)",
+        "pack": "1 BOX",
+        "mrp": 2750,
+        "price": 550,
+        "img": "\ud83e\uddf8"
+      },
+      {
+        "code": 77,
+        "id": "item-77",
+        "category": "Safety Handle Series",
+        "name": "LOLLYPOP (5 pcs)",
+        "pack": "1 BOX",
+        "mrp": 850,
+        "price": 170,
+        "img": "\ud83e\ude84"
+      },
+      {
+        "code": 78,
+        "id": "item-78",
+        "category": "Safety Handle Series",
+        "name": "POP CORN / WATER FALLS PENCIL (3 pcs)",
+        "pack": "1 BOX",
+        "mrp": 825,
+        "price": 165,
+        "img": "\ud83e\ude84"
+      },
+      {
+        "code": 79,
+        "id": "item-79",
+        "category": "Safety Handle Series",
+        "name": "SIVAKASI SPECIAL PENCIL (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 850,
+        "price": 170,
+        "img": "\ud83e\ude84"
+      },
+      {
+        "code": 80,
+        "id": "item-80",
+        "category": "Safety Handle Series",
+        "name": "RED FLOWER (5 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1000,
+        "price": 200,
+        "img": "\ud83e\ude84"
+      },
+      {
+        "code": 81,
+        "id": "item-81",
+        "category": "Vanitha Glow Sticks Series",
+        "name": "3 COLOUR PENCIL (4 pc)",
+        "pack": "1 BOX",
+        "mrp": 1250,
+        "price": 250,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 82,
+        "id": "item-82",
+        "category": "Vanitha Glow Sticks Series",
+        "name": "TOP GUN (5 pcs)",
+        "pack": "1 BOX",
+        "mrp": 1600,
+        "price": 320,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 83,
+        "id": "item-83",
+        "category": "Vanitha Glow Sticks Series",
+        "name": "ROO TTO (6 pc)",
+        "pack": "1 BOX",
+        "mrp": 2000,
+        "price": 400,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 84,
+        "id": "item-84",
+        "category": "Vanitha Glow Sticks Series",
+        "name": "AUTOGRAPH (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 2250,
+        "price": 450,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 85,
+        "id": "item-85",
+        "category": "Colourful Smoke",
+        "name": "COLOUR SMOKE",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\ud83d\udca8"
+      },
+      {
+        "code": 86,
+        "id": "item-86",
+        "category": "Tiny Crackers For Kids",
+        "name": "DRONE",
+        "pack": "1 BOX",
+        "mrp": 800,
+        "price": 160,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 87,
+        "id": "item-87",
+        "category": "Tiny Crackers For Kids",
+        "name": "HELICOPTER",
+        "pack": "1 BOX",
+        "mrp": 550,
+        "price": 110,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 88,
+        "id": "item-88",
+        "category": "Tiny Crackers For Kids",
+        "name": "BUTTERFLY",
+        "pack": "1 BOX",
+        "mrp": 550,
+        "price": 110,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 89,
+        "id": "item-89",
+        "category": "Tiny Crackers For Kids",
+        "name": "COLOUR FLASH ( VANITHA)",
+        "pack": "1 BOX",
+        "mrp": 1000,
+        "price": 200,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 90,
+        "id": "item-90",
+        "category": "Tiny Crackers For Kids",
+        "name": "PHOTO FLASH",
+        "pack": "1 BOX",
+        "mrp": 400,
+        "price": 80,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 91,
+        "id": "item-91",
+        "category": "Tiny Crackers For Kids",
+        "name": "SELFIE STICK",
+        "pack": "1 BOX",
+        "mrp": 300,
+        "price": 60,
+        "img": "\ud83c\udf88"
+      },
+      {
+        "code": 92,
+        "id": "item-92",
+        "category": "Fire Flash Matches",
+        "name": "3 IN 1 CRYSTAL COLOUR (62 mm)",
+        "pack": "1 BOX",
+        "mrp": 225,
+        "price": 45,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 93,
+        "id": "item-93",
+        "category": "Fire Flash Matches",
+        "name": "5 IN 1 MAGIC POT (62 mm)",
+        "pack": "1 BOX",
+        "mrp": 400,
+        "price": 80,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 94,
+        "id": "item-94",
+        "category": "Fire Flash Matches",
+        "name": "5 IN 1 PENTAGONA (104 mm)",
+        "pack": "1 BOX",
+        "mrp": 550,
+        "price": 110,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 95,
+        "id": "item-95",
+        "category": "Fire Flash Matches",
+        "name": "6 IN 1 HUNTER KING (140 mm)",
+        "pack": "1 BOX",
+        "mrp": 650,
+        "price": 130,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 96,
+        "id": "item-96",
+        "category": "Fire Flash Matches",
+        "name": "3 IN 1 GEM ULTRA (180 mm)",
+        "pack": "1 BOX",
+        "mrp": 950,
+        "price": 190,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 97,
+        "id": "item-97",
+        "category": "Fire Flash Matches",
+        "name": "10 IN 1 HUNTER MINI COOPER LAPTOP",
+        "pack": "1 BOX",
+        "mrp": 1050,
+        "price": 210,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 98,
+        "id": "item-98",
+        "category": "Fire Flash Matches",
+        "name": "10 IN 1 HUNTER BONAZA BIG LAPTOP",
+        "pack": "1 BOX",
+        "mrp": 1400,
+        "price": 280,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 99,
+        "id": "item-99",
+        "category": "Fire Flash Matches",
+        "name": "GEM ROOK COLOUR SMOKE",
+        "pack": "1 BOX",
+        "mrp": 700,
+        "price": 140,
+        "img": "\ud83d\udd6f\ufe0f"
+      },
+      {
+        "code": 100,
+        "id": "item-100",
+        "category": "Rockets",
+        "name": "BABY ROCKET",
+        "pack": "1 BOX",
+        "mrp": 300,
+        "price": 60,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 101,
+        "id": "item-101",
+        "category": "Rockets",
+        "name": "ROCKET BOMB",
+        "pack": "1 BOX",
+        "mrp": 400,
+        "price": 80,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 102,
+        "id": "item-102",
+        "category": "Rockets",
+        "name": "MUSICAL ROCKET",
+        "pack": "1 BOX",
+        "mrp": 700,
+        "price": 140,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 103,
+        "id": "item-103",
+        "category": "Rockets",
+        "name": "2 SOUND ROCKET",
+        "pack": "1 BOX",
+        "mrp": 850,
+        "price": 170,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 104,
+        "id": "item-104",
+        "category": "Level Up Series",
+        "name": "7 SHOT (5 PCS)",
+        "pack": "1 BOX",
+        "mrp": 600,
+        "price": 120,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 105,
+        "id": "item-105",
+        "category": "Level Up Series",
+        "name": "PANTA 5",
+        "pack": "1 BOX",
+        "mrp": 900,
+        "price": 180,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 106,
+        "id": "item-106",
+        "category": "Level Up Series",
+        "name": "SKY SHOT (10 PC)",
+        "pack": "1 BOX",
+        "mrp": 900,
+        "price": 180,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 107,
+        "id": "item-107",
+        "category": "Vanitha Sky Shot Series",
+        "name": "CHIP MIX (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 750,
+        "price": 150,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 108,
+        "id": "item-108",
+        "category": "Vanitha Sky Shot Series",
+        "name": "LONG WAY (10 pcs)",
+        "pack": "1 BOX",
+        "mrp": 2250,
+        "price": 450,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 109,
+        "id": "item-109",
+        "category": "Vanitha Sky Shot Series",
+        "name": "CHIP MIX 5 COLOUR (10 pcs)",
+        "pack": "1 BOX",
+        "mrp": 3000,
+        "price": 600,
+        "img": "\ud83d\ude80"
+      },
+      {
+        "code": 110,
+        "id": "item-110",
+        "category": "Symphony Of Lights",
+        "name": "1 1/2\" CHOTTA FANCY",
+        "pack": "1 BOX",
+        "mrp": 250,
+        "price": 50,
+        "img": "\ud83c\udf0c"
+      },
+      {
+        "code": 111,
+        "id": "item-111",
+        "category": "Symphony Of Lights",
+        "name": "2\" FANCY",
+        "pack": "1 BOX",
+        "mrp": 550,
+        "price": 110,
+        "img": "\ud83c\udf0c"
+      },
+      {
+        "code": 112,
+        "id": "item-112",
+        "category": "Symphony Of Lights",
+        "name": "2\" CANDY (3 psc)",
+        "pack": "1 BOX",
+        "mrp": 1350,
+        "price": 270,
+        "img": "\ud83c\udf0c"
+      },
+      {
+        "code": 113,
+        "id": "item-113",
+        "category": "Symphony Of Lights",
+        "name": "3 1/2\" HORROR FANCY",
+        "pack": "1 BOX",
+        "mrp": 1650,
+        "price": 330,
+        "img": "\ud83c\udf0c"
+      },
+      {
+        "code": 114,
+        "id": "item-114",
+        "category": "Symphony Of Lights",
+        "name": "4\" FANCY (RAMJI) (2 pcs)",
+        "pack": "1 BOX",
+        "mrp": 4500,
+        "price": 1200,
+        "img": "\ud83c\udf0c"
+      },
+      {
+        "code": 115,
+        "id": "item-115",
+        "category": "Symphony Of Lights",
+        "name": "4\" FANCY (SUNSHINE)",
+        "pack": "1 BOX",
+        "mrp": 2750,
+        "price": 450,
+        "img": "\ud83c\udf0c"
+      },
+      {
+        "code": 116,
+        "id": "item-116",
+        "category": "Elegance Fancy Series",
+        "name": "3 STEP (3 PCS)",
+        "pack": "1 BOX",
+        "mrp": 2200,
+        "price": 440,
+        "img": "\u2728"
+      },
+      {
+        "code": 117,
+        "id": "item-117",
+        "category": "Elegance Fancy Series",
+        "name": "7 STEP",
+        "pack": "1 BOX",
+        "mrp": 2225,
+        "price": 450,
+        "img": "\u2728"
+      },
+      {
+        "code": 118,
+        "id": "item-118",
+        "category": "Elegance Fancy Series",
+        "name": "12 STEP",
+        "pack": "1 BOX",
+        "mrp": 2500,
+        "price": 500,
+        "img": "\u2728"
+      },
+      {
+        "code": 119,
+        "id": "item-119",
+        "category": "Elegance Fancy Series",
+        "name": "31/2\" NAYAGARA FALLS",
+        "pack": "1 BOX",
+        "mrp": 770,
+        "price": 385,
+        "img": "\u2728"
+      },
+      {
+        "code": 120,
+        "id": "item-120",
+        "category": "Elegance Fancy Series",
+        "name": "4\" NAYAGARA FALLS (3 pcs)",
+        "pack": "1 BOX",
+        "mrp": 7500,
+        "price": 1500,
+        "img": "\u2728"
+      },
+      {
+        "code": 121,
+        "id": "item-121",
+        "category": "Elegance Fancy Series",
+        "name": "SONNY 5\" AQUA BLUE (2 PCS)",
+        "pack": "1 BOX",
+        "mrp": 9500,
+        "price": 1900,
+        "img": "\u2728"
+      },
+      {
+        "code": 122,
+        "id": "item-122",
+        "category": "Elegance Fancy Series",
+        "name": "SONNY 5\" OSCAR  (2 PCS)",
+        "pack": "1 BOX",
+        "mrp": 9500,
+        "price": 1900,
+        "img": "\u2728"
+      },
+      {
+        "code": 123,
+        "id": "item-123",
+        "category": "Elegance Fancy Series",
+        "name": "6\" PURPLE RAIN (VANITHA)",
+        "pack": "1 BOX",
+        "mrp": 10250,
+        "price": 2050,
+        "img": "\u2728"
+      },
+      {
+        "code": 124,
+        "id": "item-124",
+        "category": "Rapid Fire Barrage",
+        "name": "12 SHOT RIDER",
+        "pack": "1 BOX",
+        "mrp": 1000,
+        "price": 200,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 125,
+        "id": "item-125",
+        "category": "Rapid Fire Barrage",
+        "name": "25 RIDER",
+        "pack": "1 BOX",
+        "mrp": 1500,
+        "price": 300,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 126,
+        "id": "item-126",
+        "category": "Rapid Fire Barrage",
+        "name": "15 SHOT MULTI COLOUR",
+        "pack": "1 BOX",
+        "mrp": 1500,
+        "price": 300,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 127,
+        "id": "item-127",
+        "category": "Rapid Fire Barrage",
+        "name": "30 SHOT MULTI COLOUR",
+        "pack": "1 BOX",
+        "mrp": 2350,
+        "price": 470,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 128,
+        "id": "item-128",
+        "category": "Rapid Fire Barrage",
+        "name": "60 SHOT MULTI COLOUR",
+        "pack": "1 BOX",
+        "mrp": 4000,
+        "price": 800,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 129,
+        "id": "item-129",
+        "category": "Rapid Fire Barrage",
+        "name": "60 SHOT RANG",
+        "pack": "1 BOX",
+        "mrp": 4500,
+        "price": 900,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 130,
+        "id": "item-130",
+        "category": "Rapid Fire Barrage",
+        "name": "120 SHOT MULTI COLOUR",
+        "pack": "1 BOX",
+        "mrp": 8000,
+        "price": 1600,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 131,
+        "id": "item-131",
+        "category": "Rapid Fire Barrage",
+        "name": "120 SHOT BANG BANG",
+        "pack": "1 BOX",
+        "mrp": 9000,
+        "price": 1800,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 132,
+        "id": "item-132",
+        "category": "Rapid Fire Barrage",
+        "name": "240 SHOT MULTI COLOUR",
+        "pack": "1 BOX",
+        "mrp": 18000,
+        "price": 3600,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 133,
+        "id": "item-133",
+        "category": "Grand Showcase",
+        "name": "RANGOLI SMOKE (15 SHOT)",
+        "pack": "1 BOX",
+        "mrp": 2000,
+        "price": 400,
+        "img": "\ud83d\udc51"
+      },
+      {
+        "code": 134,
+        "id": "item-134",
+        "category": "Grand Showcase",
+        "name": "HAND SHOOTER (288 SHOT)",
+        "pack": "1 BOX",
+        "mrp": 12500,
+        "price": 2500,
+        "img": "\ud83d\udc51"
+      },
+      {
+        "code": 135,
+        "id": "item-135",
+        "category": "Grand Showcase",
+        "name": "2.5\" SET OUT",
+        "pack": "1 BOX",
+        "mrp": 18000,
+        "price": 3600,
+        "img": "\ud83d\udc51"
+      },
+      {
+        "code": 136,
+        "id": "item-136",
+        "category": "Grand Showcase",
+        "name": "10*10 CELEBRATION",
+        "pack": "1 BOX",
+        "mrp": 19500,
+        "price": 3900,
+        "img": "\ud83d\udc51"
+      },
+      {
+        "code": 137,
+        "id": "item-137",
+        "category": "Fairy Sparklers",
+        "name": "7 CM ELECTRIC SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 45,
+        "price": 9,
+        "img": "\u2728"
+      },
+      {
+        "code": 138,
+        "id": "item-138",
+        "category": "Fairy Sparklers",
+        "name": "7 CM COLOR SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 50,
+        "price": 10,
+        "img": "\u2728"
+      },
+      {
+        "code": 139,
+        "id": "item-139",
+        "category": "Fairy Sparklers",
+        "name": "7 CM GREEN SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 55,
+        "price": 11,
+        "img": "\u2728"
+      },
+      {
+        "code": 140,
+        "id": "item-140",
+        "category": "Fairy Sparklers",
+        "name": "7 CM RED SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 60,
+        "price": 12,
+        "img": "\u2728"
+      },
+      {
+        "code": 141,
+        "id": "item-141",
+        "category": "Fairy Sparklers",
+        "name": "10 CM ELECTRIC SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 100,
+        "price": 20,
+        "img": "\u2728"
+      },
+      {
+        "code": 142,
+        "id": "item-142",
+        "category": "Fairy Sparklers",
+        "name": "10 CM COLOR SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 110,
+        "price": 22,
+        "img": "\u2728"
+      },
+      {
+        "code": 143,
+        "id": "item-143",
+        "category": "Fairy Sparklers",
+        "name": "10 CM GREEN SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 120,
+        "price": 24,
+        "img": "\u2728"
+      },
+      {
+        "code": 144,
+        "id": "item-144",
+        "category": "Fairy Sparklers",
+        "name": "10 CM RED SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 130,
+        "price": 26,
+        "img": "\u2728"
+      },
+      {
+        "code": 145,
+        "id": "item-145",
+        "category": "Fairy Sparklers",
+        "name": "12 CM ELECTRIC SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 145,
+        "price": 29,
+        "img": "\u2728"
+      },
+      {
+        "code": 146,
+        "id": "item-146",
+        "category": "Fairy Sparklers",
+        "name": "12 CM COLOR SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 155,
+        "price": 31,
+        "img": "\u2728"
+      },
+      {
+        "code": 147,
+        "id": "item-147",
+        "category": "Fairy Sparklers",
+        "name": "12 CM GREEN SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 170,
+        "price": 34,
+        "img": "\u2728"
+      },
+      {
+        "code": 148,
+        "id": "item-148",
+        "category": "Fairy Sparklers",
+        "name": "12 CM RED SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 185,
+        "price": 37,
+        "img": "\u2728"
+      },
+      {
+        "code": 149,
+        "id": "item-149",
+        "category": "Fairy Sparklers",
+        "name": "15 CM ELECTRIC SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 200,
+        "price": 40,
+        "img": "\u2728"
+      },
+      {
+        "code": 150,
+        "id": "item-150",
+        "category": "Fairy Sparklers",
+        "name": "15 CM COLOR SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 215,
+        "price": 43,
+        "img": "\u2728"
+      },
+      {
+        "code": 151,
+        "id": "item-151",
+        "category": "Fairy Sparklers",
+        "name": "15 CM GREEN SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 225,
+        "price": 45,
+        "img": "\u2728"
+      },
+      {
+        "code": 152,
+        "id": "item-152",
+        "category": "Fairy Sparklers",
+        "name": "15 CM RED SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 245,
+        "price": 49,
+        "img": "\u2728"
+      },
+      {
+        "code": 153,
+        "id": "item-153",
+        "category": "Fairy Sparklers",
+        "name": "30 CM ELECTRIC SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 200,
+        "price": 40,
+        "img": "\u2728"
+      },
+      {
+        "code": 154,
+        "id": "item-154",
+        "category": "Fairy Sparklers",
+        "name": "30 CM COLOR SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 215,
+        "price": 43,
+        "img": "\u2728"
+      },
+      {
+        "code": 155,
+        "id": "item-155",
+        "category": "Fairy Sparklers",
+        "name": "30 CM GREEN SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 225,
+        "price": 45,
+        "img": "\u2728"
+      },
+      {
+        "code": 156,
+        "id": "item-156",
+        "category": "Fairy Sparklers",
+        "name": "30 CM RED SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 245,
+        "price": 49,
+        "img": "\u2728"
+      },
+      {
+        "code": 157,
+        "id": "item-157",
+        "category": "Fairy Sparklers",
+        "name": "30 CM 2 IN 1 SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 245,
+        "price": 49,
+        "img": "\u2728"
+      },
+      {
+        "code": 158,
+        "id": "item-158",
+        "category": "Fairy Sparklers",
+        "name": "50 CM ELECTRIC SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 850,
+        "price": 170,
+        "img": "\u2728"
+      },
+      {
+        "code": 159,
+        "id": "item-159",
+        "category": "Fairy Sparklers",
+        "name": "50 CM COLOR SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 900,
+        "price": 180,
+        "img": "\u2728"
+      },
+      {
+        "code": 160,
+        "id": "item-160",
+        "category": "Fairy Sparklers",
+        "name": "ROTATING SPARKLERS",
+        "pack": "1 BOX",
+        "mrp": 1100,
+        "price": 220,
+        "img": "\u2728"
+      },
+      {
+        "code": 161,
+        "id": "item-161",
+        "category": "90s Nostalgia",
+        "name": "SNAKE TABLET",
+        "pack": "1 BOX",
+        "mrp": 50,
+        "price": 10,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 162,
+        "id": "item-162",
+        "category": "90s Nostalgia",
+        "name": "RING CAP",
+        "pack": "1 BOX",
+        "mrp": 60,
+        "price": 12,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 163,
+        "id": "item-163",
+        "category": "90s Nostalgia",
+        "name": "RING GUN",
+        "pack": "1 BOX",
+        "mrp": 750,
+        "price": 150,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 164,
+        "id": "item-164",
+        "category": "90s Nostalgia",
+        "name": "RING GUN",
+        "pack": "1 BOX",
+        "mrp": 500,
+        "price": 100,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 165,
+        "id": "item-165",
+        "category": "90s Nostalgia",
+        "name": "ZEE BOOM BAA",
+        "pack": "1 BOX",
+        "mrp": 50,
+        "price": 10,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 166,
+        "id": "item-166",
+        "category": "90s Nostalgia",
+        "name": "MAGIC POPS",
+        "pack": "1 BOX",
+        "mrp": 50,
+        "price": 10,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 167,
+        "id": "item-167",
+        "category": "90s Nostalgia",
+        "name": "STONE",
+        "pack": "1 BOX",
+        "mrp": 50,
+        "price": 10,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 168,
+        "id": "item-168",
+        "category": "90s Nostalgia",
+        "name": "CARTON",
+        "pack": "1 BOX",
+        "mrp": 150,
+        "price": 30,
+        "img": "\ud83d\udd79\ufe0f"
+      },
+      {
+        "code": 169,
+        "id": "item-169",
+        "category": "Paper Series",
+        "name": "1/4 KG BLAST",
+        "pack": "1 BOX",
+        "mrp": 300,
+        "price": 60,
+        "img": "\ud83d\udce6"
+      },
+      {
+        "code": 170,
+        "id": "item-170",
+        "category": "Paper Series",
+        "name": "1/2 KG BLAST",
+        "pack": "1 BOX",
+        "mrp": 600,
+        "price": 120,
+        "img": "\ud83d\udce6"
+      },
+      {
+        "code": 171,
+        "id": "item-171",
+        "category": "Paper Series",
+        "name": "1 KG BLAST",
+        "pack": "1 BOX",
+        "mrp": 1200,
+        "price": 240,
+        "img": "\ud83d\udce6"
+      },
+      {
+        "code": 172,
+        "id": "item-172",
+        "category": "Digi Red Series",
+        "name": "100 DIGI RED",
+        "pack": "1 BOX",
+        "mrp": 200,
+        "price": 40,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 173,
+        "id": "item-173",
+        "category": "Digi Red Series",
+        "name": "200 DIGI RED",
+        "pack": "1 BOX",
+        "mrp": 400,
+        "price": 80,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 174,
+        "id": "item-174",
+        "category": "Digi Red Series",
+        "name": "1K DIGI RED",
+        "pack": "1 BOX",
+        "mrp": 1000,
+        "price": 200,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 175,
+        "id": "item-175",
+        "category": "Digi Red Series",
+        "name": "2K DIGI RED",
+        "pack": "1 BOX",
+        "mrp": 2000,
+        "price": 400,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 176,
+        "id": "item-176",
+        "category": "Digi Red Series",
+        "name": "5K DIGI RED",
+        "pack": "1 BOX",
+        "mrp": 5000,
+        "price": 1000,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": 177,
+        "id": "item-177",
+        "category": "Digi Red Series",
+        "name": "10K DIGI RED",
+        "pack": "1 BOX",
+        "mrp": 10000,
+        "price": 2000,
+        "img": "\ud83c\udf86"
+      },
+      {
+        "code": "G1",
+        "id": "item-g1",
+        "category": "Gift Boxes",
+        "name": "AVENGER [26 ITEMS]",
+        "pack": "1 BOX (26 Items)",
+        "mrp": 2000,
+        "price": 400,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "G2",
+        "id": "item-g2",
+        "category": "Gift Boxes",
+        "name": "AVATAR [30 ITEMS]",
+        "pack": "1 BOX (30 Items)",
+        "mrp": 2500,
+        "price": 500,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "G3",
+        "id": "item-g3",
+        "category": "Gift Boxes",
+        "name": "HULK [36 ITEMS]",
+        "pack": "1 BOX (36 Items)",
+        "mrp": 2900,
+        "price": 580,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "G4",
+        "id": "item-g4",
+        "category": "Gift Boxes",
+        "name": "ANGRY BIRDS [40 ITEMS]",
+        "pack": "1 BOX (40 Items)",
+        "mrp": 3650,
+        "price": 730,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "G5",
+        "id": "item-g5",
+        "category": "Gift Boxes",
+        "name": "PARADISE [45 ITEMS]",
+        "pack": "1 BOX (45 Items)",
+        "mrp": 4250,
+        "price": 850,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "G6",
+        "id": "item-g6",
+        "category": "Gift Boxes",
+        "name": "WONDERFUL [50 ITEMS]",
+        "pack": "1 BOX (50 Items)",
+        "mrp": 4900,
+        "price": 980,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "G7",
+        "id": "item-g7",
+        "category": "Gift Boxes",
+        "name": "CARNIVAL [55 ITEMS]",
+        "pack": "1 BOX (55 Items)",
+        "mrp": 5500,
+        "price": 1100,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "G8",
+        "id": "item-g8",
+        "category": "Gift Boxes",
+        "name": "VIP [60 ITEMS]",
+        "pack": "1 BOX (60 Items)",
+        "mrp": 6000,
+        "price": 1200,
+        "img": "\ud83c\udf81"
+      },
+      {
+        "code": "C1",
+        "id": "item-c1",
+        "category": "Combo Packs",
+        "name": "BARBIE KIDS COMBO",
+        "pack": "1 COMBO",
+        "mrp": 15000,
+        "price": 3000,
+        "img": "\ud83e\ude94"
+      },
+      {
+        "code": "C2",
+        "id": "item-c2",
+        "category": "Combo Packs",
+        "name": "MINION KIDS COMBO",
+        "pack": "1 COMBO",
+        "mrp": 25000,
+        "price": 5000,
+        "img": "\ud83e\ude94"
+      },
+      {
+        "code": "C3",
+        "id": "item-c3",
+        "category": "Combo Packs",
+        "name": "MINI BLAST COMBO",
+        "pack": "1 COMBO",
+        "mrp": 12500,
+        "price": 2500,
+        "img": "\ud83e\ude94"
+      },
+      {
+        "code": "C4",
+        "id": "item-c4",
+        "category": "Combo Packs",
+        "name": "WONDERFUL COMBO",
+        "pack": "1 COMBO",
+        "mrp": 15000,
+        "price": 3000,
+        "img": "\ud83e\ude94"
+      },
+      {
+        "code": "C5",
+        "id": "item-c5",
+        "category": "Combo Packs",
+        "name": "JUMBO COMBO",
+        "pack": "1 COMBO",
+        "mrp": 20000,
+        "price": 4000,
+        "img": "\ud83e\ude94"
+      },
+      {
+        "code": "C6",
+        "id": "item-c6",
+        "category": "Combo Packs",
+        "name": "FIVE STAR COMBO",
+        "pack": "1 COMBO",
+        "mrp": 25000,
+        "price": 5000,
+        "img": "\ud83e\ude94"
+      },
+      {
+        "code": "C7",
+        "id": "item-c7",
+        "category": "Combo Packs",
+        "name": "SEVEN STAR COMBO",
+        "pack": "1 COMBO",
+        "mrp": 35000,
+        "price": 7000,
+        "img": "\ud83e\ude94"
+      },
+      {
+        "code": "C8",
+        "id": "item-c8",
+        "category": "Combo Packs",
+        "name": "MEGA BLITZ COMBO",
+        "pack": "1 COMBO",
+        "mrp": 50000,
+        "price": 10000,
+        "img": "\ud83e\ude94"
+      }
+    ];
 
     const cart = {};
     let activeCategory = "All";
@@ -2551,11 +2745,10 @@
 
         const chip = document.createElement("button");
         chip.type = "button";
-        chip.className = `whitespace-nowrap px-4 py-1.5 rounded-full font-bold text-xs border-2 transition shrink-0 ${
-          isActive
-            ? "bg-grape-800 text-gold-300 border-grape-800 shadow-md"
-            : "bg-white text-maroon-700 border-sky-300 hover:border-punch-500"
-        }`;
+        chip.className = `whitespace-nowrap px-4 py-1.5 rounded-full font-bold text-xs border-2 transition shrink-0 ${isActive
+          ? "bg-grape-800 text-gold-300 border-grape-800 shadow-md"
+          : "bg-white text-maroon-700 border-sky-300 hover:border-punch-500"
+          }`;
         chip.textContent = icon + category;
         chip.onclick = () => selectCategory(category);
         categoryChips.appendChild(chip);
@@ -2813,7 +3006,7 @@
           `Hi Manimegalai Pyro World! I have placed an order.\n\n*Order ID:* ${result.orderId}\n*Customer:* ${payload.customerName}\n*Phone:* ${payload.phone}\n*Total Amount:* ${formatCurrency(result.totalAmount)}\n\nI am sharing payment screenshot for confirmation.`
         );
 
-        $("whatsappPaymentBtn").href = `https://wa.me/9486496341?text=${whatsappMessage}`;
+        $("whatsappPaymentBtn").href = `https://wa.me/6369178279?text=${whatsappMessage}`;
 
         confirmationModal.classList.remove("hidden");
       } catch (error) {
