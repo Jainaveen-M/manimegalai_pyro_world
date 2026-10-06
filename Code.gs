@@ -58,7 +58,7 @@ function doPost(e) {
     const addressText = [order.address, order.city, order.pincode].filter(Boolean).join(", ").trim();
     const itemsBreakdown = order.items.map(item => {
       return `${item.name} x ${item.qty} @ ₹${Number(item.salePrice).toFixed(2)}`;
-    }).join(" | ");
+    }).join("\n");
     const totalAmount = Number(order.totalAmount).toFixed(2);
 
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
@@ -90,6 +90,12 @@ function doPost(e) {
       totalAmount,
       "New"
     ]);
+
+    // Show each item on its own line inside the cell
+    const ITEMS_COLUMN = headers.indexOf("Items Breakdown") + 1;
+    sheet.getRange(sheet.getLastRow(), ITEMS_COLUMN)
+      .setWrapStrategy(SpreadsheetApp.WrapStrategy.WRAP)
+      .setVerticalAlignment("top");
 
     if (telegramToken && telegramChatId) {
       try {

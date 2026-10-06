@@ -5,316 +5,447 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manimegalai Pyro World - Price List 2026</title>
+  <meta name="description" content="Fancy crackers & gift boxes direct from Sivakasi. Diwali 2026 price list with up to 80% discount. Order online from Manimegalai Pyro World." />
+  <meta name="theme-color" content="#3a1272" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+Tamil:wght@700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            swash: ['"Berkshire Swash"', 'serif'],
+            sans: ['Montserrat', 'system-ui', 'sans-serif'],
+            tamil: ['"Noto Sans Tamil"', 'sans-serif']
+          },
+          colors: {
+            maroon: { 900: '#3a0610', 800: '#4d0914', 700: '#5e0c1a', 600: '#7a1224' },
+            grape: { 900: '#25094d', 800: '#3a1272', 700: '#4d1b91', 100: '#ece3ff' },
+            sky: { 50: '#effaff', 100: '#d9f3ff', 200: '#b4e7fb', 300: '#82d6f6', 400: '#4cc3f0', 500: '#25a9e0' },
+            gold: { 200: '#f8ebc0', 300: '#f3d98b', 400: '#e5b94a', 500: '#cf9b26', 600: '#a97a14' },
+            punch: { 500: '#c2284a', 600: '#a3173a', 700: '#7f1230' }
+          }
+        }
+      }
+    };
+  </script>
   <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 11rem; }
     body {
-      background: linear-gradient(180deg, fff8e7 0%, fff3d6 100%);
+      font-family: 'Montserrat', system-ui, sans-serif;
+      background: linear-gradient(180deg, #cdeefd 0%, #e6f7ff 420px, #effaff 100%);
+      background-attachment: fixed;
+    }
+    body.drawer-open { overflow: hidden; }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* ---------- Poster hero ---------- */
+    .poster {
+      background:
+        radial-gradient(55% 50% at 50% 55%, rgba(255, 255, 255, .7) 0, rgba(255, 255, 255, 0) 70%),
+        radial-gradient(rgba(255, 255, 255, .55) 1px, transparent 1.4px) 0 0 / 56px 56px,
+        linear-gradient(180deg, #4fb0e4 0%, #86cff0 48%, #d3f0fb 100%);
+    }
+    .title-swash {
+      font-family: 'Berkshire Swash', serif;
+      color: #5e0c1a;
+      line-height: 1;
+      letter-spacing: .02em;
+      -webkit-text-stroke: 5px #ecd07a;
+      paint-order: stroke fill;
+      text-shadow: 0 2px 0 #3a0610, 0 10px 20px rgba(58, 6, 16, .22);
     }
 
-    .festive-shadow {
-      box-shadow: 0 18px 40px rgba(173, 89, 0, 0.12);
+    .tamil-tab {
+      background: linear-gradient(180deg, #44187f, #2f0f60);
+      border: 2px solid #e5b94a;
+      border-top: 0;
+      color: #f6e7a6;
+      box-shadow: 0 10px 20px -8px rgba(37, 9, 77, .55);
     }
 
-    .product-card {
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Discount ribbon */
+    .rib { background: linear-gradient(180deg, #8f1632, #6b0f27); box-shadow: inset 0 2px 0 #e5b94a, inset 0 -2px 0 #e5b94a; }
+    .rib-l { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 12px 50%); }
+    .rib-r { clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 50%, 100% 100%, 0 100%); }
+    .shield {
+      background: linear-gradient(180deg, #fbefbd 0%, #e9c565 55%, #cf9b26 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%);
+      filter: drop-shadow(0 5px 6px rgba(94, 12, 26, .28));
     }
+    .orn { display: flex; align-items: center; gap: .75rem; color: #7a1224; }
+    .orn::before, .orn::after { content: ""; height: 1px; width: clamp(24px, 8vw, 90px); background: linear-gradient(90deg, transparent, rgba(122, 18, 36, .55)); }
+    .orn::after { transform: scaleX(-1); }
 
-    .product-card:hover {
-      transform: translateY(-2px);
+    /* Fireworks */
+    .burst { position: absolute; pointer-events: none; }
+    .burst svg { width: 100%; height: 100%; overflow: visible; }
+    .twinkle { animation: twinkle 4s ease-in-out infinite alternate; transform-origin: center; }
+    @keyframes twinkle { from { transform: scale(.92) rotate(-3deg); opacity: .5; } to { transform: scale(1.05) rotate(3deg); opacity: .85; } }
+
+    /* Buttons */
+    .btn-punch {
+      background: linear-gradient(180deg, #7d1632, #5e0c1a);
+      color: #f6e7a6;
+      border: 1px solid #cf9b26;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 8px 16px -8px rgba(94, 12, 26, .7);
+      transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
     }
-
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    .btn-punch:hover { filter: brightness(1.15); }
+    .btn-punch:active { transform: translateY(1px); }
+    .btn-punch:disabled { opacity: .45; cursor: not-allowed; filter: none; }
+    .btn-gold {
+      background: linear-gradient(180deg, #f6df93, #dcae3a);
+      color: #4d0914;
+      border: 1px solid #b98a1d;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55), 0 8px 16px -8px rgba(122, 90, 10, .6);
+      transition: transform .12s ease, filter .12s ease;
     }
+    .btn-gold:hover { filter: brightness(1.05); }
+    .btn-gold:active { transform: translateY(1px); }
 
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
+    .add-btn {
+      background: #fff;
+      color: #3a1272;
+      border: 1.5px solid #3a1272;
+      letter-spacing: .08em;
+      transition: background .15s ease, color .15s ease, transform .1s ease;
+    }
+    .add-btn .plus {
+      height: 20px; width: 20px; border-radius: 9999px;
+      background: #3a1272; color: #f3d98b;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 15px; line-height: 1; font-weight: 800;
+      transition: background .15s ease, color .15s ease;
+    }
+    .add-btn:hover { background: #3a1272; color: #f3d98b; }
+    .add-btn:hover .plus { background: #f3d98b; color: #3a1272; }
+    .add-btn:active { transform: scale(.97); }
+
+    /* Cards */
+    .card { transition: transform .18s ease, box-shadow .18s ease; box-shadow: 0 1px 2px rgba(37, 9, 77, .08), 0 14px 26px -16px rgba(37, 9, 77, .4); }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 1px 2px rgba(37, 9, 77, .1), 0 20px 32px -16px rgba(37, 9, 77, .5); }
+    .card.in-cart { border-color: #3a1272; box-shadow: 0 0 0 1px #3a1272, 0 14px 26px -16px rgba(58, 18, 114, .5); }
+
+    .drawer { transition: transform .3s cubic-bezier(.22, 1, .36, 1); }
+    .overlay { transition: opacity .25s ease; }
+    .pop { animation: pop .25s ease; }
+    @keyframes pop { 50% { transform: scale(1.3); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .twinkle, .pop { animation: none; }
+      .drawer, .overlay, .card { transition: none; }
     }
   </style>
 </head>
 
-<body class="min-h-screen text-slate-800 flex flex-col justify-between">
-  <div>
-    <header class="bg-gradient-to-r from-red-700 via-orange-600 to-amber-500 text-white sticky top-0 z-20 shadow-lg">
-      <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-        <div>
-          <p class="text-xs uppercase tracking-[0.25em] text-amber-200 font-semibold">Fancy Crackers & Gift Boxes • Price List 2026</p>
-          <h1 class="text-2xl sm:text-3xl font-black tracking-tight flex items-center gap-2">MANIMEGALAI PYRO WORLD</h1>
+<body class="min-h-screen text-maroon-700 antialiased">
+
+  <!-- Top strip -->
+  <div class="bg-grape-900 text-gold-300 text-[11px] sm:text-xs font-semibold">
+    <div class="max-w-[1320px] mx-auto px-4 py-1.5 flex items-center justify-between gap-3">
+      <p class="truncate">🎉 Diwali 2026 &nbsp;·&nbsp; Up to <b class="text-white">80% OFF</b> &nbsp;·&nbsp; Min. order ₹1,000</p>
+      <p class="hidden sm:flex items-center gap-4 shrink-0">
+        <a href="tel:9486496341" class="hover:text-white">📞 9486496341</a>
+        <a href="tel:6369178279" class="hover:text-white">6369178279</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="top" class="sticky top-0 z-30 shadow-lg shadow-grape-900/20">
+    <div class="bg-grape-800 border-b-4 border-gold-400">
+      <div class="max-w-[1320px] mx-auto px-4 py-2.5 flex flex-wrap items-center gap-x-4 gap-y-2.5">
+        <a href="#top" class="flex items-center gap-2.5 min-w-0 flex-1 lg:flex-none">
+          <span class="h-10 w-10 shrink-0 rounded-full btn-gold flex items-center justify-center text-xl">🎆</span>
+          <span class="min-w-0 leading-tight">
+            <span class="block font-swash text-[17px] min-[400px]:text-xl sm:text-2xl text-gold-300 truncate">Manimegalai Pyro World</span>
+            <span class="block text-[10px] text-white/70 font-semibold tracking-wide truncate">Fancy Crackers &amp; Gift Boxes · Sivakasi</span>
+          </span>
+        </a>
+
+        <div class="relative order-3 lg:order-none w-full lg:w-auto lg:flex-1 lg:max-w-xl lg:mx-auto">
+          <svg class="w-4 h-4 absolute left-4 top-3.5 text-maroon-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input id="searchInput" type="search" placeholder="Search crackers or item code…"
+            class="w-full pl-11 pr-4 py-2.5 bg-white border-2 border-transparent rounded-full text-sm font-semibold text-maroon-700 focus:outline-none focus:border-gold-400 placeholder:text-maroon-600/50 placeholder:font-medium" />
         </div>
-        <div class="flex items-center gap-2 bg-white/15 border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-inner">
-          <span class="bg-yellow-400 text-red-900 px-2 py-0.5 rounded-md font-extrabold text-xs uppercase">UPTO 80% DISCOUNT</span>
-          <span>Min. Order ₹1,000</span>
+
+        <div class="flex items-center gap-2">
+          <a href="Manimegalai_Pyro_World_Complete_Price_List_2026_First_Page_Colours.pdf" target="_blank" rel="noopener"
+            class="hidden md:inline-flex items-center h-10 px-4 rounded-full border-2 border-gold-400/70 text-gold-300 text-sm font-bold hover:bg-white/10 transition">📄 Price List</a>
+          <button id="openCartBtn" type="button" class="btn-gold h-10 pl-4 pr-3 rounded-full text-sm font-extrabold inline-flex items-center gap-2">
+            <span aria-hidden="true">🛒</span><span class="hidden sm:inline">Cart</span>
+            <span id="navCartCount" class="min-w-[1.5rem] text-center rounded-full bg-maroon-700 text-gold-200 text-xs font-black px-1.5 py-0.5">0</span>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Hero Festive Banner -->
-    <section class="max-w-7xl mx-auto px-4 pt-4 sm:pt-6">
-      <div class="rounded-2xl sm:rounded-3xl overflow-hidden festive-shadow border border-amber-200/80 bg-slate-900">
-        <img src="banner.png" alt="Manimegalai Pyro World 2026 Festive Banner" class="w-full h-auto object-cover block" />
+    <!-- Category chips -->
+    <div class="bg-sky-100/95 backdrop-blur border-b border-sky-300/60">
+      <div class="max-w-[1320px] mx-auto">
+        <div id="categoryChips" class="relative flex items-center gap-2 overflow-x-auto no-scrollbar px-4 py-2.5"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-[1320px] mx-auto px-4">
+
+    <!-- Poster hero -->
+    <section class="poster relative overflow-hidden rounded-[28px] mt-5 border-[3px] border-gold-400 shadow-xl shadow-sky-500/20">
+      <div class="absolute inset-2 sm:inset-3 rounded-[20px] border border-white/80 pointer-events-none z-10"></div>
+
+      <!-- fireworks -->
+      <div class="burst twinkle w-16 h-16 sm:w-28 sm:h-28 left-4 top-3 sm:left-10 sm:top-8" data-burst="a"></div>
+      <div class="burst twinkle w-16 h-16 sm:w-28 sm:h-28 right-4 top-4 sm:right-12 sm:top-10" data-burst="b" style="animation-delay:-1.2s"></div>
+      <div class="burst twinkle w-24 h-24 sm:w-52 sm:h-52 -left-8 top-[36%] sm:-left-10" data-burst="c" style="animation-delay:-.6s"></div>
+      <div class="burst twinkle w-24 h-24 sm:w-52 sm:h-52 -right-8 top-[32%] sm:-right-10" data-burst="d" style="animation-delay:-2s"></div>
+      <div class="burst twinkle hidden sm:block w-36 h-36 left-10 -bottom-6" data-burst="e" style="animation-delay:-1.6s"></div>
+      <div class="burst twinkle hidden sm:block w-36 h-36 right-10 -bottom-6" data-burst="f" style="animation-delay:-.3s"></div>
+
+      <div class="relative z-20 flex flex-col items-center text-center px-5 pb-9 sm:pb-12">
+        <!-- invocation tab -->
+        <div class="tamil-tab font-tamil font-bold rounded-b-2xl px-5 sm:px-10 pt-2.5 pb-3 text-[13px] min-[400px]:text-[15px] sm:text-xl lg:text-2xl whitespace-nowrap">
+          ஸ்ரீ மாத்தூர் கருப்பசாமி துணை
+        </div>
+
+        <h1 class="title-swash mt-5 sm:mt-7 text-[clamp(2.1rem,8.6vw,5.2rem)] uppercase">
+          Manimegalai<br />Pyro World
+        </h1>
+
+        <!-- discount ribbon -->
+        <div class="mt-6 sm:mt-7 flex items-center justify-center font-bold" aria-label="Up to 80% discount">
+          <div class="rib rib-l pl-5 pr-8 sm:pl-8 sm:pr-12 py-1.5 sm:py-2.5 -mr-3 sm:-mr-5 text-gold-200 text-[11px] sm:text-lg tracking-[0.22em]">UPTO</div>
+          <div class="shield relative z-10 px-5 sm:px-8 pt-1.5 pb-5 sm:pt-2 sm:pb-8 -my-3 text-maroon-700 text-3xl sm:text-5xl font-black leading-none" style="text-shadow:0 1px 0 rgba(255,255,255,.6)">80%</div>
+          <div class="rib rib-r pr-5 pl-8 sm:pr-8 sm:pl-12 py-1.5 sm:py-2.5 -ml-3 sm:-ml-5 text-gold-200 text-[11px] sm:text-lg tracking-[0.22em]">DISCOUNT</div>
+        </div>
+
+        <div class="orn mt-6 sm:mt-8"><span class="text-xs">◆</span></div>
+        <p class="mt-3 font-bold uppercase text-maroon-700 text-[clamp(.78rem,2.4vw,1.3rem)] tracking-[0.2em] sm:tracking-[0.28em] leading-relaxed">
+          Fancy crackers &amp; gift boxes available
+        </p>
+        <p class="mt-1.5 text-xs sm:text-sm font-medium text-maroon-700/70">
+          Official Price List 2026 · <b id="statItems">190+</b> items straight from Sivakasi
+        </p>
+
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <a href="#shop" class="btn-punch rounded-full px-7 py-3 text-sm font-bold tracking-wide">Shop the price list →</a>
+          <a href="tel:9486496341" class="btn-gold rounded-full px-6 py-3 text-sm font-bold tracking-wide">📞 Call to order</a>
+        </div>
       </div>
     </section>
 
-    <main class="max-w-7xl mx-auto px-4 py-6 lg:flex lg:gap-8">
-      <section class="flex-1 min-w-0">
-        <!-- Title & Search Bar -->
-        <div class="mb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <p class="text-xs uppercase tracking-[0.25em] text-orange-600 font-bold">Official Price List 2026</p>
-            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1">Shop Festive Fireworks & Gift Boxes</h2>
-          </div>
+    <!-- Trust row -->
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-5">
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🏭</span><p class="text-[13px] font-bold leading-tight">Direct from Sivakasi</p></div>
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🏷️</span><p class="text-[13px] font-bold leading-tight">Up to 80% off MRP</p></div>
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🔒</span><p class="text-[13px] font-bold leading-tight">Bank, GPay &amp; PhonePe</p></div>
+      <div class="bg-white border-2 border-gold-300 rounded-2xl px-4 py-3 flex items-center gap-3"><span class="text-2xl">🚚</span><p class="text-[13px] font-bold leading-tight">Lorry transport "To Pay"</p></div>
+    </section>
 
-          <div class="relative w-full sm:w-80">
-            <input id="searchInput" type="text" placeholder="Search by name or item code (14, G1, C1)..."
-              class="w-full pl-9 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm" />
-            <svg class="w-4 h-4 absolute left-3 top-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-          </div>
-        </div>
+    <!-- Shop -->
+    <main id="shop" class="mt-9">
+      <div class="mb-5">
+        <h2 id="resultTitle" class="font-swash text-3xl sm:text-4xl text-maroon-700">All crackers</h2>
+        <p id="resultCount" class="text-sm font-semibold text-maroon-600/70 mt-0.5"></p>
+      </div>
 
-        <!-- Categories Tabs -->
-        <div id="categoryTabs" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-3 mb-6 scroll-smooth"></div>
+      <div id="productGrid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-4"></div>
 
-        <!-- Products Grid -->
-        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"></div>
-
-        <!-- Empty State -->
-        <div id="emptyState" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-200 mt-4">
-          <span class="text-5xl">🔍</span>
-          <h3 class="text-lg font-bold text-slate-800 mt-3">No crackers match your search</h3>
-          <p class="text-sm text-slate-500 mt-1">Try searching with a different keyword or category.</p>
-        </div>
-      </section>
-
-      <!-- Side Panel Cart & Form -->
-      <aside id="checkoutSection" class="w-full lg:w-[380px] lg:shrink-0 mt-8 lg:mt-0">
-        <div class="lg:sticky lg:top-20 space-y-5 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:pr-1.5 no-scrollbar">
-          <!-- Order Summary -->
-          <div class="bg-white rounded-2xl festive-shadow p-5 border border-amber-100/60">
-            <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
-              <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
-                <span>🛒</span> Order Summary
-              </h3>
-              <span id="cartCountBadge" class="bg-orange-100 text-orange-700 px-2.5 py-1 rounded-full text-xs font-bold">
-                0 items
-              </span>
-            </div>
-
-            <div id="cartItems" class="space-y-3 max-h-56 overflow-y-auto pr-1 no-scrollbar"></div>
-
-            <div class="mt-5 border-t border-slate-100 pt-4 space-y-2">
-              <div class="flex justify-between text-sm text-slate-600">
-                <span>Subtotal (80% Off Rate)</span>
-                <span id="subtotalValue" class="font-bold text-slate-800">₹0</span>
-              </div>
-              <div class="flex justify-between text-sm text-slate-600">
-                <span>Delivery Charges</span>
-                <span class="text-green-600 font-semibold">Standard</span>
-              </div>
-              <div class="flex justify-between text-xl font-black text-slate-900 border-t border-slate-100 pt-2">
-                <span>Total Payable</span>
-                <span id="totalAmountValue" class="text-orange-600">₹0</span>
-              </div>
-
-              <div id="minimumOrderWarning"
-                class="hidden mt-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm px-3.5 py-2.5 flex items-start gap-2">
-                <span class="text-base leading-none">⚠️</span>
-                <span>Minimum order value is <strong>₹1,000</strong>. Please add items worth <strong id="shortfallAmount">₹1,000</strong> more.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Customer Delivery Details Form -->
-          <div class="bg-white rounded-2xl festive-shadow p-5 border border-amber-100/60">
-            <h3 class="text-lg font-black text-slate-900 mb-4 flex items-center gap-2">
-              <span>📍</span> Delivery Details
-            </h3>
-
-            <form id="orderForm" class="space-y-3.5">
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Full Name *</label>
-                <input id="customerName" type="text"
-                  class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
-                  placeholder="Enter your full name" required />
-              </div>
-
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Phone / WhatsApp *</label>
-                <input id="phone" type="tel"
-                  class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
-                  placeholder="e.g. 9876543210" required />
-              </div>
-
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Delivery Address *</label>
-                <textarea id="address" rows="2"
-                  class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
-                  placeholder="House no, street name, area/landmark" required></textarea>
-              </div>
-
-              <div class="grid grid-cols-2 gap-3">
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">City / Town *</label>
-                  <input id="city" type="text"
-                    class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
-                    placeholder="City" required />
-                </div>
-                <div>
-                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Pincode *</label>
-                  <input id="pincode" type="text"
-                    class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
-                    placeholder="Pincode" required />
-                </div>
-              </div>
-
-              <button id="submitOrderBtn" type="submit"
-                class="w-full mt-2 rounded-xl bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 text-white font-black py-3.5 shadow-lg hover:opacity-95 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-base">
-                <span>🚀</span> Place Order Now
-              </button>
-            </form>
-          </div>
-        </div>
-      </aside>
+      <div id="emptyState" class="hidden text-center py-16 bg-white rounded-3xl border-2 border-dashed border-sky-300 mt-4">
+        <span class="text-5xl">🔍</span>
+        <h3 class="font-swash text-2xl mt-3">No crackers match your search</h3>
+        <p class="text-sm font-medium text-maroon-600/70 mt-1">Try a different keyword or category.</p>
+      </div>
     </main>
   </div>
 
-  <!-- Mobile Floating Checkout Bar -->
-  <div id="mobileCartBar" class="lg:hidden fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md text-white p-3.5 border-t border-slate-800 flex items-center justify-between z-30 shadow-2xl transition transform translate-y-full">
-    <div>
-      <p id="mobileCartSummary" class="text-xs font-bold text-slate-300">0 items selected</p>
-      <p id="mobileCartTotal" class="text-lg font-black text-amber-400">₹0</p>
-    </div>
-    <a href="checkoutSection" class="bg-gradient-to-r from-orange-500 to-red-600 text-white text-sm font-black px-5 py-2.5 rounded-xl shadow-md flex items-center gap-1.5">
-      <span>🛒</span> Checkout & Pay
-    </a>
-  </div>
-
-  <!-- Footer Section -->
-  <footer class="bg-gradient-to-r from-red-950 via-slate-900 to-amber-950 text-white mt-16 border-t-4 border-amber-500">
-    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      <!-- Terms and Conditions -->
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl">
-        <h3 class="text-xl font-black text-amber-400 mb-4 flex items-center gap-2">
-          <span>📜</span> Terms and Conditions
-        </h3>
-        <ol class="space-y-3 text-sm text-amber-100/90 list-decimal pl-5 leading-relaxed font-medium">
-          <li>Once you pay 100%, then only we will confirm your order.</li>
-          <li>We will send the parcel with <strong>"To Pay"</strong> option to your nearest lorry transport office as possible.</li>
-          <li>Return goods cannot be taken.</li>
-          <li>Very rarely, if the selected item is not available at the time of packing, an equivalent item with the same price will be supplied.</li>
-        </ol>
-      </div>
-
-      <!-- Official Bank Account Details & UPI -->
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl space-y-4">
+  <!-- Footer -->
+  <footer id="contact" class="mt-20 bg-grape-900 text-white relative">
+    <div class="h-2 bg-[repeating-linear-gradient(90deg,#ff4a6b_0_28px,#ffd23f_28px_56px,#4cc3f0_56px_84px,#ffffff_84px_112px)]"></div>
+    <div class="max-w-[1320px] mx-auto px-4 py-14">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-8 border-b border-white/10">
         <div>
-          <h3 class="text-xl font-black text-amber-400 mb-3 flex items-center gap-2">
-            <span>🏦</span> Bank Account Details
-          </h3>
-          <div class="space-y-1.5 text-xs text-amber-50">
-            <p><span class="text-amber-300 font-semibold">Bank Name:</span> Bank of India</p>
-            <p><span class="text-amber-300 font-semibold">Acc. Name:</span> Gobinath R</p>
-            <p><span class="text-amber-300 font-semibold">Acc. Number:</span> <strong class="font-mono text-sm text-yellow-300">815210110019916</strong></p>
-            <p><span class="text-amber-300 font-semibold">IFSC Code:</span> <strong class="font-mono text-yellow-300">BKID0008152</strong></p>
-            <p><span class="text-amber-300 font-semibold">Branch:</span> SIVAKASI</p>
-          </div>
+          <p class="font-swash text-3xl sm:text-4xl text-gold-300">Manimegalai Pyro World</p>
+          <p class="text-white/60 text-sm font-medium mt-1">Fancy Crackers &amp; Gift Boxes Supplier · Sivakasi</p>
         </div>
-
-        <div class="pt-3 border-t border-white/10">
-          <h4 class="text-sm font-black text-amber-300 mb-2 flex items-center gap-2">
-            <span>📲</span> GPay & PhonePe
-          </h4>
-          <div class="bg-amber-400/10 border border-amber-400/20 rounded-xl p-3 flex items-center justify-between gap-2">
-            <div>
-              <p class="text-[11px] text-amber-200 font-bold uppercase tracking-wider">Google Pay / PhonePe</p>
-              <p class="text-lg font-black text-yellow-300 font-mono tracking-wide">9486496341</p>
-              <p class="text-xs text-amber-100 font-semibold">Name: Gobinath R</p>
-            </div>
-          </div>
-        </div>
+        <a href="https://wa.me/919486496341" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold px-6 py-3 text-sm transition">💬 Chat on WhatsApp</a>
       </div>
 
-      <!-- Address & Contact Info -->
-      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl flex flex-col justify-between">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         <div>
-          <h3 class="text-xl font-black text-amber-400 mb-4 flex items-center gap-2">
-            <span>📍</span> Store Address & Contact
-          </h3>
-          <div class="space-y-3 text-sm text-slate-200">
-            <p class="flex items-start gap-2.5">
-              <span class="text-amber-400 text-base shrink-0">🏢</span>
-              <span><strong>Manimegalai Pyro World</strong><br/>Fancy Crackers & Gift Boxes Supplier</span>
-            </p>
-            <p class="flex items-start gap-2.5">
-              <span class="text-amber-400 text-base shrink-0">📍</span>
-              <span>Sivakasi to Vembakottai Main Road, Pernayakenpatti - 626189.</span>
-            </p>
-            <p class="flex items-center gap-2.5">
-              <span class="text-amber-400 text-base shrink-0">📞</span>
-              <span><strong>Call / WhatsApp:</strong> <a href="tel:9486496341" class="hover:underline text-amber-300 font-bold">9486496341</a> | <a href="tel:6369178279" class="hover:underline text-amber-300 font-bold">6369178279</a></span>
-            </p>
-            <p class="flex items-center gap-2.5">
-              <span class="text-amber-400 text-base shrink-0">🌐</span>
-              <span><strong>Website:</strong> <a href="https://www.manimegalaipyroworld.com" target="_blank" class="hover:underline text-amber-300 font-bold">www.manimegalaipyroworld.com</a></span>
-            </p>
+          <h3 class="font-swash text-xl text-gold-300 mb-4">Terms &amp; Conditions</h3>
+          <ol class="space-y-3 text-sm text-white/75 list-decimal pl-5 leading-relaxed font-medium marker:text-gold-400 marker:font-bold">
+            <li>Once you pay 100%, then only we will confirm your order.</li>
+            <li>We will send the parcel with <strong class="text-white">"To Pay"</strong> option to your nearest lorry transport office as possible.</li>
+            <li>Return goods cannot be taken.</li>
+            <li>Very rarely, if the selected item is not available at the time of packing, an equivalent item with the same price will be supplied.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3 class="font-swash text-xl text-gold-300 mb-4">Payment Details</h3>
+          <dl class="text-sm space-y-2">
+            <div class="flex justify-between gap-3"><dt class="text-white/50">Bank</dt><dd class="font-semibold text-right">Bank of India</dd></div>
+            <div class="flex justify-between gap-3"><dt class="text-white/50">Acc. Name</dt><dd class="font-semibold text-right">Gobinath R</dd></div>
+            <div class="flex justify-between gap-3"><dt class="text-white/50">Acc. Number</dt><dd class="font-mono font-bold text-gold-300 text-right">815210110019916</dd></div>
+            <div class="flex justify-between gap-3"><dt class="text-white/50">IFSC</dt><dd class="font-mono font-bold text-gold-300 text-right">BKID0008152</dd></div>
+            <div class="flex justify-between gap-3"><dt class="text-white/50">Branch</dt><dd class="font-semibold text-right">SIVAKASI</dd></div>
+          </dl>
+          <div class="mt-4 rounded-2xl bg-white/5 border-2 border-gold-400/40 p-3.5">
+            <p class="text-[11px] font-bold uppercase tracking-widest text-white/50">GPay &amp; PhonePe</p>
+            <p class="font-mono text-2xl font-bold text-gold-300 mt-0.5">9486496341</p>
+            <p class="text-xs text-white/60">Name: Gobinath R</p>
           </div>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-white/10 text-xs text-slate-400 text-center md:text-left">
-          © 2026 Manimegalai Pyro World. All Rights Reserved. Happy & Safe Diwali! 🎆
+        <div>
+          <h3 class="font-swash text-xl text-gold-300 mb-4">Visit &amp; Contact</h3>
+          <ul class="space-y-3.5 text-sm text-white/80 font-medium">
+            <li class="flex gap-3"><span>📍</span><span>Sivakasi to Vembakottai Main Road, Pernayakenpatti - 626189.</span></li>
+            <li class="flex gap-3"><span>📞</span><span>Call / WhatsApp<br /><a href="tel:9486496341" class="text-gold-300 font-bold hover:underline">9486496341</a> &nbsp;|&nbsp; <a href="tel:6369178279" class="text-gold-300 font-bold hover:underline">6369178279</a></span></li>
+            <li class="flex gap-3"><span>🌐</span><a href="https://www.manimegalaipyroworld.com" target="_blank" rel="noopener" class="text-gold-300 font-bold hover:underline">www.manimegalaipyroworld.com</a></li>
+          </ul>
         </div>
       </div>
 
+      <p class="mt-12 pt-6 border-t border-white/10 text-xs text-white/45 text-center font-medium">
+        © 2026 Manimegalai Pyro World. All Rights Reserved. Happy &amp; Safe Diwali! 🎆
+      </p>
     </div>
   </footer>
 
-  <!-- Order Confirmation Modal -->
-  <div id="confirmationModal" class="fixed inset-0 hidden bg-slate-900/70 backdrop-blur-sm p-4 flex items-center justify-center z-50">
-    <div class="bg-white rounded-3xl festive-shadow max-w-lg w-full p-6 relative">
-      <button id="closeModalBtn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold">×</button>
+  <!-- Mobile floating cart bar -->
+  <button id="mobileCartBar" type="button"
+    class="lg:hidden fixed bottom-3 inset-x-3 bg-grape-800 border-2 border-gold-400 text-white px-4 py-3 rounded-2xl flex items-center justify-between z-30 shadow-2xl transition transform translate-y-[150%] text-left">
+    <span>
+      <span id="mobileCartSummary" class="block text-xs font-semibold text-white/70">0 items in cart</span>
+      <span id="mobileCartTotal" class="block text-xl font-black text-gold-300 leading-tight">₹0</span>
+    </span>
+    <span class="btn-gold text-sm font-extrabold px-5 py-2.5 rounded-full">View cart →</span>
+  </button>
+
+  <!-- Cart / checkout drawer -->
+  <div id="drawerOverlay" class="overlay fixed inset-0 bg-grape-900/70 z-40 opacity-0 pointer-events-none"></div>
+  <aside id="checkoutSection" class="drawer fixed top-0 right-0 bottom-0 w-full sm:w-[440px] bg-sky-50 z-50 translate-x-full flex flex-col shadow-2xl" role="dialog" aria-modal="true" aria-label="Your order" aria-hidden="true">
+    <div class="flex items-center justify-between px-5 py-4 bg-grape-800 border-b-4 border-gold-400">
+      <h3 class="font-swash text-2xl text-gold-300 flex items-center gap-2">🛒 Your Order <span id="cartCountBadge" class="font-sans text-xs font-extrabold bg-gold-400 text-maroon-800 px-2.5 py-1 rounded-full">0 items</span></h3>
+      <button id="closeCartBtn" type="button" aria-label="Close cart" class="h-9 w-9 rounded-full hover:bg-white/10 text-3xl leading-none text-white/80">×</button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto px-5 py-4 space-y-6">
+      <div>
+        <div id="cartItems" class="space-y-2"></div>
+
+        <div class="mt-4 bg-white rounded-2xl border-2 border-gold-300 p-4 space-y-2 text-sm font-semibold">
+          <div class="flex justify-between"><span>Subtotal (discounted rate)</span><span id="subtotalValue" class="font-extrabold">₹0</span></div>
+          <div id="savingsRow" class="hidden flex justify-between text-emerald-700"><span>You save vs MRP</span><span id="savingsValue" class="font-extrabold">₹0</span></div>
+          <div class="flex justify-between text-maroon-600/80"><span>Delivery</span><span>To Pay (lorry)</span></div>
+          <div class="pt-2">
+            <div class="h-3 rounded-full bg-sky-100 overflow-hidden border border-sky-300">
+              <div id="minProgress" class="h-full rounded-full bg-gradient-to-r from-gold-400 to-punch-500 transition-all duration-300" style="width:0%"></div>
+            </div>
+            <p id="minProgressText" class="text-xs text-maroon-600/70 mt-1.5 font-medium">Minimum order ₹1,000</p>
+          </div>
+        </div>
+
+        <div id="minimumOrderWarning" class="hidden mt-3 rounded-xl bg-punch-500/10 border-2 border-punch-500/40 text-punch-700 text-sm font-semibold px-3.5 py-2.5 flex items-start gap-2">
+          <span class="leading-none">⚠️</span>
+          <span>Minimum order value is <strong>₹1,000</strong>. Please add items worth <strong id="shortfallAmount">₹1,000</strong> more.</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-swash text-xl mb-3 flex items-center gap-2">📍 Delivery Details</h4>
+        <form id="orderForm" class="space-y-3.5">
+          <div>
+            <label for="customerName" class="block text-xs font-bold mb-1">Full Name *</label>
+            <input id="customerName" type="text" autocomplete="name" placeholder="Enter your full name" required
+              class="w-full bg-white border-2 border-sky-200 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:border-punch-500" />
+          </div>
+          <div>
+            <label for="phone" class="block text-xs font-bold mb-1">Phone / WhatsApp *</label>
+            <input id="phone" type="tel" autocomplete="tel" placeholder="e.g. 9876543210" required
+              class="w-full bg-white border-2 border-sky-200 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:border-punch-500" />
+          </div>
+          <div>
+            <label for="address" class="block text-xs font-bold mb-1">Delivery Address *</label>
+            <textarea id="address" rows="2" autocomplete="street-address" placeholder="House no, street name, area/landmark" required
+              class="w-full bg-white border-2 border-sky-200 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:border-punch-500"></textarea>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label for="city" class="block text-xs font-bold mb-1">City / Town *</label>
+              <input id="city" type="text" autocomplete="address-level2" placeholder="City" required
+                class="w-full bg-white border-2 border-sky-200 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:border-punch-500" />
+            </div>
+            <div>
+              <label for="pincode" class="block text-xs font-bold mb-1">Pincode *</label>
+              <input id="pincode" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="Pincode" required
+                class="w-full bg-white border-2 border-sky-200 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:border-punch-500" />
+            </div>
+          </div>
+          <p class="text-xs font-medium text-maroon-600/70">You'll get bank &amp; UPI payment details after placing the order.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="border-t-4 border-gold-400 px-5 py-4 bg-white">
+      <div class="flex items-baseline justify-between mb-3">
+        <span class="font-extrabold">Total Payable</span>
+        <span id="totalAmountValue" class="font-swash text-3xl text-punch-600">₹0</span>
+      </div>
+      <button id="submitOrderBtn" type="submit" form="orderForm"
+        class="btn-punch w-full rounded-full font-extrabold py-3.5 text-base flex items-center justify-center gap-2">
+        <span>🚀</span> Place Order Now
+      </button>
+    </div>
+  </aside>
+
+  <!-- Order confirmation modal -->
+  <div id="confirmationModal" class="fixed inset-0 hidden bg-grape-900/80 backdrop-blur-sm p-4 flex items-center justify-center z-[60] overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div class="bg-sky-50 border-4 border-gold-300 rounded-3xl shadow-2xl max-w-lg w-full p-6 relative my-auto max-h-[95vh] overflow-y-auto no-scrollbar">
+      <button id="closeModalBtn" aria-label="Close" class="absolute top-4 right-4 h-8 w-8 rounded-full bg-white text-maroon-600 hover:bg-gold-200 text-xl font-bold leading-none">×</button>
 
       <div class="text-center">
-        <div class="mx-auto mb-3 h-16 w-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl font-black shadow-inner">
-          ✓
-        </div>
-        <h3 class="text-2xl font-black text-slate-900">Order Placed Successfully!</h3>
-        <p class="mt-1 text-sm text-slate-600">Your order has been recorded with <strong>Manimegalai Pyro World</strong>.</p>
+        <div class="mx-auto mb-3 h-16 w-16 rounded-full bg-emerald-100 border-4 border-emerald-300 text-emerald-600 flex items-center justify-center text-3xl font-black">✓</div>
+        <h3 id="confirmTitle" class="font-swash text-2xl text-maroon-700">Order Placed Successfully!</h3>
+        <p class="mt-1 text-sm font-medium text-maroon-600/80">Your order has been recorded with <strong>Manimegalai Pyro World</strong>.</p>
       </div>
 
-      <div class="mt-5 bg-amber-50 border border-amber-200/80 rounded-2xl p-4 text-center">
-        <p class="text-xs uppercase tracking-[0.2em] text-amber-700 font-extrabold">Official Order Reference ID</p>
-        <p id="confirmationOrderId" class="mt-1 text-3xl font-black text-slate-900 font-mono tracking-wider"></p>
+      <div class="mt-5 bg-grape-800 border-2 border-gold-400 rounded-2xl p-4 text-center">
+        <p class="text-[11px] uppercase tracking-[0.22em] font-bold text-gold-300">Official Order Reference ID</p>
+        <p id="confirmationOrderId" class="mt-1 text-3xl font-black text-white font-mono tracking-wider"></p>
       </div>
 
-      <div class="mt-5 space-y-3 text-sm">
-        <div class="flex justify-between items-center py-2 border-b border-slate-100">
-          <span class="text-slate-600 font-medium">Total Amount Payable</span>
-          <span id="confirmationTotal" class="text-xl font-black text-orange-600"></span>
+      <div class="mt-5 space-y-3 text-sm font-medium">
+        <div class="flex justify-between items-center py-2 border-b-2 border-sky-200">
+          <span class="font-bold">Total Amount Payable</span>
+          <span id="confirmationTotal" class="font-swash text-2xl text-punch-600"></span>
         </div>
-        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 space-y-3 text-slate-700">
+        <div class="bg-white p-4 rounded-2xl border-2 border-gold-300 space-y-3">
           <div>
-            <p class="font-black text-slate-900 border-b border-slate-200 pb-1 mb-2 text-xs uppercase tracking-wider flex items-center gap-1.5">
-              <span>🏦</span> Bank Transfer Details
-            </p>
-            <p><span class="font-semibold text-slate-500">Bank Name:</span> Bank of India</p>
-            <p><span class="font-semibold text-slate-500">Acc. Name:</span> Gobinath R</p>
-            <p><span class="font-semibold text-slate-500">Acc. Number:</span> <strong class="font-mono text-slate-900 text-base">815210110019916</strong></p>
-            <p><span class="font-semibold text-slate-500">IFSC Code:</span> <strong class="font-mono text-slate-900">BKID0008152</strong></p>
-            <p><span class="font-semibold text-slate-500">Branch:</span> SIVAKASI</p>
+            <p class="font-extrabold border-b border-sky-200 pb-1 mb-2 text-xs uppercase tracking-wider">🏦 Bank Transfer Details</p>
+            <p><span class="text-maroon-600/60">Bank Name:</span> Bank of India</p>
+            <p><span class="text-maroon-600/60">Acc. Name:</span> Gobinath R</p>
+            <p><span class="text-maroon-600/60">Acc. Number:</span> <strong class="font-mono text-base">815210110019916</strong></p>
+            <p><span class="text-maroon-600/60">IFSC Code:</span> <strong class="font-mono">BKID0008152</strong></p>
+            <p><span class="text-maroon-600/60">Branch:</span> SIVAKASI</p>
           </div>
-
-          <div class="pt-2 border-t border-slate-200">
-            <p class="font-black text-slate-900 mb-1.5 text-xs uppercase tracking-wider flex items-center gap-1.5">
-              <span>📲</span> GPay & PhonePe Number
-            </p>
-            <div class="bg-purple-50 border border-purple-200 rounded-xl p-3 flex items-center justify-between">
+          <div class="pt-3 border-t border-sky-200">
+            <p class="font-extrabold mb-1.5 text-xs uppercase tracking-wider">📲 GPay &amp; PhonePe Number</p>
+            <div class="bg-sky-50 border-2 border-sky-200 rounded-xl p-3 flex items-center justify-between">
               <div>
-                <p class="text-xs font-extrabold text-purple-900">Google Pay / PhonePe</p>
-                <p class="text-xl font-black text-purple-700 font-mono">9486496341</p>
-                <p class="text-xs text-slate-600 font-semibold">Name: Gobinath R</p>
+                <p class="text-xs font-bold text-maroon-600/60">Google Pay / PhonePe</p>
+                <p class="text-xl font-black font-mono">9486496341</p>
+                <p class="text-xs font-semibold">Name: Gobinath R</p>
               </div>
               <span class="text-2xl">📱</span>
             </div>
@@ -323,13 +454,13 @@
       </div>
 
       <div class="mt-6 space-y-2">
-        <a id="whatsappPaymentBtn" href="" target="_blank"
-          class="block text-center w-full rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 shadow-md transition flex items-center justify-center gap-2">
+        <a id="whatsappPaymentBtn" href="" target="_blank" rel="noopener"
+          class="w-full rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 shadow-md transition flex items-center justify-center gap-2">
           <span>💬</span> Send Order Confirmation on WhatsApp
         </a>
         <button id="doneModalBtn" type="button"
-          class="block text-center w-full rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2.5 text-sm transition">
-          Close & Start New Order
+          class="block text-center w-full rounded-full bg-white hover:bg-gold-200 border-2 border-gold-300 font-bold py-2.5 text-sm transition">
+          Close &amp; Start New Order
         </button>
       </div>
     </div>
@@ -337,7 +468,7 @@
 
   <script>
     const MINIMUM_ORDER_VALUE = 1000;
-    const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzU7ZLmN5N3JyLZ6u-zBSy3yAZ1PUz4qYboZ5B-V6ao6McOzqHwv_zDqsUlQfoWXO9GQg/exec";
+    const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzpXspjYXr9r84utaI3mZMWeyyBsvo93joJWAP9OYFjRkAwzhKiYZOlpwHhE4WDitWg/exec";
     const ORDER_SECRET = "CrackerBazaar@2026!SecureOrder";
 
     const PRODUCTS = [
@@ -2279,24 +2410,46 @@
 
     const categories = ["All", ...new Set(PRODUCTS.map(p => p.category))];
 
-    const productGrid = document.getElementById("productGrid");
-    const categoryTabs = document.getElementById("categoryTabs");
-    const searchInput = document.getElementById("searchInput");
-    const emptyState = document.getElementById("emptyState");
-    const cartItems = document.getElementById("cartItems");
-    const subtotalValue = document.getElementById("subtotalValue");
-    const totalAmountValue = document.getElementById("totalAmountValue");
-    const cartCountBadge = document.getElementById("cartCountBadge");
-    const minimumOrderWarning = document.getElementById("minimumOrderWarning");
-    const shortfallAmount = document.getElementById("shortfallAmount");
-    const orderForm = document.getElementById("orderForm");
-    const submitOrderBtn = document.getElementById("submitOrderBtn");
-    const confirmationModal = document.getElementById("confirmationModal");
-    const closeModalBtn = document.getElementById("closeModalBtn");
-    const doneModalBtn = document.getElementById("doneModalBtn");
-    const mobileCartBar = document.getElementById("mobileCartBar");
-    const mobileCartSummary = document.getElementById("mobileCartSummary");
-    const mobileCartTotal = document.getElementById("mobileCartTotal");
+    // Soft tile colours cycled across categories (sky, pink, butter, lilac, mint, peach)
+    const TILE_COLORS = ["#cfeeff", "#ffd9e2", "#fff0b3", "#e6dcff", "#d4f5e6", "#ffe1c9"];
+    const categoryMeta = {};
+    categories.slice(1).forEach((cat, i) => {
+      categoryMeta[cat] = {
+        icon: PRODUCTS.find(p => p.category === cat).img,
+        tile: TILE_COLORS[i % TILE_COLORS.length]
+      };
+    });
+
+    const $ = id => document.getElementById(id);
+    const productGrid = $("productGrid");
+    const categoryChips = $("categoryChips");
+    const searchInput = $("searchInput");
+    const emptyState = $("emptyState");
+    const resultTitle = $("resultTitle");
+    const resultCount = $("resultCount");
+    const cartItems = $("cartItems");
+    const subtotalValue = $("subtotalValue");
+    const totalAmountValue = $("totalAmountValue");
+    const savingsRow = $("savingsRow");
+    const savingsValue = $("savingsValue");
+    const cartCountBadge = $("cartCountBadge");
+    const navCartCount = $("navCartCount");
+    const minimumOrderWarning = $("minimumOrderWarning");
+    const shortfallAmount = $("shortfallAmount");
+    const minProgress = $("minProgress");
+    const minProgressText = $("minProgressText");
+    const orderForm = $("orderForm");
+    const submitOrderBtn = $("submitOrderBtn");
+    const confirmationModal = $("confirmationModal");
+    const closeModalBtn = $("closeModalBtn");
+    const doneModalBtn = $("doneModalBtn");
+    const mobileCartBar = $("mobileCartBar");
+    const mobileCartSummary = $("mobileCartSummary");
+    const mobileCartTotal = $("mobileCartTotal");
+    const drawer = $("checkoutSection");
+    const drawerOverlay = $("drawerOverlay");
+
+    $("statItems").textContent = PRODUCTS.length;
 
     function formatCurrency(value) {
       return new Intl.NumberFormat("en-IN", {
@@ -2306,42 +2459,112 @@
       }).format(value);
     }
 
+    function discountPercent(product) {
+      return Math.round((1 - product.price / product.mrp) * 100);
+    }
+
     function getFilteredProducts() {
+      const q = searchQuery.toLowerCase();
       return PRODUCTS.filter(product => {
-        const matchesCategory = activeCategory === "All" || product.category === activeCategory;
-        const matchesSearch = searchQuery === "" ||
-          product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          product.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          String(product.code).toLowerCase().includes(searchQuery.toLowerCase().replace("#", ""));
+        const matchesCategory = q !== "" || activeCategory === "All" || product.category === activeCategory;
+        const matchesSearch = q === "" ||
+          product.name.toLowerCase().includes(q) ||
+          product.category.toLowerCase().includes(q) ||
+          String(product.code).toLowerCase().includes(q.replace("#", ""));
         return matchesCategory && matchesSearch;
       });
     }
 
-    function buildCategoryTabs() {
-      categoryTabs.innerHTML = "";
+    // ---------- Fireworks (decorative SVG bursts in the hero) ----------
+    const BURST_PALETTES = {
+      a: ["#f3d98b", "#ffffff", "#e5b94a"],
+      b: ["#e48ba3", "#ffffff", "#f3d98b"],
+      c: ["#d9507a", "#9b6bff", "#e5b94a", "#ffffff"],
+      d: ["#7a7cff", "#b678ff", "#e5b94a", "#ffffff"],
+      e: ["#e5b94a", "#d9507a", "#9b6bff", "#ffffff"],
+      f: ["#b678ff", "#7a7cff", "#d9507a", "#ffffff"]
+    };
+
+    function burstSvg(colors, seed) {
+      let s = seed;
+      const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+      const rays = 44;
+      let out = "";
+      for (let i = 0; i < rays; i++) {
+        const a = (Math.PI * 2 * i) / rays + rnd() * 0.05;
+        const r1 = 7 + rnd() * 4;
+        const r2 = 26 + rnd() * 22;
+        const c = colors[i % colors.length];
+        const x1 = (Math.cos(a) * r1).toFixed(1), y1 = (Math.sin(a) * r1).toFixed(1);
+        const x2 = (Math.cos(a) * r2).toFixed(1), y2 = (Math.sin(a) * r2).toFixed(1);
+        out += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="${(0.7 + rnd() * 0.9).toFixed(1)}" stroke-linecap="round"/>`;
+        if (i % 3 === 0) out += `<circle cx="${x2}" cy="${y2}" r="1.3" fill="${c}"/>`;
+      }
+      return `<svg viewBox="-50 -50 100 100" aria-hidden="true">
+        <defs><radialGradient id="g${seed}"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset=".45" stop-color="${colors[0]}" stop-opacity=".9"/><stop offset="1" stop-color="${colors[0]}" stop-opacity="0"/></radialGradient></defs>
+        ${out}<circle r="9" fill="url(#g${seed})"/></svg>`;
+    }
+
+    document.querySelectorAll("[data-burst]").forEach((el, i) => {
+      const key = el.dataset.burst;
+      el.innerHTML = burstSvg(BURST_PALETTES[key], 11 + i * 37);
+    });
+
+    // ---------- Drawer ----------
+    function openCart() {
+      drawer.classList.remove("translate-x-full");
+      drawer.setAttribute("aria-hidden", "false");
+      drawerOverlay.classList.remove("opacity-0", "pointer-events-none");
+      document.body.classList.add("drawer-open");
+    }
+
+    function closeCart() {
+      drawer.classList.add("translate-x-full");
+      drawer.setAttribute("aria-hidden", "true");
+      drawerOverlay.classList.add("opacity-0", "pointer-events-none");
+      document.body.classList.remove("drawer-open");
+    }
+
+    $("openCartBtn").addEventListener("click", openCart);
+    mobileCartBar.addEventListener("click", openCart);
+    $("closeCartBtn").addEventListener("click", closeCart);
+    drawerOverlay.addEventListener("click", closeCart);
+    document.addEventListener("keydown", e => { if (e.key === "Escape") closeCart(); });
+
+    // ---------- Categories ----------
+    function selectCategory(category) {
+      activeCategory = category;
+      buildCategories();
+      renderProducts();
+      const header = document.querySelector("header").offsetHeight;
+      const shop = $("shop").getBoundingClientRect().top + window.scrollY - header - 12;
+      if (window.scrollY > shop) window.scrollTo({ top: shop, behavior: "smooth" });
+    }
+
+    function buildCategories() {
+      categoryChips.innerHTML = "";
 
       categories.forEach(category => {
-        const btn = document.createElement("button");
-        btn.type = "button";
         const isActive = activeCategory === category;
-        btn.className = `whitespace-nowrap px-4 py-2 rounded-full font-bold text-xs sm:text-sm border transition shrink-0 ${
+        const icon = categoryMeta[category] ? categoryMeta[category].icon + " " : "🎆 ";
+
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = `whitespace-nowrap px-4 py-1.5 rounded-full font-bold text-xs border-2 transition shrink-0 ${
           isActive
-            ? "bg-gradient-to-r from-red-600 to-orange-600 text-white border-red-600 shadow-md"
-            : "bg-white text-slate-700 border-slate-200 hover:border-orange-300 hover:bg-orange-50/50"
+            ? "bg-grape-800 text-gold-300 border-grape-800 shadow-md"
+            : "bg-white text-maroon-700 border-sky-300 hover:border-punch-500"
         }`;
-        btn.textContent = category;
-        btn.onclick = () => {
-          activeCategory = category;
-          buildCategoryTabs();
-          renderProducts();
-        };
-        categoryTabs.appendChild(btn);
+        chip.textContent = icon + category;
+        chip.onclick = () => selectCategory(category);
+        categoryChips.appendChild(chip);
+        if (isActive) categoryChips.scrollLeft = chip.offsetLeft - (categoryChips.clientWidth - chip.offsetWidth) / 2;
       });
     }
 
+    // ---------- Cart ----------
     function addToCart(productId, delta = 1) {
-      const current = cart[productId] || 0;
-      const next = current + delta;
+      const next = (cart[productId] || 0) + delta;
       if (next <= 0) {
         delete cart[productId];
       } else {
@@ -2349,6 +2572,11 @@
       }
       renderCart();
       renderProducts();
+      if (delta > 0) {
+        navCartCount.classList.remove("pop");
+        void navCartCount.offsetWidth;
+        navCartCount.classList.add("pop");
+      }
     }
 
     function getTotalItems() {
@@ -2356,14 +2584,18 @@
     }
 
     function getSubtotal() {
-      return PRODUCTS.reduce((sum, product) => {
-        const qty = cart[product.id] || 0;
-        return sum + qty * product.price;
-      }, 0);
+      return PRODUCTS.reduce((sum, product) => sum + (cart[product.id] || 0) * product.price, 0);
+    }
+
+    function getSavings() {
+      return PRODUCTS.reduce((sum, product) => sum + (cart[product.id] || 0) * (product.mrp - product.price), 0);
     }
 
     function renderProducts() {
       const products = getFilteredProducts();
+
+      resultTitle.textContent = searchQuery ? `Results for “${searchQuery}”` : (activeCategory === "All" ? "All crackers" : activeCategory);
+      resultCount.textContent = `${products.length} item${products.length === 1 ? "" : "s"}`;
 
       if (products.length === 0) {
         productGrid.innerHTML = "";
@@ -2373,69 +2605,60 @@
 
       emptyState.classList.add("hidden");
 
-      // Group products by category so category headings appear in "All" and category views
       const grouped = {};
       products.forEach(p => {
-        if (!grouped[p.category]) grouped[p.category] = [];
-        grouped[p.category].push(p);
+        (grouped[p.category] = grouped[p.category] || []).push(p);
       });
 
+      const showHeaders = activeCategory === "All" || Object.keys(grouped).length > 1;
       let html = "";
+
       Object.keys(grouped).forEach(cat => {
         const catProducts = grouped[cat];
-        const catIcon = catProducts[0]?.img || "🎆";
+        const { tile, icon } = categoryMeta[cat];
 
-        html += `
-          <div class="col-span-full mt-6 first:mt-0 pt-4 border-t border-amber-200/80">
-            <div class="flex items-center justify-between">
-              <h3 class="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-                <span>${catIcon}</span> ${cat}
-              </h3>
-              <span class="text-xs font-extrabold bg-orange-100 text-orange-800 px-3 py-1 rounded-full border border-orange-200">
-                ${catProducts.length} item${catProducts.length === 1 ? "" : "s"}
-              </span>
+        if (showHeaders) {
+          html += `
+            <div class="col-span-full mt-6 first:mt-0 flex items-center gap-3">
+              <span class="h-10 w-10 rounded-full bg-white border-2 border-gold-300 flex items-center justify-center text-xl shrink-0">${icon}</span>
+              <h3 class="font-swash text-xl sm:text-2xl">${cat}</h3>
+              <span class="text-xs font-extrabold bg-gold-400 text-maroon-800 px-2.5 py-0.5 rounded-full">${catProducts.length}</span>
+              <span class="flex-1 h-0.5 rounded bg-gradient-to-r from-sky-400/60 to-transparent"></span>
             </div>
-          </div>
-        `;
+          `;
+        }
 
         html += catProducts.map(product => {
           const qty = cart[product.id] || 0;
-          const codeFormatted = typeof product.code === 'number' ? '#' + String(product.code).padStart(3, '0') : '#' + product.code;
+          const codeFormatted = typeof product.code === "number" ? "#" + String(product.code).padStart(3, "0") : "#" + product.code;
+
+          const control = qty === 0
+            ? `<button data-action="increase" data-product-id="${product.id}"
+                class="add-btn w-full rounded-full py-2 text-sm font-extrabold flex items-center justify-center gap-2"><span class="plus" aria-hidden="true">+</span>ADD</button>`
+            : `<div class="flex items-center justify-between rounded-full bg-grape-800 text-white p-1">
+                <button data-action="decrease" data-product-id="${product.id}" aria-label="Decrease quantity"
+                  class="w-9 h-8 rounded-full bg-white/15 hover:bg-white/25 text-xl font-bold leading-none transition">−</button>
+                <span class="font-extrabold text-sm text-gold-300">${qty}</span>
+                <button data-action="increase" data-product-id="${product.id}" aria-label="Increase quantity"
+                  class="w-9 h-8 rounded-full bg-gold-400 text-maroon-800 hover:brightness-105 text-xl font-bold leading-none transition">+</button>
+              </div>`;
 
           return `
-            <div class="product-card bg-white rounded-2xl festive-shadow overflow-hidden border border-slate-100 flex flex-col justify-between p-4 relative">
-              <div class="flex items-start justify-between gap-2">
-                <div>
-                  <span class="text-[10px] font-extrabold uppercase tracking-wider bg-orange-100 text-orange-800 px-2 py-0.5 rounded-md">
-                    ${codeFormatted}
-                  </span>
-                  <h3 class="font-black text-slate-900 text-base mt-1.5 leading-snug">${product.name}</h3>
-                  <span class="inline-block mt-1 text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
-                    ${product.pack}
-                  </span>
-                </div>
-                <span class="text-3xl shrink-0">${product.img}</span>
+            <div class="card ${qty > 0 ? "in-cart" : "border-gold-200"} bg-white rounded-3xl border-[3px] overflow-hidden flex flex-col">
+              <div class="relative h-24 sm:h-28 flex items-center justify-center text-4xl sm:text-5xl" style="background:${tile}">
+                <span class="absolute top-2 left-2 text-[10px] leading-4 font-extrabold tracking-wide bg-white/90 text-maroon-700 px-2 py-0.5 rounded-full">${codeFormatted}</span>
+                <span class="absolute top-2 right-2 text-[10px] leading-4 font-extrabold bg-maroon-700 text-gold-200 px-2 py-0.5 rounded-full shadow-sm">${discountPercent(product)}% OFF</span>
+                <span>${product.img}</span>
               </div>
-
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-end justify-between gap-2">
-                <div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="text-xs text-slate-400 line-through">MRP ${formatCurrency(product.mrp)}</span>
-                    <span class="text-[10px] font-black text-green-700 bg-green-100 px-1.5 py-0.5 rounded">80% OFF</span>
+              <div class="p-3 sm:p-4 flex flex-col flex-1">
+                <h4 class="font-extrabold text-[13px] sm:text-[15px] leading-snug text-maroon-800">${product.name}</h4>
+                <p class="text-[11px] font-semibold text-maroon-600/60 mt-0.5">${product.pack}</p>
+                <div class="mt-auto pt-3">
+                  <div class="flex items-baseline gap-2 mb-2.5">
+                    <span class="font-extrabold text-xl sm:text-2xl text-maroon-700">${formatCurrency(product.price)}</span>
+                    <span class="text-xs font-medium text-slate-400 line-through">${formatCurrency(product.mrp)}</span>
                   </div>
-                  <p class="text-xl font-black text-slate-900">${formatCurrency(product.price)}</p>
-                </div>
-
-                <div class="flex items-center gap-1.5 bg-slate-50 p-1 rounded-xl border border-slate-200">
-                  <button data-action="decrease" data-product-id="${product.id}"
-                    class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-700 text-lg font-bold flex items-center justify-center hover:bg-slate-100 active:scale-95 transition">
-                    −
-                  </button>
-                  <span class="min-w-[24px] text-center font-black text-sm">${qty}</span>
-                  <button data-action="increase" data-product-id="${product.id}"
-                    class="w-8 h-8 rounded-lg bg-orange-600 text-white text-lg font-bold flex items-center justify-center hover:bg-orange-700 active:scale-95 transition shadow-sm">
-                    +
-                  </button>
+                  ${control}
                 </div>
               </div>
             </div>
@@ -2448,50 +2671,62 @@
 
     function renderCart() {
       const subtotal = getSubtotal();
+      const savings = getSavings();
       const totalItems = getTotalItems();
+      const plural = totalItems === 1 ? "" : "s";
 
-      cartCountBadge.textContent = `${totalItems} item${totalItems === 1 ? "" : "s"}`;
+      cartCountBadge.textContent = `${totalItems} item${plural}`;
+      navCartCount.textContent = totalItems;
       subtotalValue.textContent = formatCurrency(subtotal);
       totalAmountValue.textContent = formatCurrency(subtotal);
+      savingsValue.textContent = formatCurrency(savings);
+      savingsRow.classList.toggle("hidden", savings === 0);
 
       if (totalItems > 0) {
-        mobileCartBar.classList.remove("translate-y-full");
-        mobileCartSummary.textContent = `${totalItems} item${totalItems === 1 ? "" : "s"} in cart`;
+        mobileCartBar.classList.remove("translate-y-[150%]");
+        mobileCartSummary.textContent = `${totalItems} item${plural} in cart`;
         mobileCartTotal.textContent = formatCurrency(subtotal);
       } else {
-        mobileCartBar.classList.add("translate-y-full");
+        mobileCartBar.classList.add("translate-y-[150%]");
       }
 
       const itemsInCart = PRODUCTS.filter(p => (cart[p.id] || 0) > 0);
 
       if (itemsInCart.length === 0) {
         cartItems.innerHTML = `
-          <div class="text-center py-6 text-slate-400">
-            <span class="text-3xl block mb-1">🛒</span>
-            <p class="text-xs font-medium">Your cart is empty</p>
-            <p class="text-[11px] mt-0.5">Select crackers to start building your order.</p>
+          <div class="text-center py-8 text-maroon-600/70">
+            <span class="text-4xl block mb-1">🎇</span>
+            <p class="text-sm font-bold">Your cart is empty</p>
+            <p class="text-xs font-medium mt-0.5">Add crackers to start building your order.</p>
           </div>
         `;
       } else {
         cartItems.innerHTML = itemsInCart.map(product => {
           const qty = cart[product.id];
-          const itemTotal = qty * product.price;
-
           return `
-            <div class="flex items-center justify-between gap-2 text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+            <div class="flex items-center gap-3 p-2.5 rounded-2xl bg-white border-2 border-sky-200">
               <div class="min-w-0 flex-1">
-                <p class="font-bold text-slate-800 truncate">${product.name}</p>
-                <p class="text-slate-500 font-medium">${qty} x ${formatCurrency(product.price)}</p>
+                <p class="font-extrabold text-sm truncate">${product.name}</p>
+                <p class="text-xs font-semibold text-maroon-600/60">${formatCurrency(product.price)} each</p>
               </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="font-black text-slate-900">${formatCurrency(itemTotal)}</span>
-                <button data-action="decrease" data-product-id="${product.id}"
-                  class="text-red-500 hover:text-red-700 text-base font-bold px-1">×</button>
+              <div class="flex items-center gap-1 rounded-full bg-sky-100 p-0.5 shrink-0">
+                <button data-action="decrease" data-product-id="${product.id}" aria-label="Decrease quantity" class="w-7 h-7 rounded-full hover:bg-white font-bold">−</button>
+                <span class="min-w-[22px] text-center text-sm font-extrabold">${qty}</span>
+                <button data-action="increase" data-product-id="${product.id}" aria-label="Increase quantity" class="w-7 h-7 rounded-full hover:bg-white font-bold">+</button>
               </div>
+              <span class="w-16 text-right font-black text-sm shrink-0">${formatCurrency(qty * product.price)}</span>
+              <button data-action="remove" data-product-id="${product.id}" aria-label="Remove ${product.name}"
+                class="h-6 w-6 rounded-full text-maroon-600/60 hover:text-punch-600 hover:bg-punch-500/10 text-lg font-bold leading-none shrink-0">×</button>
             </div>
           `;
         }).join("");
       }
+
+      const pct = Math.min(100, Math.round((subtotal / MINIMUM_ORDER_VALUE) * 100));
+      minProgress.style.width = pct + "%";
+      minProgressText.textContent = subtotal >= MINIMUM_ORDER_VALUE
+        ? "✓ Minimum order reached"
+        : `Minimum order ${formatCurrency(MINIMUM_ORDER_VALUE)}`;
 
       if (subtotal > 0 && subtotal < MINIMUM_ORDER_VALUE) {
         minimumOrderWarning.classList.remove("hidden");
@@ -2503,23 +2738,16 @@
       }
     }
 
-    productGrid.addEventListener("click", event => {
+    function handleCartClick(event) {
       const btn = event.target.closest("button[data-action]");
       if (!btn) return;
-
-      const action = btn.dataset.action;
-      const productId = btn.dataset.productId;
-
-      if (action === "increase") addToCart(productId, 1);
-      if (action === "decrease") addToCart(productId, -1);
-    });
-
-    cartItems.addEventListener("click", event => {
-      const btn = event.target.closest("button[data-action='decrease']");
-      if (!btn) return;
-      const productId = btn.dataset.productId;
-      addToCart(productId, -cart[productId]);
-    });
+      const id = btn.dataset.productId;
+      if (btn.dataset.action === "increase") addToCart(id, 1);
+      if (btn.dataset.action === "decrease") addToCart(id, -1);
+      if (btn.dataset.action === "remove") addToCart(id, -cart[id]);
+    }
+    productGrid.addEventListener("click", handleCartClick);
+    cartItems.addEventListener("click", handleCartClick);
 
     searchInput.addEventListener("input", e => {
       searchQuery = e.target.value.trim();
@@ -2548,11 +2776,11 @@
         }));
 
       const payload = {
-        customerName: document.getElementById("customerName").value.trim(),
-        phone: document.getElementById("phone").value.trim(),
-        address: document.getElementById("address").value.trim(),
-        city: document.getElementById("city").value.trim(),
-        pincode: document.getElementById("pincode").value.trim(),
+        customerName: $("customerName").value.trim(),
+        phone: $("phone").value.trim(),
+        address: $("address").value.trim(),
+        city: $("city").value.trim(),
+        pincode: $("pincode").value.trim(),
         items: selectedItems,
         totalAmount: subtotal,
         orderSecret: ORDER_SECRET
@@ -2577,14 +2805,14 @@
           throw new Error(result.message || "Failed to submit order.");
         }
 
-        document.getElementById("confirmationOrderId").textContent = result.orderId;
-        document.getElementById("confirmationTotal").textContent = formatCurrency(result.totalAmount);
+        $("confirmationOrderId").textContent = result.orderId;
+        $("confirmationTotal").textContent = formatCurrency(result.totalAmount);
 
         const whatsappMessage = encodeURIComponent(
           `Hi Manimegalai Pyro World! I have placed an order.\n\n*Order ID:* ${result.orderId}\n*Customer:* ${payload.customerName}\n*Phone:* ${payload.phone}\n*Total Amount:* ${formatCurrency(result.totalAmount)}\n\nI am sharing payment screenshot for confirmation.`
         );
 
-        document.getElementById("whatsappPaymentBtn").href = `https://wa.me/9486496341?text=${whatsappMessage}`;
+        $("whatsappPaymentBtn").href = `https://wa.me/9486496341?text=${whatsappMessage}`;
 
         confirmationModal.classList.remove("hidden");
       } catch (error) {
@@ -2601,6 +2829,7 @@
 
     doneModalBtn.addEventListener("click", () => {
       confirmationModal.classList.add("hidden");
+      closeCart();
       orderForm.reset();
       Object.keys(cart).forEach(k => delete cart[k]);
       renderCart();
@@ -2608,7 +2837,7 @@
     });
 
     // Initial load
-    buildCategoryTabs();
+    buildCategories();
     renderProducts();
     renderCart();
   </script>
