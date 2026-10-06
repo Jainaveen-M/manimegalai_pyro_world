@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeyalakshmi Crackers - Price List 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(180deg, #fff8e7 0%, #fff3d6 100%);
+    }
+
+    .festive-shadow {
+      box-shadow: 0 18px 40px rgba(173, 89, 0, 0.12);
+    }
+
+    .product-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen text-slate-800 flex flex-col justify-between">
+  <div>
+    <header class="bg-gradient-to-r from-red-700 via-orange-600 to-amber-500 text-white sticky top-0 z-20 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-amber-200 font-semibold">Fancy Crackers & Gift Boxes • Price List 2026</p>
+          <h1 class="text-2xl sm:text-3xl font-black tracking-tight flex items-center gap-2">JEYALAKSHMI CRACKERS</h1>
+        </div>
+        <div class="flex items-center gap-2 bg-white/15 border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-inner">
+          <span class="bg-yellow-400 text-red-900 px-2 py-0.5 rounded-md font-extrabold text-xs uppercase">UPTO 80% OFF</span>
+          <span>Min. Order ₹1,000</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Festive Banner -->
+    <section class="max-w-7xl mx-auto px-4 pt-4 sm:pt-6">
+      <div class="rounded-2xl sm:rounded-3xl overflow-hidden festive-shadow border border-amber-200/80 bg-slate-900">
+        <img src="banner.png" alt="Jeyalakshmi Crackers 2026 Festive Banner" class="w-full h-auto object-cover block" />
+      </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 py-6 lg:flex lg:gap-8">
+      <section class="flex-1 min-w-0">
+        <!-- Title & Search Bar -->
+        <div class="mb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-orange-600 font-bold">Official Price List 2026</p>
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1">Shop Festive Fireworks & Gift Boxes</h2>
+          </div>
+
+          <div class="relative w-full sm:w-80">
+            <input id="searchInput" type="text" placeholder="Search by name or item code (#14, G1, C1)..."
+              class="w-full pl-9 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm" />
+            <svg class="w-4 h-4 absolute left-3 top-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Categories Tabs -->
+        <div id="categoryTabs" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-3 mb-6 scroll-smooth"></div>
+
+        <!-- Products Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-200 mt-4">
+          <span class="text-5xl">🔍</span>
+          <h3 class="text-lg font-bold text-slate-800 mt-3">No crackers match your search</h3>
+          <p class="text-sm text-slate-500 mt-1">Try searching with a different keyword or category.</p>
+        </div>
+      </section>
+
+      <!-- Side Panel Cart & Form -->
+      <aside id="checkoutSection" class="w-full lg:w-[380px] lg:shrink-0 mt-8 lg:mt-0">
+        <div class="lg:sticky lg:top-20 space-y-5 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:pr-1.5 no-scrollbar">
+          <!-- Order Summary -->
+          <div class="bg-white rounded-2xl festive-shadow p-5 border border-amber-100/60">
+            <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+              <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
+                <span>🛒</span> Order Summary
+              </h3>
+              <span id="cartCountBadge" class="bg-orange-100 text-orange-700 px-2.5 py-1 rounded-full text-xs font-bold">
+                0 items
+              </span>
+            </div>
+
+            <div id="cartItems" class="space-y-3 max-h-56 overflow-y-auto pr-1 no-scrollbar"></div>
+
+            <div class="mt-5 border-t border-slate-100 pt-4 space-y-2">
+              <div class="flex justify-between text-sm text-slate-600">
+                <span>Subtotal (80% Off Rate)</span>
+                <span id="subtotalValue" class="font-bold text-slate-800">₹0</span>
+              </div>
+              <div class="flex justify-between text-sm text-slate-600">
+                <span>Delivery Charges</span>
+                <span class="text-green-600 font-semibold">Standard</span>
+              </div>
+              <div class="flex justify-between text-xl font-black text-slate-900 border-t border-slate-100 pt-2">
+                <span>Total Payable</span>
+                <span id="totalAmountValue" class="text-orange-600">₹0</span>
+              </div>
+
+              <div id="minimumOrderWarning"
+                class="hidden mt-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm px-3.5 py-2.5 flex items-start gap-2">
+                <span class="text-base leading-none">⚠️</span>
+                <span>Minimum order value is <strong>₹1,000</strong>. Please add items worth <strong id="shortfallAmount">₹1,000</strong> more.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Delivery Details Form -->
+          <div class="bg-white rounded-2xl festive-shadow p-5 border border-amber-100/60">
+            <h3 class="text-lg font-black text-slate-900 mb-4 flex items-center gap-2">
+              <span>📍</span> Delivery Details
+            </h3>
+
+            <form id="orderForm" class="space-y-3.5">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Full Name *</label>
+                <input id="customerName" type="text"
+                  class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  placeholder="Enter your full name" required />
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Phone / WhatsApp *</label>
+                <input id="phone" type="tel"
+                  class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  placeholder="e.g. 9876543210" required />
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Delivery Address *</label>
+                <textarea id="address" rows="2"
+                  class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  placeholder="House no, street name, area/landmark" required></textarea>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">City / Town *</label>
+                  <input id="city" type="text"
+                    class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                    placeholder="City" required />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Pincode *</label>
+                  <input id="pincode" type="text"
+                    class="w-full border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                    placeholder="Pincode" required />
+                </div>
+              </div>
+
+              <button id="submitOrderBtn" type="submit"
+                class="w-full mt-2 rounded-xl bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 text-white font-black py-3.5 shadow-lg hover:opacity-95 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-base">
+                <span>🚀</span> Place Order Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Mobile Floating Checkout Bar -->
+  <div id="mobileCartBar" class="lg:hidden fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md text-white p-3.5 border-t border-slate-800 flex items-center justify-between z-30 shadow-2xl transition transform translate-y-full">
+    <div>
+      <p id="mobileCartSummary" class="text-xs font-bold text-slate-300">0 items selected</p>
+      <p id="mobileCartTotal" class="text-lg font-black text-amber-400">₹0</p>
+    </div>
+    <a href="#checkoutSection" class="bg-gradient-to-r from-orange-500 to-red-600 text-white text-sm font-black px-5 py-2.5 rounded-xl shadow-md flex items-center gap-1.5">
+      <span>🛒</span> Checkout & Pay
+    </a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-gradient-to-r from-red-950 via-slate-900 to-amber-950 text-white mt-16 border-t-4 border-amber-500">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Terms and Conditions -->
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl">
+        <h3 class="text-xl font-black text-amber-400 mb-4 flex items-center gap-2">
+          <span>📜</span> Terms and Conditions
+        </h3>
+        <ol class="space-y-3 text-sm text-amber-100/90 list-decimal pl-5 leading-relaxed font-medium">
+          <li>Once you pay 100%, then only we will confirm your order.</li>
+          <li>We will send the parcel with <strong>"To Pay"</strong> option to your nearest lorry transport office as possible.</li>
+          <li>Return goods cannot be taken.</li>
+          <li>Very rarely, if the selected item is not available at the time of packing, an equivalent item with the same price will be supplied.</li>
+        </ol>
+      </div>
+
+      <!-- Official Bank Account Details & UPI -->
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl space-y-4">
+        <div>
+          <h3 class="text-xl font-black text-amber-400 mb-3 flex items-center gap-2">
+            <span>🏦</span> Bank Account Details
+          </h3>
+          <div class="space-y-1.5 text-xs text-amber-50">
+            <p><span class="text-amber-300 font-semibold">Bank Name:</span> Bank of India</p>
+            <p><span class="text-amber-300 font-semibold">Acc. Name:</span> Gobinath R</p>
+            <p><span class="text-amber-300 font-semibold">Acc. Number:</span> <strong class="font-mono text-sm text-yellow-300">815210110019916</strong></p>
+            <p><span class="text-amber-300 font-semibold">IFSC Code:</span> <strong class="font-mono text-yellow-300">BKID0008152</strong></p>
+            <p><span class="text-amber-300 font-semibold">Branch:</span> SIVAKASI</p>
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-white/10">
+          <h4 class="text-sm font-black text-amber-300 mb-2 flex items-center gap-2">
+            <span>📲</span> GPay & PhonePe
+          </h4>
+          <div class="bg-amber-400/10 border border-amber-400/20 rounded-xl p-3 flex items-center justify-between gap-2">
+            <div>
+              <p class="text-[11px] text-amber-200 font-bold uppercase tracking-wider">Google Pay / PhonePe</p>
+              <p class="text-lg font-black text-yellow-300 font-mono tracking-wide">9524803201</p>
+              <p class="text-xs text-amber-100 font-semibold">Name: Gobinath R</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address & Contact Info -->
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-black text-amber-400 mb-4 flex items-center gap-2">
+            <span>📍</span> Store Address & Contact
+          </h3>
+          <div class="space-y-3 text-sm text-slate-200">
+            <p class="flex items-start gap-2.5">
+              <span class="text-amber-400 text-base shrink-0">🏢</span>
+              <span><strong>Jeyalakshmi Crackers</strong><br/>Fancy Crackers & Gift Boxes Supplier</span>
+            </p>
+            <p class="flex items-start gap-2.5">
+              <span class="text-amber-400 text-base shrink-0">📍</span>
+              <span>Sivakasi to Thayilpatti Main Road, Pernaickenpatti - 626128.</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="text-amber-400 text-base shrink-0">📞</span>
+              <span><strong>Call / WhatsApp:</strong> <a href="tel:9524803201" class="hover:underline text-amber-300 font-bold">9524803201</a> | <a href="tel:9788159495" class="hover:underline text-amber-300 font-bold">9788159495</a></span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <span class="text-amber-400 text-base shrink-0">🌐</span>
+              <span><strong>Website:</strong> <a href="https://www.jeyalakshmicracker.com" target="_blank" class="hover:underline text-amber-300 font-bold">www.jeyalakshmicracker.com</a></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-white/10 text-xs text-slate-400 text-center md:text-left">
+          © 2026 Jeyalakshmi Crackers. All Rights Reserved. Happy & Safe Diwali! 🎆
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Order Confirmation Modal -->
+  <div id="confirmationModal" class="fixed inset-0 hidden bg-slate-900/70 backdrop-blur-sm p-4 flex items-center justify-center z-50">
+    <div class="bg-white rounded-3xl festive-shadow max-w-lg w-full p-6 relative">
+      <button id="closeModalBtn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold">×</button>
+
+      <div class="text-center">
+        <div class="mx-auto mb-3 h-16 w-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl font-black shadow-inner">
+          ✓
+        </div>
+        <h3 class="text-2xl font-black text-slate-900">Order Placed Successfully!</h3>
+        <p class="mt-1 text-sm text-slate-600">Your order has been recorded with <strong>Jeyalakshmi Crackers</strong>.</p>
+      </div>
+
+      <div class="mt-5 bg-amber-50 border border-amber-200/80 rounded-2xl p-4 text-center">
+        <p class="text-xs uppercase tracking-[0.2em] text-amber-700 font-extrabold">Official Order Reference ID</p>
+        <p id="confirmationOrderId" class="mt-1 text-3xl font-black text-slate-900 font-mono tracking-wider"></p>
+      </div>
+
+      <div class="mt-5 space-y-3 text-sm">
+        <div class="flex justify-between items-center py-2 border-b border-slate-100">
+          <span class="text-slate-600 font-medium">Total Amount Payable</span>
+          <span id="confirmationTotal" class="text-xl font-black text-orange-600"></span>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 space-y-3 text-slate-700">
+          <div>
+            <p class="font-black text-slate-900 border-b border-slate-200 pb-1 mb-2 text-xs uppercase tracking-wider flex items-center gap-1.5">
+              <span>🏦</span> Bank Transfer Details
+            </p>
+            <p><span class="font-semibold text-slate-500">Bank Name:</span> Bank of India</p>
+            <p><span class="font-semibold text-slate-500">Acc. Name:</span> Gobinath R</p>
+            <p><span class="font-semibold text-slate-500">Acc. Number:</span> <strong class="font-mono text-slate-900 text-base">815210110019916</strong></p>
+            <p><span class="font-semibold text-slate-500">IFSC Code:</span> <strong class="font-mono text-slate-900">BKID0008152</strong></p>
+            <p><span class="font-semibold text-slate-500">Branch:</span> SIVAKASI</p>
+          </div>
+
+          <div class="pt-2 border-t border-slate-200">
+            <p class="font-black text-slate-900 mb-1.5 text-xs uppercase tracking-wider flex items-center gap-1.5">
+              <span>📲</span> GPay & PhonePe Number
+            </p>
+            <div class="bg-purple-50 border border-purple-200 rounded-xl p-3 flex items-center justify-between">
+              <div>
+                <p class="text-xs font-extrabold text-purple-900">Google Pay / PhonePe</p>
+                <p class="text-xl font-black text-purple-700 font-mono">9524803201</p>
+                <p class="text-xs text-slate-600 font-semibold">Name: Gobinath R</p>
+              </div>
+              <span class="text-2xl">📱</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 space-y-2">
+        <a id="whatsappPaymentBtn" href="#" target="_blank"
+          class="block text-center w-full rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 shadow-md transition flex items-center justify-center gap-2">
+          <span>💬</span> Send Order Confirmation on WhatsApp
+        </a>
+        <button id="doneModalBtn" type="button"
+          class="block text-center w-full rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2.5 text-sm transition">
+          Close & Start New Order
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const MINIMUM_ORDER_VALUE = 1000;
+    const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzU7ZLmN5N3JyLZ6u-zBSy3yAZ1PUz4qYboZ5B-V6ao6McOzqHwv_zDqsUlQfoWXO9GQg/exec";
+    const ORDER_SECRET = "CrackerBazaar@2026!SecureOrder";
+
+    const PRODUCTS = [
+  {
+    "code": 1,
+    "id": "item-1",
+    "category": "Single Storm",
+    "name": "2 3/4\" KURUVI",
+    "pack": "1 PKT",
+    "mrp": 45,
+    "price": 9,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 2,
+    "id": "item-2",
+    "category": "Single Storm",
+    "name": "3.5\" LAKSHMI",
+    "pack": "1 PKT",
+    "mrp": 80,
+    "price": 16,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 3,
+    "id": "item-3",
+    "category": "Single Storm",
+    "name": "4\" LAKSHMI",
+    "pack": "1 PKT",
+    "mrp": 110,
+    "price": 22,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 4,
+    "id": "item-4",
+    "category": "Single Storm",
+    "name": "4\" LAKSHMI DELUXE",
+    "pack": "1 PKT",
+    "mrp": 170,
+    "price": 34,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 5,
+    "id": "item-5",
+    "category": "Single Storm",
+    "name": "4\" GOLD LAKSHMI",
+    "pack": "1 PKT",
+    "mrp": 175,
+    "price": 35,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 6,
+    "id": "item-6",
+    "category": "Single Storm",
+    "name": "5\" GANESH",
+    "pack": "1 PKT",
+    "mrp": 310,
+    "price": 62,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 7,
+    "id": "item-7",
+    "category": "Single Storm",
+    "name": "6\" JALLIKATTU",
+    "pack": "1 PKT",
+    "mrp": 330,
+    "price": 66,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 8,
+    "id": "item-8",
+    "category": "Double Blast",
+    "name": "TWO SOUND CRACKER",
+    "pack": "1 PKT",
+    "mrp": 180,
+    "price": 36,
+    "img": "\ud83d\udca5"
+  },
+  {
+    "code": 9,
+    "id": "item-9",
+    "category": "Giant Crackers",
+    "name": "28 GIANT",
+    "pack": "1 PKT",
+    "mrp": 145,
+    "price": 29,
+    "img": "\ud83d\udca3"
+  },
+  {
+    "code": 10,
+    "id": "item-10",
+    "category": "Giant Crackers",
+    "name": "56 GIANT",
+    "pack": "1 PKT",
+    "mrp": 290,
+    "price": 58,
+    "img": "\ud83d\udca3"
+  },
+  {
+    "code": 11,
+    "id": "item-11",
+    "category": "Ultra Deluxe Crackers",
+    "name": "24 DELUXE",
+    "pack": "1 PKT",
+    "mrp": 270,
+    "price": 54,
+    "img": "\ud83d\udca3"
+  },
+  {
+    "code": 12,
+    "id": "item-12",
+    "category": "Ultra Deluxe Crackers",
+    "name": "50 DELUXE",
+    "pack": "1 PKT",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83d\udca3"
+  },
+  {
+    "code": 13,
+    "id": "item-13",
+    "category": "Ultra Deluxe Crackers",
+    "name": "100 DELUXE",
+    "pack": "1 PKT",
+    "mrp": 1100,
+    "price": 220,
+    "img": "\ud83d\udca3"
+  },
+  {
+    "code": 14,
+    "id": "item-14",
+    "category": "Take It Easy",
+    "name": "RED BIJILI (50 PCS)",
+    "pack": "1 PKT",
+    "mrp": 105,
+    "price": 21,
+    "img": "\u26a1"
+  },
+  {
+    "code": 15,
+    "id": "item-15",
+    "category": "Take It Easy",
+    "name": "RED BIJILI (100 PCS)",
+    "pack": "1 PKT",
+    "mrp": 210,
+    "price": 42,
+    "img": "\u26a1"
+  },
+  {
+    "code": 16,
+    "id": "item-16",
+    "category": "Take It Easy",
+    "name": "STRIPPED BIJILI (100 PCS)",
+    "pack": "1 PKT",
+    "mrp": 225,
+    "price": 45,
+    "img": "\u26a1"
+  },
+  {
+    "code": 17,
+    "id": "item-17",
+    "category": "Flower Pots",
+    "name": "FLOWER POT BIG",
+    "pack": "1 BOX",
+    "mrp": 360,
+    "price": 72,
+    "img": "\ud83c\udf3c"
+  },
+  {
+    "code": 18,
+    "id": "item-18",
+    "category": "Flower Pots",
+    "name": "FLOWER POT SPECIAL",
+    "pack": "1 BOX",
+    "mrp": 450,
+    "price": 90,
+    "img": "\ud83c\udf3c"
+  },
+  {
+    "code": 19,
+    "id": "item-19",
+    "category": "Flower Pots",
+    "name": "FLOWER POT ASOKA",
+    "pack": "1 BOX",
+    "mrp": 700,
+    "price": 140,
+    "img": "\ud83c\udf3c"
+  },
+  {
+    "code": 20,
+    "id": "item-20",
+    "category": "Flower Pots",
+    "name": "COLOUR KOTI",
+    "pack": "1 BOX",
+    "mrp": 1150,
+    "price": 230,
+    "img": "\ud83c\udf3c"
+  },
+  {
+    "code": 21,
+    "id": "item-21",
+    "category": "Flower Pots",
+    "name": "COLOUR KOTI XL",
+    "pack": "1 BOX",
+    "mrp": 1250,
+    "price": 250,
+    "img": "\ud83c\udf3c"
+  },
+  {
+    "code": 22,
+    "id": "item-22",
+    "category": "Flower Pots",
+    "name": "COLOUR CONE",
+    "pack": "1 BOX",
+    "mrp": 1300,
+    "price": 260,
+    "img": "\ud83c\udf3c"
+  },
+  {
+    "code": 23,
+    "id": "item-23",
+    "category": "Flower Pots",
+    "name": "SUPER KOTI / JUMBO KOTI",
+    "pack": "1 BOX",
+    "mrp": 3000,
+    "price": 600,
+    "img": "\ud83c\udf3c"
+  },
+  {
+    "code": 24,
+    "id": "item-24",
+    "category": "Ground Chakkram",
+    "name": "GROUND CHAKKAR BIG (10 pcs)",
+    "pack": "1 BOX",
+    "mrp": 240,
+    "price": 48,
+    "img": "\ud83c\udf2a\ufe0f"
+  },
+  {
+    "code": 25,
+    "id": "item-25",
+    "category": "Ground Chakkram",
+    "name": "GROUND CHAKKAR BIG (25 pcs)",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83c\udf2a\ufe0f"
+  },
+  {
+    "code": 26,
+    "id": "item-26",
+    "category": "Ground Chakkram",
+    "name": "GROUND CHAKKAR SPECIAL",
+    "pack": "1 BOX",
+    "mrp": 475,
+    "price": 95,
+    "img": "\ud83c\udf2a\ufe0f"
+  },
+  {
+    "code": 27,
+    "id": "item-27",
+    "category": "Ground Chakkram",
+    "name": "GROUND CHAKKAR DELUXE",
+    "pack": "1 BOX",
+    "mrp": 800,
+    "price": 160,
+    "img": "\ud83c\udf2a\ufe0f"
+  },
+  {
+    "code": 28,
+    "id": "item-28",
+    "category": "Ground Chakkram",
+    "name": "GROUND CHAKKAR SPINNER SPECIAL",
+    "pack": "1 BOX",
+    "mrp": 850,
+    "price": 170,
+    "img": "\ud83c\udf2a\ufe0f"
+  },
+  {
+    "code": 29,
+    "id": "item-29",
+    "category": "Ground Chakkram",
+    "name": "WIRE CHAKKAR",
+    "pack": "1 BOX",
+    "mrp": 1000,
+    "price": 200,
+    "img": "\ud83c\udf2a\ufe0f"
+  },
+  {
+    "code": 30,
+    "id": "item-30",
+    "category": "Ground Chakkram",
+    "name": "LOTUS CHAKKAR (3 pcs)",
+    "pack": "1 BOX",
+    "mrp": 675,
+    "price": 135,
+    "img": "\ud83c\udf2a\ufe0f"
+  },
+  {
+    "code": 31,
+    "id": "item-31",
+    "category": "Non Stop Noise Express",
+    "name": "100 DIGI RED",
+    "pack": "1 PKT",
+    "mrp": 200,
+    "price": 40,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 32,
+    "id": "item-32",
+    "category": "Non Stop Noise Express",
+    "name": "200 DIGI RED",
+    "pack": "1 PKT",
+    "mrp": 400,
+    "price": 80,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 33,
+    "id": "item-33",
+    "category": "Non Stop Noise Express",
+    "name": "1K DIGI RED",
+    "pack": "1 BOX",
+    "mrp": 850,
+    "price": 170,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 34,
+    "id": "item-34",
+    "category": "Non Stop Noise Express",
+    "name": "2K DIGI RED",
+    "pack": "1 BOX",
+    "mrp": 1750,
+    "price": 350,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 35,
+    "id": "item-35",
+    "category": "Non Stop Noise Express",
+    "name": "5K DIGI RED",
+    "pack": "1 BOX",
+    "mrp": 4500,
+    "price": 900,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 36,
+    "id": "item-36",
+    "category": "Non Stop Noise Express",
+    "name": "10K DIGI REG",
+    "pack": "1 BOX",
+    "mrp": 9000,
+    "price": 1800,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 37,
+    "id": "item-37",
+    "category": "Non Stop Noise Express",
+    "name": "20K DIGI RED",
+    "pack": "1 BOX",
+    "mrp": 18000,
+    "price": 3600,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 38,
+    "id": "item-38",
+    "category": "Twinkling Star",
+    "name": "1 1/2 FT TWINKING STAR",
+    "pack": "1 BOX",
+    "mrp": 120,
+    "price": 24,
+    "img": "\u2728"
+  },
+  {
+    "code": 39,
+    "id": "item-39",
+    "category": "Twinkling Star",
+    "name": "4 FT TWINKING STAR",
+    "pack": "1 BOX",
+    "mrp": 350,
+    "price": 70,
+    "img": "\u2728"
+  },
+  {
+    "code": 40,
+    "id": "item-40",
+    "category": "Skyward",
+    "name": "COLOUR ROCKET",
+    "pack": "1 BOX",
+    "mrp": 400,
+    "price": 80,
+    "img": "\ud83d\ude80"
+  },
+  {
+    "code": 41,
+    "id": "item-41",
+    "category": "Skyward",
+    "name": "LUNIK EXPRESS",
+    "pack": "1 BOX",
+    "mrp": 675,
+    "price": 135,
+    "img": "\ud83d\ude80"
+  },
+  {
+    "code": 42,
+    "id": "item-42",
+    "category": "Skyward",
+    "name": "WHISTLING ROCKET",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\ud83d\ude80"
+  },
+  {
+    "code": 43,
+    "id": "item-43",
+    "category": "Thunderstrike",
+    "name": "ATOM BOMB",
+    "pack": "1 BOX",
+    "mrp": 400,
+    "price": 80,
+    "img": "\u26a1"
+  },
+  {
+    "code": 44,
+    "id": "item-44",
+    "category": "Thunderstrike",
+    "name": "HYDRO BOMB",
+    "pack": "1 BOX",
+    "mrp": 425,
+    "price": 85,
+    "img": "\u26a1"
+  },
+  {
+    "code": 45,
+    "id": "item-45",
+    "category": "Thunderstrike",
+    "name": "KING OF KING",
+    "pack": "1 BOX",
+    "mrp": 600,
+    "price": 120,
+    "img": "\u26a1"
+  },
+  {
+    "code": 46,
+    "id": "item-46",
+    "category": "Thunderstrike",
+    "name": "CLASSIC GREEN",
+    "pack": "1 BOX",
+    "mrp": 700,
+    "price": 140,
+    "img": "\u26a1"
+  },
+  {
+    "code": 47,
+    "id": "item-47",
+    "category": "Thunderstrike",
+    "name": "AGNI BOMB",
+    "pack": "1 BOX",
+    "mrp": 1200,
+    "price": 240,
+    "img": "\u26a1"
+  },
+  {
+    "code": 48,
+    "id": "item-48",
+    "category": "Thunderstrike",
+    "name": "DIGITAL BOMB",
+    "pack": "1 BOX",
+    "mrp": 1300,
+    "price": 260,
+    "img": "\u26a1"
+  },
+  {
+    "code": 49,
+    "id": "item-49",
+    "category": "Paper Wreaks",
+    "name": "1/4 KG BOMB",
+    "pack": "1 BOX",
+    "mrp": 275,
+    "price": 55,
+    "img": "\ud83d\udce6"
+  },
+  {
+    "code": 50,
+    "id": "item-50",
+    "category": "Paper Wreaks",
+    "name": "1/2 KG BOMB",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83d\udce6"
+  },
+  {
+    "code": 51,
+    "id": "item-51",
+    "category": "Paper Wreaks",
+    "name": "1 KG BOMB",
+    "pack": "1 BOX",
+    "mrp": 1100,
+    "price": 220,
+    "img": "\ud83d\udce6"
+  },
+  {
+    "code": 52,
+    "id": "item-52",
+    "category": "Paper Wreaks",
+    "name": "MONEY PAPER BOMB",
+    "pack": "1 BOX",
+    "mrp": 675,
+    "price": 135,
+    "img": "\ud83d\udce6"
+  },
+  {
+    "code": 53,
+    "id": "item-53",
+    "category": "Paper Wreaks",
+    "name": "MONEY BLAST (2 PCS)",
+    "pack": "1 BOX",
+    "mrp": 1100,
+    "price": 220,
+    "img": "\ud83d\udce6"
+  },
+  {
+    "code": 54,
+    "id": "item-54",
+    "category": "Whistle Series",
+    "name": "MINI SIREN",
+    "pack": "1 BOX",
+    "mrp": 800,
+    "price": 160,
+    "img": "\ud83d\udce2"
+  },
+  {
+    "code": 55,
+    "id": "item-55",
+    "category": "Whistle Series",
+    "name": "MEGA SIREN",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\ud83d\udce2"
+  },
+  {
+    "code": 56,
+    "id": "item-56",
+    "category": "Peacock Series",
+    "name": "DANCING PEACOCK",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\ud83e\udd9a"
+  },
+  {
+    "code": 57,
+    "id": "item-57",
+    "category": "Peacock Series",
+    "name": "COLOUR PEACOCK",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\ud83e\udd9a"
+  },
+  {
+    "code": 58,
+    "id": "item-58",
+    "category": "Peacock Series",
+    "name": "BADA PEACOCK",
+    "pack": "1 BOX",
+    "mrp": 2250,
+    "price": 450,
+    "img": "\ud83e\udd9a"
+  },
+  {
+    "code": 59,
+    "id": "item-59",
+    "category": "Glow Sticks",
+    "name": "NAYARA FALLS CANDLE",
+    "pack": "1 BOX",
+    "mrp": 700,
+    "price": 140,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 60,
+    "id": "item-60",
+    "category": "Glow Sticks",
+    "name": "RED FLARE (5 pcs)",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 61,
+    "id": "item-61",
+    "category": "Sun Indiya Collection",
+    "name": "POP CORN",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\u2600\ufe0f"
+  },
+  {
+    "code": 62,
+    "id": "item-62",
+    "category": "Sun Indiya Collection",
+    "name": "STAR DROPS",
+    "pack": "1 BOX",
+    "mrp": 600,
+    "price": 120,
+    "img": "\u2600\ufe0f"
+  },
+  {
+    "code": 63,
+    "id": "item-63",
+    "category": "Sun Indiya Collection",
+    "name": "SUN DROPS",
+    "pack": "1 BOX",
+    "mrp": 650,
+    "price": 130,
+    "img": "\u2600\ufe0f"
+  },
+  {
+    "code": 64,
+    "id": "item-64",
+    "category": "Sun Indiya Collection",
+    "name": "MOON DROPS",
+    "pack": "1 BOX",
+    "mrp": 650,
+    "price": 130,
+    "img": "\u2600\ufe0f"
+  },
+  {
+    "code": 65,
+    "id": "item-65",
+    "category": "Sun Indiya Collection",
+    "name": "BARBIE PENCIL (10 PCS)",
+    "pack": "1 BOX",
+    "mrp": 650,
+    "price": 130,
+    "img": "\u2600\ufe0f"
+  },
+  {
+    "code": 66,
+    "id": "item-66",
+    "category": "Sun Indiya Collection",
+    "name": "KING OF KING FOILS",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\u2600\ufe0f"
+  },
+  {
+    "code": 67,
+    "id": "item-67",
+    "category": "Kids Series Fountain",
+    "name": "4\"ANGRY BIRD",
+    "pack": "1 BOX",
+    "mrp": 400,
+    "price": 80,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 68,
+    "id": "item-68",
+    "category": "Kids Series Fountain",
+    "name": "TIN SHOWER",
+    "pack": "1 BOX",
+    "mrp": 500,
+    "price": 100,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 69,
+    "id": "item-69",
+    "category": "Kids Series Fountain",
+    "name": "COLOUR RAIN (5 PCS)",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 70,
+    "id": "item-70",
+    "category": "Kids Series Fountain",
+    "name": "GOLDEN RAIN (5 PCS)",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 71,
+    "id": "item-71",
+    "category": "Kids Series Fountain",
+    "name": "PEACOCK FEATHER (5 PCS)",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 72,
+    "id": "item-72",
+    "category": "Kids Series Fountain",
+    "name": "TANGO SHOWER (5 PCS)",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 73,
+    "id": "item-73",
+    "category": "Kids Series Fountain",
+    "name": "4\"ANGRY BIRD SERIES (5 PCS)",
+    "pack": "1 BOX",
+    "mrp": 1900,
+    "price": 380,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 74,
+    "id": "item-74",
+    "category": "Kids Series Fountain",
+    "name": "I CONE (2 PCS)",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 75,
+    "id": "item-75",
+    "category": "Kids Series Fountain",
+    "name": "WATER MELON STAR",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 76,
+    "id": "item-76",
+    "category": "Kids Series Fountain",
+    "name": "THE REAL THAR",
+    "pack": "1 BOX",
+    "mrp": 1100,
+    "price": 220,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 77,
+    "id": "item-77",
+    "category": "Kids Series Fountain",
+    "name": "MRF BAT",
+    "pack": "1 PCS",
+    "mrp": 650,
+    "price": 130,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 78,
+    "id": "item-78",
+    "category": "Kids Series Fountain",
+    "name": "GUITAR",
+    "pack": "1 PCS",
+    "mrp": 800,
+    "price": 160,
+    "img": "\ud83e\uddf8"
+  },
+  {
+    "code": 79,
+    "id": "item-79",
+    "category": "Prism Peak Fountain",
+    "name": "GANGA JAMUNA",
+    "pack": "1 BOX",
+    "mrp": 725,
+    "price": 145,
+    "img": "\u26f2"
+  },
+  {
+    "code": 80,
+    "id": "item-80",
+    "category": "Prism Peak Fountain",
+    "name": "3\" MISS BUTTERFLY",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\u26f2"
+  },
+  {
+    "code": 81,
+    "id": "item-81",
+    "category": "Prism Peak Fountain",
+    "name": "3\" RED SUN",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\u26f2"
+  },
+  {
+    "code": 82,
+    "id": "item-82",
+    "category": "Prism Peak Fountain",
+    "name": "3\" BLUE ICE",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\u26f2"
+  },
+  {
+    "code": 83,
+    "id": "item-83",
+    "category": "Prism Peak Fountain",
+    "name": "MURUGAN VEL (2 PCS)",
+    "pack": "1 BOX",
+    "mrp": 1300,
+    "price": 260,
+    "img": "\u26f2"
+  },
+  {
+    "code": 84,
+    "id": "item-84",
+    "category": "Shootout Glitters",
+    "name": "GOLDEN SUN",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\u2728"
+  },
+  {
+    "code": 85,
+    "id": "item-85",
+    "category": "Shootout Glitters",
+    "name": "BLUE MOON",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\u2728"
+  },
+  {
+    "code": 86,
+    "id": "item-86",
+    "category": "High Fiery Casade",
+    "name": "WATER QUEEN",
+    "pack": "1 BOX",
+    "mrp": 750,
+    "price": 150,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 87,
+    "id": "item-87",
+    "category": "High Fiery Casade",
+    "name": "ORION",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 88,
+    "id": "item-88",
+    "category": "High Fiery Casade",
+    "name": "FANTASY ELEPHANT",
+    "pack": "1 BOX",
+    "mrp": 1050,
+    "price": 210,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 89,
+    "id": "item-89",
+    "category": "High Fiery Casade",
+    "name": "FANTASY LION",
+    "pack": "1 BOX",
+    "mrp": 1100,
+    "price": 220,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 90,
+    "id": "item-90",
+    "category": "High Fiery Casade",
+    "name": "ALIEN FOUNTAIN",
+    "pack": "1 BOX",
+    "mrp": 1125,
+    "price": 225,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 91,
+    "id": "item-91",
+    "category": "High Fiery Casade",
+    "name": "TRI COLOUR CRACKLING",
+    "pack": "1 BOX",
+    "mrp": 1500,
+    "price": 300,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 92,
+    "id": "item-92",
+    "category": "High Fiery Casade",
+    "name": "INFINITE STARS",
+    "pack": "1 BOX",
+    "mrp": 2200,
+    "price": 440,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 93,
+    "id": "item-93",
+    "category": "High Fiery Casade",
+    "name": "PIKACHU (WITH TOY GIFT)",
+    "pack": "1 BOX",
+    "mrp": 2750,
+    "price": 550,
+    "img": "\ud83d\udd25"
+  },
+  {
+    "code": 94,
+    "id": "item-94",
+    "category": "Tiny Crackers For Kids",
+    "name": "SELFI STICK",
+    "pack": "1 BOX",
+    "mrp": 300,
+    "price": 60,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 95,
+    "id": "item-95",
+    "category": "Tiny Crackers For Kids",
+    "name": "PHOTO FLASH",
+    "pack": "1 BOX",
+    "mrp": 400,
+    "price": 80,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 96,
+    "id": "item-96",
+    "category": "Tiny Crackers For Kids",
+    "name": "BUTTERFLY",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 97,
+    "id": "item-97",
+    "category": "Tiny Crackers For Kids",
+    "name": "HELICOPTER",
+    "pack": "1 BOX",
+    "mrp": 550,
+    "price": 110,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 98,
+    "id": "item-98",
+    "category": "Tiny Crackers For Kids",
+    "name": "COLOUR SMOKE",
+    "pack": "1 BOX",
+    "mrp": 600,
+    "price": 120,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 99,
+    "id": "item-99",
+    "category": "Tiny Crackers For Kids",
+    "name": "BAMBARAM",
+    "pack": "1 BOX",
+    "mrp": 600,
+    "price": 120,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 100,
+    "id": "item-100",
+    "category": "Tiny Crackers For Kids",
+    "name": "DRONE",
+    "pack": "1 BOX",
+    "mrp": 800,
+    "price": 160,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 101,
+    "id": "item-101",
+    "category": "Tiny Crackers For Kids",
+    "name": "LOLLIPOP",
+    "pack": "1 BOX",
+    "mrp": 800,
+    "price": 160,
+    "img": "\ud83c\udf88"
+  },
+  {
+    "code": 102,
+    "id": "item-102",
+    "category": "Fire Flash Matches",
+    "name": "3 in 1 CRYSTAL COLOUR (62 mm)",
+    "pack": "1 BOX",
+    "mrp": 225,
+    "price": 45,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 103,
+    "id": "item-103",
+    "category": "Fire Flash Matches",
+    "name": "5 IN 1 MAGIC POT (62 mm)",
+    "pack": "1 BOX",
+    "mrp": 400,
+    "price": 80,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 104,
+    "id": "item-104",
+    "category": "Fire Flash Matches",
+    "name": "10 IN 1",
+    "pack": "1 BOX",
+    "mrp": 450,
+    "price": 90,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 105,
+    "id": "item-105",
+    "category": "Fire Flash Matches",
+    "name": "6 IN 1 HUNTER KING (140 mm)",
+    "pack": "1 BOX",
+    "mrp": 650,
+    "price": 130,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 106,
+    "id": "item-106",
+    "category": "Fire Flash Matches",
+    "name": "GEM ROOK COLOUR SMOKE",
+    "pack": "1 BOX",
+    "mrp": 700,
+    "price": 140,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 107,
+    "id": "item-107",
+    "category": "Fire Flash Matches",
+    "name": "10 IN 1",
+    "pack": "1 BOX",
+    "mrp": 450,
+    "price": 90,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 108,
+    "id": "item-108",
+    "category": "Fire Flash Matches",
+    "name": "LAPTOP",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\ud83d\udd6f\ufe0f"
+  },
+  {
+    "code": 109,
+    "id": "item-109",
+    "category": "Level Up Series",
+    "name": "7 SHOT (5 PCS)",
+    "pack": "1 BOX",
+    "mrp": 600,
+    "price": 120,
+    "img": "\ud83d\ude80"
+  },
+  {
+    "code": 110,
+    "id": "item-110",
+    "category": "Level Up Series",
+    "name": "PANTA 5",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\ud83d\ude80"
+  },
+  {
+    "code": 111,
+    "id": "item-111",
+    "category": "Symphony Of Lights",
+    "name": "1 1/2\" CHOTTA FANCY",
+    "pack": "1 BOX",
+    "mrp": 250,
+    "price": 50,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 112,
+    "id": "item-112",
+    "category": "Symphony Of Lights",
+    "name": "2 1/2\" FANCY",
+    "pack": "1 BOX",
+    "mrp": 500,
+    "price": 100,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 113,
+    "id": "item-113",
+    "category": "Symphony Of Lights",
+    "name": "2 1/2\" CANDY (3 PCS)",
+    "pack": "1 BOX",
+    "mrp": 1350,
+    "price": 270,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 114,
+    "id": "item-114",
+    "category": "Symphony Of Lights",
+    "name": "3 1/2\" HORROR FANCY",
+    "pack": "1 BOX",
+    "mrp": 1500,
+    "price": 300,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 115,
+    "id": "item-115",
+    "category": "Symphony Of Lights",
+    "name": "4\" FANCY",
+    "pack": "1 BOX",
+    "mrp": 2250,
+    "price": 450,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 116,
+    "id": "item-116",
+    "category": "Symphony Of Lights",
+    "name": "3 1/2\" GRAFITY (2 PCS)",
+    "pack": "1 BOX",
+    "mrp": 1250,
+    "price": 630,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 117,
+    "id": "item-117",
+    "category": "Symphony Of Lights",
+    "name": "SONNY 5\" AQUA BLUE (2 PCS)",
+    "pack": "1 BOX",
+    "mrp": 9500,
+    "price": 1900,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 118,
+    "id": "item-118",
+    "category": "Symphony Of Lights",
+    "name": "6\" PURPLE RAIN",
+    "pack": "1 BOX",
+    "mrp": 10250,
+    "price": 2050,
+    "img": "\ud83c\udf0c"
+  },
+  {
+    "code": 119,
+    "id": "item-119",
+    "category": "Elegance Fancy Series",
+    "name": "3 STEP (3 PCS)",
+    "pack": "1 BOX",
+    "mrp": 2200,
+    "price": 440,
+    "img": "\u2728"
+  },
+  {
+    "code": 120,
+    "id": "item-120",
+    "category": "Elegance Fancy Series",
+    "name": "7 STEP",
+    "pack": "1 BOX",
+    "mrp": 2225,
+    "price": 450,
+    "img": "\u2728"
+  },
+  {
+    "code": 121,
+    "id": "item-121",
+    "category": "Elegance Fancy Series",
+    "name": "12 STEP",
+    "pack": "1 BOX",
+    "mrp": 2500,
+    "price": 500,
+    "img": "\u2728"
+  },
+  {
+    "code": 122,
+    "id": "item-122",
+    "category": "Elegance Fancy Series",
+    "name": "4\" NAYAGARA FALLS",
+    "pack": "1 BOX",
+    "mrp": 2000,
+    "price": 400,
+    "img": "\u2728"
+  },
+  {
+    "code": 123,
+    "id": "item-123",
+    "category": "Elegance Fancy Series",
+    "name": "4\" DOUBLE BALL",
+    "pack": "1 BOX",
+    "mrp": 2500,
+    "price": 500,
+    "img": "\u2728"
+  },
+  {
+    "code": 124,
+    "id": "item-124",
+    "category": "Rapid Fire Barrage",
+    "name": "12 SHOT COLOUR BALL",
+    "pack": "1 BOX",
+    "mrp": 1000,
+    "price": 200,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 125,
+    "id": "item-125",
+    "category": "Rapid Fire Barrage",
+    "name": "25 RIDER",
+    "pack": "1 BOX",
+    "mrp": 1500,
+    "price": 300,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 126,
+    "id": "item-126",
+    "category": "Rapid Fire Barrage",
+    "name": "25 + 25 MAGIC GLOW",
+    "pack": "1 BOX",
+    "mrp": 1600,
+    "price": 380,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 127,
+    "id": "item-127",
+    "category": "Rapid Fire Barrage",
+    "name": "30 SHOT MULTI COLOUR",
+    "pack": "1 BOX",
+    "mrp": 2250,
+    "price": 450,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 128,
+    "id": "item-128",
+    "category": "Rapid Fire Barrage",
+    "name": "60 SHOT MULTI COLOUR",
+    "pack": "1 BOX",
+    "mrp": 450,
+    "price": 900,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 129,
+    "id": "item-129",
+    "category": "Rapid Fire Barrage",
+    "name": "120 SHOT",
+    "pack": "1 BOX",
+    "mrp": 9000,
+    "price": 1800,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 130,
+    "id": "item-130",
+    "category": "Rapid Fire Barrage",
+    "name": "240 SHOT",
+    "pack": "1 BOX",
+    "mrp": 18000,
+    "price": 3600,
+    "img": "\ud83c\udf86"
+  },
+  {
+    "code": 131,
+    "id": "item-131",
+    "category": "Grand Showcase",
+    "name": "RANGOLI SMOKE (15 SHOT)",
+    "pack": "1 BOX",
+    "mrp": 2400,
+    "price": 480,
+    "img": "\ud83d\udc51"
+  },
+  {
+    "code": 132,
+    "id": "item-132",
+    "category": "Grand Showcase",
+    "name": "HAND SHOOTER (288 SHOT)",
+    "pack": "1 BOX",
+    "mrp": 12500,
+    "price": 2500,
+    "img": "\ud83d\udc51"
+  },
+  {
+    "code": 133,
+    "id": "item-133",
+    "category": "Grand Showcase",
+    "name": "2.5\" SET OUT",
+    "pack": "1 BOX",
+    "mrp": 18000,
+    "price": 3600,
+    "img": "\ud83d\udc51"
+  },
+  {
+    "code": 134,
+    "id": "item-134",
+    "category": "Grand Showcase",
+    "name": "10*10 CELEBRATION",
+    "pack": "1 BOX",
+    "mrp": 19500,
+    "price": 3900,
+    "img": "\ud83d\udc51"
+  },
+  {
+    "code": 135,
+    "id": "item-135",
+    "category": "Fairy Sparklers",
+    "name": "7 CM ELECTRIC SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 45,
+    "price": 9,
+    "img": "\u2728"
+  },
+  {
+    "code": 136,
+    "id": "item-136",
+    "category": "Fairy Sparklers",
+    "name": "7 CM COLOR SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 50,
+    "price": 10,
+    "img": "\u2728"
+  },
+  {
+    "code": 137,
+    "id": "item-137",
+    "category": "Fairy Sparklers",
+    "name": "7 CM GREEN SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 55,
+    "price": 11,
+    "img": "\u2728"
+  },
+  {
+    "code": 138,
+    "id": "item-138",
+    "category": "Fairy Sparklers",
+    "name": "7 CM RED SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 60,
+    "price": 12,
+    "img": "\u2728"
+  },
+  {
+    "code": 139,
+    "id": "item-139",
+    "category": "Fairy Sparklers",
+    "name": "10 CM ELECTRIC SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 100,
+    "price": 20,
+    "img": "\u2728"
+  },
+  {
+    "code": 140,
+    "id": "item-140",
+    "category": "Fairy Sparklers",
+    "name": "10 CM COLOR SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 110,
+    "price": 22,
+    "img": "\u2728"
+  },
+  {
+    "code": 141,
+    "id": "item-141",
+    "category": "Fairy Sparklers",
+    "name": "10 CM GREEN SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 120,
+    "price": 24,
+    "img": "\u2728"
+  },
+  {
+    "code": 142,
+    "id": "item-142",
+    "category": "Fairy Sparklers",
+    "name": "10 CM RED SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 130,
+    "price": 26,
+    "img": "\u2728"
+  },
+  {
+    "code": 143,
+    "id": "item-143",
+    "category": "Fairy Sparklers",
+    "name": "10 CM 2 IN 1 SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 130,
+    "price": 26,
+    "img": "\u2728"
+  },
+  {
+    "code": 144,
+    "id": "item-144",
+    "category": "Fairy Sparklers",
+    "name": "12 CM ELECTRIC SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 145,
+    "price": 29,
+    "img": "\u2728"
+  },
+  {
+    "code": 145,
+    "id": "item-145",
+    "category": "Fairy Sparklers",
+    "name": "12 CM COLOR SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 155,
+    "price": 31,
+    "img": "\u2728"
+  },
+  {
+    "code": 146,
+    "id": "item-146",
+    "category": "Fairy Sparklers",
+    "name": "12 CM GREEN SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 170,
+    "price": 34,
+    "img": "\u2728"
+  },
+  {
+    "code": 147,
+    "id": "item-147",
+    "category": "Fairy Sparklers",
+    "name": "12 CM RED SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 185,
+    "price": 37,
+    "img": "\u2728"
+  },
+  {
+    "code": 148,
+    "id": "item-148",
+    "category": "Fairy Sparklers",
+    "name": "15 CM ELECTRIC SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 200,
+    "price": 40,
+    "img": "\u2728"
+  },
+  {
+    "code": 149,
+    "id": "item-149",
+    "category": "Fairy Sparklers",
+    "name": "15 CM COLOR SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 215,
+    "price": 43,
+    "img": "\u2728"
+  },
+  {
+    "code": 150,
+    "id": "item-150",
+    "category": "Fairy Sparklers",
+    "name": "15 CM GREEN SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 225,
+    "price": 45,
+    "img": "\u2728"
+  },
+  {
+    "code": 151,
+    "id": "item-151",
+    "category": "Fairy Sparklers",
+    "name": "15 CM RED SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 245,
+    "price": 49,
+    "img": "\u2728"
+  },
+  {
+    "code": 152,
+    "id": "item-152",
+    "category": "Fairy Sparklers",
+    "name": "30 CM ELECTRIC SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 200,
+    "price": 40,
+    "img": "\u2728"
+  },
+  {
+    "code": 153,
+    "id": "item-153",
+    "category": "Fairy Sparklers",
+    "name": "30 CM COLOR SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 215,
+    "price": 43,
+    "img": "\u2728"
+  },
+  {
+    "code": 154,
+    "id": "item-154",
+    "category": "Fairy Sparklers",
+    "name": "30 CM GREEN SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 225,
+    "price": 45,
+    "img": "\u2728"
+  },
+  {
+    "code": 155,
+    "id": "item-155",
+    "category": "Fairy Sparklers",
+    "name": "30 CM RED SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 245,
+    "price": 49,
+    "img": "\u2728"
+  },
+  {
+    "code": 156,
+    "id": "item-156",
+    "category": "Fairy Sparklers",
+    "name": "50 CM ELECTRIC SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 850,
+    "price": 170,
+    "img": "\u2728"
+  },
+  {
+    "code": 157,
+    "id": "item-157",
+    "category": "Fairy Sparklers",
+    "name": "50 CM COLOR SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 900,
+    "price": 180,
+    "img": "\u2728"
+  },
+  {
+    "code": 158,
+    "id": "item-158",
+    "category": "Fairy Sparklers",
+    "name": "ROTATIND SPARKLERS",
+    "pack": "1 BOX",
+    "mrp": 1100,
+    "price": 220,
+    "img": "\u2728"
+  },
+  {
+    "code": 159,
+    "id": "item-159",
+    "category": "90S Nostalgia",
+    "name": "SNAKE TABLET",
+    "pack": "1 BOX",
+    "mrp": 50,
+    "price": 10,
+    "img": "\ud83d\udd79\ufe0f"
+  },
+  {
+    "code": 160,
+    "id": "item-160",
+    "category": "90S Nostalgia",
+    "name": "RING CAP",
+    "pack": "1 BOX",
+    "mrp": 50,
+    "price": 10,
+    "img": "\ud83d\udd79\ufe0f"
+  },
+  {
+    "code": 161,
+    "id": "item-161",
+    "category": "90S Nostalgia",
+    "name": "RING GUN",
+    "pack": "1 BOX",
+    "mrp": 500,
+    "price": 100,
+    "img": "\ud83d\udd79\ufe0f"
+  },
+  {
+    "code": 162,
+    "id": "item-162",
+    "category": "90S Nostalgia",
+    "name": "ZEE BOOM BAA",
+    "pack": "1 BOX",
+    "mrp": 50,
+    "price": 10,
+    "img": "\ud83d\udd79\ufe0f"
+  },
+  {
+    "code": 163,
+    "id": "item-163",
+    "category": "90S Nostalgia",
+    "name": "MAGIC POPS",
+    "pack": "1 BOX",
+    "mrp": 50,
+    "price": 10,
+    "img": "\ud83d\udd79\ufe0f"
+  },
+  {
+    "code": 164,
+    "id": "item-164",
+    "category": "90S Nostalgia",
+    "name": "STONE",
+    "pack": "1 BOX",
+    "mrp": 50,
+    "price": 10,
+    "img": "\ud83d\udd79\ufe0f"
+  },
+  {
+    "code": 165,
+    "id": "item-165",
+    "category": "90S Nostalgia",
+    "name": "CARTON",
+    "pack": "1 BOX",
+    "mrp": 150,
+    "price": 30,
+    "img": "\ud83d\udd79\ufe0f"
+  },
+  {
+    "code": 166,
+    "id": "item-166",
+    "category": "Gift Boxes",
+    "name": "G1 DUCK [25 ITEMS]",
+    "pack": "1 BOX (25 Items)",
+    "mrp": 1450,
+    "price": 290,
+    "img": "\ud83c\udf81"
+  },
+  {
+    "code": 167,
+    "id": "item-167",
+    "category": "Gift Boxes",
+    "name": "G2 FLAMINGO [35 ITEMS]",
+    "pack": "1 BOX (35 Items)",
+    "mrp": 2850,
+    "price": 570,
+    "img": "\ud83c\udf81"
+  },
+  {
+    "code": 168,
+    "id": "item-168",
+    "category": "Gift Boxes",
+    "name": "G3 KARUDA [40 ITEMS]",
+    "pack": "1 BOX (40 Items)",
+    "mrp": 4200,
+    "price": 840,
+    "img": "\ud83c\udf81"
+  },
+  {
+    "code": 169,
+    "id": "item-169",
+    "category": "Gift Boxes",
+    "name": "G4 PEACOCK [50 ITEMS]",
+    "pack": "1 BOX (50 Items)",
+    "mrp": 6000,
+    "price": 1200,
+    "img": "\ud83c\udf81"
+  },
+  {
+    "code": 170,
+    "id": "item-170",
+    "category": "Combo Packs",
+    "name": "C1 MINION PACK",
+    "pack": "1 COMBO",
+    "mrp": 11110,
+    "price": 2222,
+    "img": "\ud83e\ude94"
+  },
+  {
+    "code": 171,
+    "id": "item-171",
+    "category": "Combo Packs",
+    "name": "C2 POCKET FRIENDLY PACK",
+    "pack": "1 COMBO",
+    "mrp": 16665,
+    "price": 3333,
+    "img": "\ud83e\ude94"
+  },
+  {
+    "code": 172,
+    "id": "item-172",
+    "category": "Combo Packs",
+    "name": "C3 BUDGET COMBO",
+    "pack": "1 COMBO",
+    "mrp": 27775,
+    "price": 5555,
+    "img": "\ud83e\ude94"
+  },
+  {
+    "code": 173,
+    "id": "item-173",
+    "category": "Combo Packs",
+    "name": "C4 HAPPY HOURS COMBO",
+    "pack": "1 COMBO",
+    "mrp": 38885,
+    "price": 7777,
+    "img": "\ud83e\ude94"
+  },
+  {
+    "code": 174,
+    "id": "item-174",
+    "category": "Combo Packs",
+    "name": "C5 HOME CELEBRATION COMBO",
+    "pack": "1 COMBO",
+    "mrp": 49995,
+    "price": 9999,
+    "img": "\ud83e\ude94"
+  }
+];
+
+    const cart = {};
+    let activeCategory = "All";
+    let searchQuery = "";
+
+    const categories = ["All", ...new Set(PRODUCTS.map(p => p.category))];
+
+    const productGrid = document.getElementById("productGrid");
+    const categoryTabs = document.getElementById("categoryTabs");
+    const searchInput = document.getElementById("searchInput");
+    const emptyState = document.getElementById("emptyState");
+    const cartItems = document.getElementById("cartItems");
+    const subtotalValue = document.getElementById("subtotalValue");
+    const totalAmountValue = document.getElementById("totalAmountValue");
+    const cartCountBadge = document.getElementById("cartCountBadge");
+    const minimumOrderWarning = document.getElementById("minimumOrderWarning");
+    const shortfallAmount = document.getElementById("shortfallAmount");
+    const orderForm = document.getElementById("orderForm");
+    const submitOrderBtn = document.getElementById("submitOrderBtn");
+    const confirmationModal = document.getElementById("confirmationModal");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+    const doneModalBtn = document.getElementById("doneModalBtn");
+    const mobileCartBar = document.getElementById("mobileCartBar");
+    const mobileCartSummary = document.getElementById("mobileCartSummary");
+    const mobileCartTotal = document.getElementById("mobileCartTotal");
+
+    function formatCurrency(value) {
+      return new Intl.NumberFormat("en-IN", {
+        style: "currency",
+        currency: "INR",
+        maximumFractionDigits: 0
+      }).format(value);
+    }
+
+    function getFilteredProducts() {
+      return PRODUCTS.filter(product => {
+        const matchesCategory = activeCategory === "All" || product.category === activeCategory;
+        const matchesSearch = searchQuery === "" ||
+          product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          product.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          String(product.code).includes(searchQuery.replace("#", ""));
+        return matchesCategory && matchesSearch;
+      });
+    }
+
+    function buildCategoryTabs() {
+      categoryTabs.innerHTML = "";
+
+      categories.forEach(category => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        const isActive = activeCategory === category;
+        btn.className = `whitespace-nowrap px-4 py-2 rounded-full font-bold text-xs sm:text-sm border transition shrink-0 ${
+          isActive
+            ? "bg-gradient-to-r from-red-600 to-orange-600 text-white border-red-600 shadow-md"
+            : "bg-white text-slate-700 border-slate-200 hover:border-orange-300 hover:bg-orange-50/50"
+        }`;
+        btn.textContent = category;
+        btn.onclick = () => {
+          activeCategory = category;
+          buildCategoryTabs();
+          renderProducts();
+        };
+        categoryTabs.appendChild(btn);
+      });
+    }
+
+    function addToCart(productId, delta = 1) {
+      const current = cart[productId] || 0;
+      const next = current + delta;
+      if (next <= 0) {
+        delete cart[productId];
+      } else {
+        cart[productId] = next;
+      }
+      renderCart();
+      renderProducts();
+    }
+
+    function getTotalItems() {
+      return Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+    }
+
+    function getSubtotal() {
+      return PRODUCTS.reduce((sum, product) => {
+        const qty = cart[product.id] || 0;
+        return sum + qty * product.price;
+      }, 0);
+    }
+
+    function renderProducts() {
+      const products = getFilteredProducts();
+
+      if (products.length === 0) {
+        productGrid.innerHTML = "";
+        emptyState.classList.remove("hidden");
+        return;
+      }
+
+      emptyState.classList.add("hidden");
+
+      // Group products by category so category headings appear in "All" and category views
+      const grouped = {};
+      products.forEach(p => {
+        if (!grouped[p.category]) grouped[p.category] = [];
+        grouped[p.category].push(p);
+      });
+
+      let html = "";
+      Object.keys(grouped).forEach(cat => {
+        const catProducts = grouped[cat];
+        const catIcon = catProducts[0]?.img || "🎆";
+
+        html += `
+          <div class="col-span-full mt-6 first:mt-0 pt-4 border-t border-amber-200/80">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
+                <span>${catIcon}</span> ${cat}
+              </h3>
+              <span class="text-xs font-extrabold bg-orange-100 text-orange-800 px-3 py-1 rounded-full border border-orange-200">
+                ${catProducts.length} item${catProducts.length === 1 ? "" : "s"}
+              </span>
+            </div>
+          </div>
+        `;
+
+        html += catProducts.map(product => {
+          const qty = cart[product.id] || 0;
+          const codePadded = String(product.code).padStart(3, '0');
+
+          return `
+            <div class="product-card bg-white rounded-2xl festive-shadow overflow-hidden border border-slate-100 flex flex-col justify-between p-4 relative">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-[10px] font-extrabold uppercase tracking-wider bg-orange-100 text-orange-800 px-2 py-0.5 rounded-md">
+                    #${codePadded}
+                  </span>
+                  <h3 class="font-black text-slate-900 text-base mt-1.5 leading-snug">${product.name}</h3>
+                  <span class="inline-block mt-1 text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
+                    ${product.pack}
+                  </span>
+                </div>
+                <span class="text-3xl shrink-0">${product.img}</span>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-end justify-between gap-2">
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-xs text-slate-400 line-through">MRP ${formatCurrency(product.mrp)}</span>
+                    <span class="text-[10px] font-black text-green-700 bg-green-100 px-1.5 py-0.5 rounded">80% OFF</span>
+                  </div>
+                  <p class="text-xl font-black text-slate-900">${formatCurrency(product.price)}</p>
+                </div>
+
+                <div class="flex items-center gap-1.5 bg-slate-50 p-1 rounded-xl border border-slate-200">
+                  <button data-action="decrease" data-product-id="${product.id}"
+                    class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-700 text-lg font-bold flex items-center justify-center hover:bg-slate-100 active:scale-95 transition">
+                    −
+                  </button>
+                  <span class="min-w-[24px] text-center font-black text-sm">${qty}</span>
+                  <button data-action="increase" data-product-id="${product.id}"
+                    class="w-8 h-8 rounded-lg bg-orange-600 text-white text-lg font-bold flex items-center justify-center hover:bg-orange-700 active:scale-95 transition shadow-sm">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join("");
+      });
+
+      productGrid.innerHTML = html;
+    }
+
+    function renderCart() {
+      const subtotal = getSubtotal();
+      const totalItems = getTotalItems();
+
+      cartCountBadge.textContent = `${totalItems} item${totalItems === 1 ? "" : "s"}`;
+      subtotalValue.textContent = formatCurrency(subtotal);
+      totalAmountValue.textContent = formatCurrency(subtotal);
+
+      if (totalItems > 0) {
+        mobileCartBar.classList.remove("translate-y-full");
+        mobileCartSummary.textContent = `${totalItems} item${totalItems === 1 ? "" : "s"} in cart`;
+        mobileCartTotal.textContent = formatCurrency(subtotal);
+      } else {
+        mobileCartBar.classList.add("translate-y-full");
+      }
+
+      const itemsInCart = PRODUCTS.filter(p => (cart[p.id] || 0) > 0);
+
+      if (itemsInCart.length === 0) {
+        cartItems.innerHTML = `
+          <div class="text-center py-6 text-slate-400">
+            <span class="text-3xl block mb-1">🛒</span>
+            <p class="text-xs font-medium">Your cart is empty</p>
+            <p class="text-[11px] mt-0.5">Select crackers to start building your order.</p>
+          </div>
+        `;
+      } else {
+        cartItems.innerHTML = itemsInCart.map(product => {
+          const qty = cart[product.id];
+          const itemTotal = qty * product.price;
+
+          return `
+            <div class="flex items-center justify-between gap-2 text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+              <div class="min-w-0 flex-1">
+                <p class="font-bold text-slate-800 truncate">${product.name}</p>
+                <p class="text-slate-500 font-medium">${qty} x ${formatCurrency(product.price)}</p>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="font-black text-slate-900">${formatCurrency(itemTotal)}</span>
+                <button data-action="decrease" data-product-id="${product.id}"
+                  class="text-red-500 hover:text-red-700 text-base font-bold px-1">×</button>
+              </div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      if (subtotal > 0 && subtotal < MINIMUM_ORDER_VALUE) {
+        minimumOrderWarning.classList.remove("hidden");
+        shortfallAmount.textContent = formatCurrency(MINIMUM_ORDER_VALUE - subtotal);
+        submitOrderBtn.disabled = true;
+      } else {
+        minimumOrderWarning.classList.add("hidden");
+        submitOrderBtn.disabled = subtotal === 0;
+      }
+    }
+
+    productGrid.addEventListener("click", event => {
+      const btn = event.target.closest("button[data-action]");
+      if (!btn) return;
+
+      const action = btn.dataset.action;
+      const productId = btn.dataset.productId;
+
+      if (action === "increase") addToCart(productId, 1);
+      if (action === "decrease") addToCart(productId, -1);
+    });
+
+    cartItems.addEventListener("click", event => {
+      const btn = event.target.closest("button[data-action='decrease']");
+      if (!btn) return;
+      const productId = btn.dataset.productId;
+      addToCart(productId, -cart[productId]);
+    });
+
+    searchInput.addEventListener("input", e => {
+      searchQuery = e.target.value.trim();
+      renderProducts();
+    });
+
+    orderForm.addEventListener("submit", async event => {
+      event.preventDefault();
+
+      const subtotal = getSubtotal();
+
+      if (subtotal < MINIMUM_ORDER_VALUE) {
+        alert(`Minimum order value is ${formatCurrency(MINIMUM_ORDER_VALUE)}.`);
+        return;
+      }
+
+      const selectedItems = PRODUCTS
+        .filter(product => (cart[product.id] || 0) > 0)
+        .map(product => ({
+          id: product.id,
+          name: product.name,
+          qty: cart[product.id],
+          mrp: product.mrp,
+          salePrice: product.price,
+          lineTotal: cart[product.id] * product.price
+        }));
+
+      const payload = {
+        customerName: document.getElementById("customerName").value.trim(),
+        phone: document.getElementById("phone").value.trim(),
+        address: document.getElementById("address").value.trim(),
+        city: document.getElementById("city").value.trim(),
+        pincode: document.getElementById("pincode").value.trim(),
+        items: selectedItems,
+        totalAmount: subtotal,
+        orderSecret: ORDER_SECRET
+      };
+
+      submitOrderBtn.disabled = true;
+      submitOrderBtn.innerHTML = `<span>⏳</span> Processing Order...`;
+
+      try {
+        // Google Apps Script requires simple POST without custom headers to avoid CORS OPTIONS preflight
+        const response = await fetch(APP_SCRIPT_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (!result.ok) {
+          throw new Error(result.message || "Failed to submit order.");
+        }
+
+        document.getElementById("confirmationOrderId").textContent = result.orderId;
+        document.getElementById("confirmationTotal").textContent = formatCurrency(result.totalAmount);
+
+        const whatsappMessage = encodeURIComponent(
+          `Hi Jeyalakshmi Crackers! I have placed an order.\n\n*Order ID:* ${result.orderId}\n*Customer:* ${payload.customerName}\n*Phone:* ${payload.phone}\n*Total Amount:* ${formatCurrency(result.totalAmount)}\n\nI am sharing payment screenshot for confirmation.`
+        );
+
+        document.getElementById("whatsappPaymentBtn").href = `https://wa.me/9524803201?text=${whatsappMessage}`;
+
+        confirmationModal.classList.remove("hidden");
+      } catch (error) {
+        alert(error.message || "Order submission failed. Please try again.");
+      } finally {
+        submitOrderBtn.disabled = false;
+        submitOrderBtn.innerHTML = `<span>🚀</span> Place Order Now`;
+      }
+    });
+
+    closeModalBtn.addEventListener("click", () => {
+      confirmationModal.classList.add("hidden");
+    });
+
+    doneModalBtn.addEventListener("click", () => {
+      confirmationModal.classList.add("hidden");
+      orderForm.reset();
+      Object.keys(cart).forEach(k => delete cart[k]);
+      renderCart();
+      renderProducts();
+    });
+
+    // Initial load
+    buildCategoryTabs();
+    renderProducts();
+    renderCart();
+  </script>
+</body>
+
+</html>
